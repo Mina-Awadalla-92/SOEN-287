@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="../Metadata/icon.svg" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        background-image: url("https://images.pexels.com/photos/6707510/pexels-photo-6707510.jpeg?cs=srgb&dl=pexels-mikhail-nilov-6707510.jpg&fm=jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+      }
+      .logo {
+        font-size: 25px;
+        font-weight: 700;
+        transform: scale(2, 2);
+        color: black;
+      }
+      .logo a {
+        text-decoration: none !important;
+      }
+      .logo-sub {
+        color: #ff2750;
+      }
+      .navbar-dark .navbar-nav .nav-link {
+        color: white;
+      }
+
+      .navbar-dark .navbar-brand {
+        color: #1adc1a;
+      }
+
+      .navbar-brand {
+        font-size: 25px;
+        text-align: center;
+      }
+      .dropdown-menu{
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown-menu a{
+        float: none;
+        color:black;
+        line-height: 2;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-menu a:hover{
+        background-color: lightgrey;
+        text-decoration: none;
+      }
+      .dropdown:hover .dropdown-menu{
+        display: block;
+      }
+      .dropdown:hover{
+        background-color: transparent;
+      }
+      h1 {
+        font-size: 70px;
+
+        padding-top: 70px;
+        font-family: "Lucida Handwriting", Helevetica, sans-serif;
+        color: rgb(250, 249, 249);
+      }
+      h2 {
+        padding-top: 20px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: rgb(248, 248, 248);
+      }
+      h4 {
+        padding-top: 20px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: rgb(248, 248, 248);
+      }
+      .dropbtn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 8.7px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .item-pic {
+        width: 80%;
+        height: 80%;
+      }
+      .item-pic:hover{
+        border: 2px solid #f8ea1f;
+      }
+      .item-title {
+        color: black;
+        font-size: large;
+        font-weight: bold;
+      }
+      a{
+        text-decoration-color: yellow !important;
+      }
+      p.copyRight {
+        text-align: bottom;
+      }
+    </style>
+  </head>
+  
+  <body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="Home.html">
+          <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
+          <p class="logo" style="display: inline">
+            <span class="logo-sub">MUNCHIES</span>Market
+          </p>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <button class="dropbtn">
+                Aisle
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Aisle/Fruits&veggies.html">Fruits and vegetables</a>
+                <a class="dropdown-item" href="Aisle/Bakery.html">Bakery</a>
+                <a class="dropdown-item" href="Aisle/Frozen.html">Frozen</a>
+                <a class="dropdown-item" href="Aisle/Butchery.html">Butchery</a>
+                <a class="dropdown-item" href="Aisle/Seafood.html">Seafood</a>
+              </div>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="Shopping-Cart.html">Shopping Cart</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="ProductList.html"
+                >Back Store Page</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+ 
+    <br><br><br>
+    
+    <header>
+      <h1 align = "center"><strong><em>
+        Welcome to MUNCHIES Store
+        </em></strong></h1>
+    </header>
+
+    <h2 align = "center"><strong>Items of the week</strong></h2>
+    <br>
+
+    <h4 align = "center"> ... and many more! </h4>
+    <footer>
+      <p class ="copyRight"> &copy MUNCHIES Team </p>
+    </footer>
+
+    
+  </body>
