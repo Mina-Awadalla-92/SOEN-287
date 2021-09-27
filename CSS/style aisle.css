@@ -84,6 +84,7 @@
         list-style-type: none;
         font-weight: 600;
         margin-left: 18px;
+        text-align: center;
 
     }
     .list-group > a {
