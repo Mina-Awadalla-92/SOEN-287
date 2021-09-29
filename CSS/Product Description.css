@@ -1,0 +1,80 @@
+
+/* NAVBAR */
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-dark .navbar-brand {
+            color: #1adc1a;
+        }
+        .navbar-brand {
+            font-size: 25px;
+            text-align: center;
+        }
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-menu a{
+            float: none;
+            color:black;
+            line-height: 2;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-menu a:hover{
+            background-color: lightgrey;
+            text-decoration: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        .dropdown:hover{
+            background-color: transparent;
+        }
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 8.7px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+/* MAIN CONTENT */
+
+
+        .div1{
+            border: rgb(83, 218, 223) 11px solid;
+            text-align: center;
+            background: rgb(83, 218, 223);
+            color: black;
+            margin-top: 6%;
+        }
+
+        .h1{ 
+            font-size: 200%;
+            font-weight: 400;
+            color: white;
+
+        }
+
+        .img1{
+            width: 450px;
+            height: 350px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+            transform: scale(2, 2);
+            color: black;
+        }
+        .logo-sub {
+            color: #ff2750;
+        }
