@@ -55,13 +55,18 @@
             background: rgb(83, 218, 223);
             color: black;
             margin-top: 6%;
+            text-transform: none;
+           
+            
+         
+        
         }
 
         .h1{ 
             font-size: 200%;
             font-weight: 400;
             color: white;
-            text-decoration:none;
+        
 
         }
 
@@ -79,7 +84,7 @@
         .logo-sub {
             color: #ff2750;
         }
-
-        .none{
-            text-decoration:none;
-        }
+.none{
+    color: black;
+}
+        
