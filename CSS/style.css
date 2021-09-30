@@ -100,7 +100,7 @@ h4 {
   }
 
 .item-pic:hover{
-    border: 2px solid #f8ea1f;
+    border: 2px solid white;
   }
 
 .item-title {
@@ -110,7 +110,7 @@ h4 {
   }
 
 a{
-    text-decoration-color: yellow !important;
+    text-decoration-color: white !important;
     }
     
 p.copyRight {
