@@ -206,4 +206,6 @@ p.copyRight {
             height: 180px
         }
 
-        
+        .item-pic{
+            border-radius: 10px;
+        }
