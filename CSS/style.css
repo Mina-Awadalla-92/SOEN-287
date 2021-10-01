@@ -63,22 +63,24 @@ body {
     background-color: transparent;
     }
 
-    
+    .welcome{
+      
+    }
     header{
         background-color: #ff2750;
-        height: 300px;
+        height: 375px;
+        margin:0
+       
    
         
     }
     .welcomemes{
-        margin-right: 10px;
+        text-align: center;
+      
     }
-    #blackmunchies{ 
-        margin-right: auto;
-        margin-left: auto;
-        width: 50%;
-        
-    
+    .blackmunchies{ 
+        margin-top: -100px;
+        text-align: center;
     }
 
 h1 {
@@ -94,7 +96,7 @@ h2 {
     color: rgb(248, 248, 248);
     }
     .itemsweek {
-        
+        margin-top: 50px;
     }
 
 h4 {
@@ -237,11 +239,12 @@ p.copyRight {
         }
         .copyRight{
             color: white;
+         
             
         }
         footer{
             bottom:0;
-            position: absolute;
+            position: fixed;
             
         }
         
