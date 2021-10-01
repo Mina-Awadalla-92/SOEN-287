@@ -147,11 +147,7 @@ p.copyRight {
         display: inline-block;
     }
 
-
-
-            body {
-            background-color: white;
-        }
+            
         .sidebar {
 
             margin-top: -4.2rem;
@@ -232,6 +228,9 @@ p.copyRight {
 
         .item-pic{
             border-radius: 10px;
+            
+        }
+        .item-pic:hover {
             box-shadow: 5px 5px 5px #ccc;
             -moz-box-shadow: 5px 5px 5px #ccc;
             -webkit-box-shadow: 5px 5px 5px #ccc;
