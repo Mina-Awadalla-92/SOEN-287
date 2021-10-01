@@ -63,8 +63,19 @@ body {
     background-color: transparent;
     }
 
-    .welcome{
+    
+    header{
         background-color: #ff2750;
+        height: 300px;
+        
+    }
+    .welcomemes{
+        margin-right: 10px;
+    }
+    .blackmunchies{ 
+        margin-right: auto;
+        margin-left: auto;
+        width: 45%;
     }
 
 h1 {
