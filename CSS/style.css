@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://images.unsplash.com/photo-1484848560771-c55afee65e0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+    background:linear-gradient(#353A41,#000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -214,3 +214,13 @@ p.copyRight {
             -webkit-box-shadow: 5px 5px 5px #ccc;
             -khtml-box-shadow: 5px 5px 5px #ccc;
         }
+        .copyRight{
+            color: white;
+            
+        }
+        footer{
+            bottom:0;
+            positIon: absolute;
+            
+        }
+        
