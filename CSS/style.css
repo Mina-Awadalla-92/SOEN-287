@@ -1,5 +1,5 @@
 body {
-    background:linear-gradient(#353A41,#000000);
+    background: linear-gradient(#353A41,#000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -61,6 +61,10 @@ body {
 
 .dropdown:hover{
     background-color: transparent;
+    }
+
+    .welcome{
+        background-color: #ff2750;
     }
 
 h1 {
@@ -220,7 +224,7 @@ p.copyRight {
         }
         footer{
             bottom:0;
-            positIon: absolute;
+            position: absolute;
             
         }
         
