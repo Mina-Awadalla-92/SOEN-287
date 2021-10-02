@@ -63,9 +63,7 @@ body {
     background-color: transparent;
     }
 
-    .welcome{
-      
-    }
+    
     header{
         background-color: #ff2750;
         height: 375px;
@@ -97,7 +95,7 @@ h2 {
     }
     .itemsweek {
         margin-top: 50px;
-        background-color: white;
+        background-color: lightgrey;
     }
 
 h4 {
@@ -125,7 +123,7 @@ h4 {
   }
 
 .item-pic:hover{
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
   }
 
 .item-title {
@@ -238,7 +236,7 @@ p.copyRight {
             -khtml-box-shadow: 5px 5px 5px #ccc;
         }
         .copyRight{
-            color: white;
+            color: rgb(0, 0, 0);
          
             
         }
