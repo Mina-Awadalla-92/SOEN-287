@@ -56,18 +56,12 @@
             color: black;
             margin-top: 6%;
             text-transform: none;
-           
-            
-         
-        
         }
 
         .h1{ 
             font-size: 200%;
             font-weight: 400;
             color: white;
-        
-
         }
 
         .img1{
@@ -88,4 +82,22 @@
     
             color: black;
         }
-        
+        .accordion{
+            margin-top: 0.5rem;
+        }
+        .more-description{
+           text-decoration: none;
+           color: black;
+           font-size: large;
+           
+        }
+        .more-description:hover{
+            text-decoration: none;
+            color: black;
+        }
+
+        .product-name{
+            font-weight: 500;
+            font-size: 2rem;
+            color: rgb(27, 27, 161);
+        }
