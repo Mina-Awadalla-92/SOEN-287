@@ -2,9 +2,9 @@ body{
 
 display:grid;
 grid-template-columns: repeat(10, 1fr);
-grid-template-rows: repeat(10, 1fr);
+grid-template-rows: repeat(8, 1fr);
 background: linear-gradient( #353A41,#000000);
-overflow: hidden;
+
 }
 
 .login {
@@ -60,4 +60,8 @@ button:hover {
 #signup{
     color: white;
     
+}
+
+footer{
+    color: grey;
 }
