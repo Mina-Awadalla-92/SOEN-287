@@ -21,7 +21,22 @@ background: rgb(138, 135, 135)
 
 }
 
+@media all and (max-width: 450px){
 
+body{
+background-color:#353A41 ;
+}
+    
+    .login {
+    grid-row: 2/11;
+    grid-column: 1/11;
+    border:none;
+    
+    }
+    #image1 {
+        margin-left: 15px;
+    }
+}
 
 .login-text{
     font-size: 100px;
