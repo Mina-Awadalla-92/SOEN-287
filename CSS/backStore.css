@@ -40,7 +40,6 @@ h1 {
     .list li{
         margin-bottom: 3px;
         list-style-type: none;
-        
         height:90px;
         width: 100%;
     }
@@ -66,22 +65,87 @@ h1 {
         color:white;
     }
 
+    
+
     .productList {
         grid-column: 3/11;
-        grid-row: 3/10;
-        
+        grid-row: 3/9;
         padding:3px;
+      
         overflow-y: scroll;
         background-color: white;
     
     }
     .productList li {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); 
+        
         list-style-type: none;
         width:100%;
         border-bottom:groove;
-        font-size: 30px;
+        font-size: 30px; 
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+
+    .box input{
+        width: 45px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 5px;
+        text-align: center;
        
+    }
+
+    .box {
+        grid-column: 7/11;
+        align-items: center;
+        text-align: right;
+        padding-right:5px;
+      
+        
+    }
+
+    .box button{
+        padding: 5px; 
+        border-radius: 7px;
+        color: white;
+        margin-left: 5px;
+    }
+    .box span{
+        margin-right:10px;
+    }
+
+    #addButton {
+        background-color: green;
+        
        
+    }
+
+    #addButton:hover {
+        background-color: rgb(6, 190, 6);
+    }
+
+    #deleteButton {
+        background-color: red;
+    }
+
+    #deleteButton:hover {
+        background-color: rgb(255, 72, 72);
+    }
+
+    #editButton {
+        background-color: blue;
+    }
+
+    #editButton:hover {
+        background-color: rgb(86, 86, 255);
+    }
+    
+    .editText {
+        font-size: 15px;
+        text-align: left;
+        border: none;
     }
 
     footer {
@@ -94,7 +158,86 @@ h1 {
         text-align: center;
         font-size: smaller;
     }
+
+    .productEditor {
+        grid-row: 9/10;
+        grid-column: 3/11;
         
+    }
+    .productEditor .buttons {
+        text-align: center;
+        
+    }
+
+    .productEditor button {
+        text-align: center;
+        font-size: 50px;
+        border-radius: 5px;
+        padding: 3px;
+        width: 70px;
+        margin: 30px;
+        color: white;
+        
+    }
+
+    #addProductButton {
+        background-color: green;
+    }
+
+    #addProductButton:hover {
+        background-color: rgb(12, 180, 12);
+    }
+
+    #deleteProductButton {
+        background-color: red;
+    }
+
+    #deleteProductButton:hover {
+        background-color: rgb(231, 46, 46);
+    }
+
+
+
+
+    @media all and (max-width: 800px) {
+        body{
+            font-size: 5px;
+        }
+        h1 {
+            margin-top: 30px;
+        }
+        .aisleNav {
+            grid-column: 1/4;
+        }
+        
+         .aisleNav button{
+            font-size: 20px;
+        }
+            .productList {
+            grid-column: 4/11;
+        }
+        .productList li{
+            grid-template-rows: repeat(2,1fr);
+            font-size: 20px;
+        }
+        .productList button{
+            margin-bottom: 3px;
+        }
+
+        .box {
+            grid-column: 1/11;
+            grid-row: 2/3;
+            text-align: left;
+        }
+        .box button {
+            padding: 0px;
+            font-size: 15px;
+            border-radius: 0px;
+        }
+     
+       
+    }
+       
 
 
     
