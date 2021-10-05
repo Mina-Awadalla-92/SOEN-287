@@ -1,9 +1,8 @@
 body {
-    background: linear-gradient(#353A41,#000000);
+    background: linear-gradient(#354137,#000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
     }
   
 .logo {
@@ -244,7 +243,8 @@ p.copyRight {
         }
         footer{
             bottom:0;
-            position: fixed;
-            
+            position: fixed; 
         }
+
+
         
