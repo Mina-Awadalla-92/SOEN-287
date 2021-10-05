@@ -8,6 +8,8 @@ background: rgb(138, 135, 135)
 
 }
 
+
+
 .login {
     margin-top:0px;
     border-style: solid;
@@ -21,11 +23,26 @@ background: rgb(138, 135, 135)
 
 }
 
+@media all and (max-width: 450px){
 
+body{
+background-color:#353A41 ;
+}
+    
+    .login {
+    grid-row: 2/11;
+    grid-column: 1/11;
+    border:none;
+    
+    }
+    #image1 {
+        margin-left: 15px;
+    }
+}
 
 .login-text{
     font-size: 100px;
-    margin: -30px;
+    margin: -20px;
     color:white;
     text-shadow: 2px 2px #ff0000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,6 +50,9 @@ background: rgb(138, 135, 135)
     
 }
  
+.textboxSignup{
+    margin-bottom: 10px;
+}
 
 #image1{
     width: 250px;
@@ -63,7 +83,23 @@ button:hover {
     color: white;
     
 }
+.textboxSignup input{
+    border-radius: 10px;
+    margin: 2px;
+    padding: 2px;
+}
+.textboxSignup input:hover {
+    background-color:#FF2750 ;
+}
+
+
+::placeholder {
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 footer{
+  
     color: grey;
 }
+

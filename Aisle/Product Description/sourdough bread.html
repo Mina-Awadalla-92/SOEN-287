@@ -37,6 +37,10 @@
 
 
 <body>
+    <script type="text/javascript" src="code.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
           <div class="container-fluid nav">
           
             <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -101,8 +105,21 @@
                            <img src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="" class="img1" style="width: 100%;">
                        </div>
                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                           <h4 class="product-name">Sourdough Bread</h4>
-                           <p>Sourdough bread is a great alternative to conventional bread. Its lower phytate levels make it more nutritious and easier to digest. Sourdough bread also seems less likely to spike your blood sugar levels, which makes it an option for those monitoring their blood sugar.</p>
+                        <h4 class="product-name">Sourdough Bread</h4>
+                        <br>
+
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="more-description">More Description <i class="fas fa-arrow-down"></i></a>
+
+                            </h4>
+                        </div>
+
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                               <p>Sourdough bread is a great alternative to conventional bread. Its lower phytate levels make it more nutritious and easier to digest. Sourdough bread also seems less likely to spike your blood sugar levels, which makes it an option for those monitoring their blood sugar.</p>
+                           </div>
+                        </div>
                            <p class="under-product-name"></p>
                            <br>
                            <h5><span class="third">$6.96/unit </span>

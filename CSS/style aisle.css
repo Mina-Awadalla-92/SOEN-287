@@ -156,3 +156,6 @@
         outline: none;
         padding: 8.7px;
     }
+    .cartIcon:hover{
+        text-shadow: 2px 2px #ff0000;;
+    }

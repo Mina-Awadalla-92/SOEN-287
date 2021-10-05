@@ -5,18 +5,22 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../CSS/backStore.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style aisle.css"/>
     
     <!-- Bootstrap CSS -->
+    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/backStore.css">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>Back Store - MUNCHIES Market</title>
+    <title>Back Store</title>
    
-    
+    <a rel="icon" href="../Munchies.jpg">
     <!-- <link rel="icon" href="../../Metadata/icon.svg"> -->
+
+  
 </head>
 <body>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -51,8 +55,8 @@
             <a class="nav-link" href="../Home.html">Home</a>
           </li>
 
-          <li class="nav-item dropdown">
-            <button class="dropbtn">
+          <li class="nav-item dropdown" >
+            <button class="dropbtn" style= margin:0; >
               Aisle
               <i class="fa fa-caret-down"></i>
             </button>
@@ -66,9 +70,7 @@
             </div>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="../Shopping Cart.html">Shopping Cart</a>
-          </li>
+          
 
           <li class="nav-item">
             <a class="nav-link" href="login.html">Login</a>
@@ -80,12 +82,118 @@
               >Back Store Page</a>
        
           </li>
+
+           
         </ul>
+      </div>
+      <div>
+        <a class = "cartIcon"href="../Shopping Cart.html"><img src="..\cartfinal-removebg-preview.png" alt="Cart" style="width: 40px; height:40px;"  ></a>
       </div>
     </nav>
   </div>
 
+  <h1>Back Store</h1>
+  <div class="aisleNav">
+    <div class="list">
+       <ul>
+      <li>
+      <button id = "fvButton">Fruits & Vegetables</button>
+      </li>
+  
+      <li>
+        <button>Butchery</button>
+        </li>
+        <li>
+         <button>Beverages</button>
+         </li>
+         <li>
+          <button>Bakery</button>
+          </li>
+           <li>
+           <button>Frozen</button>
+           </li>
+           <li>
+           <button>Seafood</button>
+           </li>
+
+         </ul>
+    </div>
+  </div>
+
+  <div class="productList">
+    <ul>
+      <li class = "product"> Apples 
+         <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+          <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+          <span><button class = "editText" id = "editButton">Edit</button></span>
+        </div> 
+      </li>
+      <li class = "product"> Bananas 
+        <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+         <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+         <span><button class = "editText" id = "editButton">Edit</button></span>
+       </div> 
+     </li>
+     <li class = "product"> Kiwis
+      <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+       <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+       <span><button class = "editText" id = "editButton">Edit</button></span>
+     </div> 
+   </li>
+   <li class = "product"> Oranges
+    <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+     <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+     <span><button class = "editText" id = "editButton">Edit</button></span>
+   </div> 
+ </li>
+ <li class = "product"> Cucumber
+  <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+   <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+   <span><button class = "editText" id = "editButton">Edit</button></span>
+ </div> 
+</li>
+<li class = "product"> Carrots
+  <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+   <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+   <span><button class = "editText" id = "editButton">Edit</button></span>
+ </div> 
+</li>
+<li class = "product"> Brocolli
+  <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+   <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+   <span><button class = "editText" id = "editButton">Edit</button></span>
+ </div> 
+</li>
+<li class = "product"> Corn
+  <div class = "box"> <span> <input type="number" value="0" min="0"><button class = "editText" id = "addButton">Add</button></span>
+   <span> <input type="number" value="0" min="0"><button class = "editText" id = "deleteButton">Delete</button></span>
+   <span><button class = "editText" id = "editButton">Edit</button></span>
+ </div> 
+</li>
+
+    </ul>
+  </div>
+
+  <div class="productEditor">
+    <div class = "buttons"> 
+    <button id="addProductButton">+</button>
+    <button id = "deleteProductButton">-</button>
+  </div>
+   
+
+  </div>
 
 
+
+
+
+
+  
+  
+<footer>
+  <p class ="copyRight"> &copy MUNCHIES Team 2021 </p>
+</footer>
 </body>
+
+
 </html>
