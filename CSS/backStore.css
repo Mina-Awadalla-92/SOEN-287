@@ -71,9 +71,9 @@ h1 {
         grid-column: 3/11;
         grid-row: 3/9;
         padding:3px;
-      
         overflow-y: scroll;
         background-color: white;
+        border-bottom:solid #ff0000;
     
     }
     .productList li {
