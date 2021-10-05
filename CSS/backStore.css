@@ -1,1 +1,30 @@
+* {
+    margin:0;
+    padding:0;
+}
+html, body{
+    height:100%;
+    position: relative;
+}
 
+body{  
+
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background: rgb(138, 135, 135)
+    }
+
+    .aisleNav{
+        grid-row: 3/10;
+        grid-column: 1/4;
+        margin-left:3px;
+        border: solid;
+        
+      
+    }
+    
+    .list li{
+        list-style-type: none;
+    }
+    
