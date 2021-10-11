@@ -83,6 +83,7 @@
 }
 .cart .table tbody tr td .main .des p{
     margin-bottom:0px;
+    width: 100%;
 }
 .cart .table tbody tr td h6{
     font-size:16px;
