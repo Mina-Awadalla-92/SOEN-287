@@ -2,14 +2,14 @@ body {
     background: linear-gradient(#354137,#000000);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     }
   
 .logo {
     font-size: 25px;
     font-weight: 700;
     transform: scale(2, 2);
-    color: black;
+    color: rgb(0, 0, 0);
     }
 
 .logo a {
@@ -75,9 +75,17 @@ body {
         text-align: center;
       
     }
+
+    .welcome{
+        text-align: center;
+        size: inherit;
+        width: 100%;
+    }
     .blackmunchies{ 
         margin-top: -100px;
         text-align: center;
+        
+        
     }
 
 h1 {
@@ -128,7 +136,7 @@ h4 {
   }
 
 .item-title {
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: large;
     font-weight: bold;
   }
@@ -166,7 +174,7 @@ p.copyRight {
 
         }
         .list-group > a {
-            color: black;
+            color: rgb(0, 0, 0);
             text-decoration: none;
         }
         .list-group {
@@ -176,14 +184,14 @@ p.copyRight {
             border: rgb(240, 238, 238) 15px solid;
             text-align: center;
             background: rgb(240, 238, 238);
-            color: black;
+            color: rgb(0, 0, 0);
             margin-top: 3%;
             margin-bottom: 6rem;
         }
         .h1 {
             font-size: 220%;
             font-weight: 700;
-            color: rgb(80, 78, 78);
+            color: rgb(80, 78, 80);
         }
         .cost {
             font-weight: bold;
@@ -218,7 +226,7 @@ p.copyRight {
             list-style-type: none;
             border: none;
             height: 2px;
-            background: black;
+            background: rgb(0, 0, 0);
             margin-left: 18px;
         }
         .item-pic {
@@ -243,8 +251,23 @@ p.copyRight {
         }
         footer{
             bottom:0;
-            position: fixed; 
+            /* position: fixed;  */
         }
 
+        .p_logo{
+            width: 100%;
+            height: 180px;
+            /* width: 80%;
+            height: 80%; */
+        }
+
+        .cartIcon {
+            font-size: 10px;
+            text-align: center;
+            align-items: center;
+            }
+            .navbar-dark .cartIcon {
+                color: #1adc1a;
+                }
 
         
