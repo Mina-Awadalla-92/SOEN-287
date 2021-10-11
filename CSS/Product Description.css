@@ -54,14 +54,18 @@
             text-align: center;
             background: rgb(83, 218, 223);
             color: black;
-            margin-top: 6%;
+            margin-top: 21px;
             text-transform: none;
+            
+
+
         }
 
         .h1{ 
             font-size: 200%;
             font-weight: 400;
             color: white;
+            margin-top: 80px;
         }
 
         .img1{
