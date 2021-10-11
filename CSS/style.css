@@ -102,6 +102,7 @@ h2 {
     }
     .itemsweek {
         margin-top: 50px;
+        padding-bottom: 30px;
         background-color: lightgrey;
     }
 
@@ -147,6 +148,12 @@ a{
     
 p.copyRight {
     text-align: bottom;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+   
+    
+    
     }
 
 
@@ -245,9 +252,7 @@ p.copyRight {
             -khtml-box-shadow: 5px 5px 5px #ccc;
         }
         .copyRight{
-            color: white
-         
-            
+            color: white;
         }
         footer{
             bottom:0;
