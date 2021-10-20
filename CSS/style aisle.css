@@ -123,14 +123,14 @@
         margin-left: 20px;
 
     }
-    .btn {
+    /* .btn {
         width: 10rem;
         text-align: center;
         font-size: 0.9rem;
         position: relative;
         left: 0.2px;
         margin-top: 3rem;
-    }
+    } */
     .card-text {
         font-size: 0.9rem;
     }
