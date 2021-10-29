@@ -19,6 +19,7 @@
   var gtotalfruits, gtotalfruitss, subtotal, total_QST, GST, total_GST,
   afterTax,TaxIn, Tax ;
 
+  
 
   function kiwi() {
     var itemquantity = document.getElementById("kiwi");
