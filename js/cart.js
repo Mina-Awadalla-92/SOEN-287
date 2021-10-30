@@ -1,3 +1,39 @@
+var addToCartButton = document.getElementsByClassName("btn btn-dark");
+for (var i = 0; i < addToCartButton.length; i++) {
+    addToCartButton[i].addEventListener('click', addToCartClicked);
+
+}
+
+
+function addToCartClicked(a) {
+  var divParent = a.target.parentElement;
+  var itemName = divParent.querySelector(".card-title").textContent;
+  var price = divParent.querySelector(".cost").textContent;
+  var priceDouble = parseFloat(price);
+  var priceWunit = '$' + price + divParent.querySelector(".unit").textContent
+  var imageSrc = divParent.parentElement.querySelector(".item-pic").src;
+  console.log(imageSrc);
+  addToCart(itemName,priceWunit,imageSrc);
+  
+}
+
+function addToCart(itemName,priceWunit,imageSrc) {
+  var cartRow = document.createElement('tr');
+  var cartCell = document.createElement('td');
+  var itemImage = document.createElement('img');
+  var itemTitle = itemName;
+  
+  itemImage.src = imageSrc;
+  var cartItems = document.querySelector('tbody');
+  cartItems.appendChild(cartRow);
+  cartRow.appendChild(cartCell);
+  cartCell.appendChild(itemImage)
+
+}
+
+
+
+  
   var  kiwi_amount = 1;
   var kiwi_totalamount = 5.45; 
   var Red_Bull_amount =1;
@@ -14,7 +50,7 @@
   var Chocolate_amount = 1;
   var Chocolate_totalamount = 18.99;
   var itemquantity = 0
-
+  
    
   var gtotalfruits, gtotalfruitss, subtotal, total_QST, GST, total_GST,
   afterTax,TaxIn, Tax ;

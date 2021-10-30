@@ -90,6 +90,10 @@
     color:#000;
     margin-bottom: 0px;
 }
+tbody img{
+    width: 145px; 
+    height: 98px
+}
 .checkout ul{
     border: 2px solid #ebebeb;
     background: #f3f3f3;
