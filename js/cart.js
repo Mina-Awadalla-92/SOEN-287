@@ -22,6 +22,7 @@ function loadItems() {
 }
 
 function addToCartClicked(a) {
+  
   var divParent = a.target.parentElement;
   itemName = divParent.querySelector(".card-title").textContent;
   console.log(itemName)
@@ -29,7 +30,6 @@ function addToCartClicked(a) {
   var priceDouble = parseFloat(price);
   priceWunit = '$' + priceDouble + divParent.querySelector(".unit").textContent
   imageSrc = divParent.parentElement.querySelector(".item-pic").src;
-  
   
 }
 
