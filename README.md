@@ -1,2 +1,3 @@
-Link: https://munchiesmarket.netlify.app/home
+Link: https://muchiesmarket.netlify.app/
+
 
