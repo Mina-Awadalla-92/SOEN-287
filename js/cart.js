@@ -5,7 +5,8 @@ for(i=0;i<remove.length;i++){
    button.addEventListener('click', function(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
+    calcTotalPrice();
+    updateCartTotal();
    })
 }
   
