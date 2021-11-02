@@ -2,9 +2,9 @@ function removeButtonEvent() {
    var remove = document.getElementsByClassName('remove');
 for(i=0;i<remove.length;i++){
    var button = remove[i];  
-   button.addEventListener('click', function() {
+   button.addEventListener('click', function(event) {
     var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.parentElement.remove()
+    buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
    })
 }
@@ -136,6 +136,7 @@ function displayItemPrice() {
      var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
      price = parseFloat(price.substring(1,price.indexOf('/')))
      var tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
+     console.log(tPrice)
      tPrice.innerHTML = (price * quantity).toFixed(2);
      
   
