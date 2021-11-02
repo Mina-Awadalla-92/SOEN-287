@@ -139,7 +139,7 @@ function displayItemPrice() {
      var tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
      console.log(tPrice)
      tPrice.innerHTML = (price * quantity).toFixed(2);
-     
+     calcTotalPrice();
   
     })
  }
