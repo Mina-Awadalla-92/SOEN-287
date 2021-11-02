@@ -7,9 +7,9 @@ class item{
   }
 }
 
-let itemName;
-let priceWunit;
-let imageSrc;
+var itemName = "Test";
+var priceWunit = "$13.33/unit"
+var imageSrc = "https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT"
 var addToCartButton = document.getElementsByClassName("btn btn-dark");
 for (var i = 0; i < addToCartButton.length; i++) {
     addToCartButton[i].addEventListener('click', addToCartClicked);
