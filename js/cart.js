@@ -1,14 +1,26 @@
-class item{
-  constructor(name,price,unit,imgSrc) {
-    this.name = name;
-    this.price = price;
-    this.unit = unit;
-    this.imgSrc = imgSrc;
-  }
+function removeButtonEvent() {
+   var remove = document.getElementsByClassName('remove');
+for(i=0;i<remove.length;i++){
+   var button = remove[i];  
+   button.addEventListener('click', function() {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.parentElement.remove()
+    updateCartTotal()
+   })
 }
+  
+}
+ function onLoad() {
+  addToCart();
+  removeButtonEvent();
+  calcTotalPrice();
+  displayItemPrice();
+ }
+
 
 var itemName = "Test";
 var priceWunit = "$13.33/unit"
+var price = 20.99;
 var imageSrc = "https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT"
 var addToCartButton = document.getElementsByClassName("btn btn-dark");
 for (var i = 0; i < addToCartButton.length; i++) {
@@ -18,7 +30,7 @@ for (var i = 0; i < addToCartButton.length; i++) {
 
 function loadItems() {
   var products = document.getElementsByClassName("card");
-  
+  addToCart();
 }
 
 function addToCartClicked(a) {
@@ -29,6 +41,7 @@ function addToCartClicked(a) {
   var price = divParent.querySelector(".cost").textContent;
   var priceDouble = parseFloat(price);
   priceWunit = '$' + priceDouble + divParent.querySelector(".unit").textContent
+  console.log(priceWunit);
   imageSrc = divParent.parentElement.querySelector(".item-pic").src;
   
 }
@@ -67,14 +80,22 @@ function addToCart() {
   var dollarSign = document.createElement('span');
   dollarSign.innerHTML = "$";
   var outputPrice = document.createElement('output')
+  outputPrice.innerHTML = price;
+  outputPrice.className = "itemPrice"
   var button = document.createElement('button');
   button.type = "button";
+  button.addEventListener('click', function() {
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
+   })
+
   button.className = "btn btn-dark btn1 remove";
   button.textContent = "Remove";
   cartCell4.appendChild(dollarSign);
   cartCell4.appendChild(outputPrice);
   cartCell4.appendChild(button);
-
+  
 
 
   cartRow.appendChild(cartCell1);
@@ -87,6 +108,39 @@ function addToCart() {
   cartItems.appendChild(cartRow);
   
   
+
+}
+
+function calcTotalPrice() {
+  
+  
+  var itemPrices = document.getElementsByClassName('itemPrice');
+  console.log(itemPrices.length);
+   var totalPrice = 0;
+   
+  for (var i = 0; i<itemPrices.length;i++) {
+    var individualPrice = parseFloat(itemPrices[i].innerHTML)
+    totalPrice = totalPrice + individualPrice
+  } 
+  console.log(totalPrice.toFixed(2));
+}
+
+function displayItemPrice() {
+  var quantityButton = document.getElementsByClassName("shoppinginput");
+  console.log(quantityButton);
+  
+  for(i=0;i<quantityButton.length;i++){
+    quantityButton[i].addEventListener('change',function(event) {
+     var buttonClicked = event.target
+     var quantity= buttonClicked.value;
+     var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
+     price = parseFloat(price.substring(1,price.indexOf('/')))
+     var tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
+     tPrice.innerHTML = price * quantity;
+     
+  
+    })
+ }
 
 }
 
@@ -114,7 +168,7 @@ function addToCart() {
   var gtotalfruits, gtotalfruitss, subtotal, total_QST, GST, total_GST,
   afterTax,TaxIn, Tax ;
 
-  
+ 
 
   function kiwi() {
     var itemquantity = document.getElementById("kiwi");

@@ -15,7 +15,7 @@
     <script type="text/javascript" src="../SOEN-287/js/cart.js"> </script>
 
 </head>
-<body onload="addToCart()">
+<body onload ="onLoad()">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@
                     <div class="table-responsive">
                         <table class="table">
                             <thead class="thead-dark">
-                                <tr>
+                                <tr >
                                     <th scope="col"class="text-white">Product</th>
                                     <th scope="col"class="text-white">Price</th>
                                     <th scope="col"class="text-white">Quantity</th>
@@ -82,8 +82,8 @@
                                 </tr>
                             </thead>
                             <div class="product-display-div">
-                                <tbody class = "addedproducts">
-                            <tr>
+                                <tbody class = "addedProducts">
+                            <tr >
                                 <td>
                                     <img src="https://images.unsplash.com/photo-1616684000067-36952fde56ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80"alt=" ;">
                                     <p>Kiwis</p>
@@ -92,15 +92,15 @@
                                     <h6>$5.45/pack</h6>
                                 </td>
                                 <td>
-                                    <input type="number" id="kiwi" class="shoppinginput" onChange="kiwi()" onchange="grandtotalfruits" value="1" min="0">
+                                    <input type="number" id="kiwi" class="shoppinginput"  onchange="grandtotalfruits" value="1" min="0">
     
                                 </td>
                                 <td>
-                                    <span>$</span><output id="kiwi_total" >5.45</output>    
+                                    <span>$</span><ouput class = "itemPrice" >5.45</output>    
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> 
                                 </td>     
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                     <img src="https://cdn.pixabay.com/photo/2018/04/08/14/46/red-bull-3301415_1280.jpg"alt=" ;">
                                     <p>Red Bull</p>
@@ -113,11 +113,11 @@
     
                                 </td>
                                 <td>
-                                    $<output id="RedBull_total" >3.69</output>    
+                                    $<ouput class = "itemPrice" id="RedBull_total" >3.69</output>    
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
                                 </td> 
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                     <img src="https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80"alt=" ;">
                                     <p>Brioche Bread</p>                         
@@ -130,11 +130,11 @@
     
                                 </td>
                                 <td>
-                                    $<output id="Brioche_total" >3.75</output>    
+                                    $<ouput class = "itemPrice" id="Brioche_total" >3.75</output>    
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
                                 </td> 
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                     <img src="https://assets.bonappetit.com/photos/57ad3d4c53e63daf11a4dd38/16:9/w_1280,c_limit/spicy-italian-sausage.jpg"alt=" ;">
                                     <p>Italian Sausages</p>
@@ -146,11 +146,11 @@
                                     <input type="number" id="Sausages" class="shoppinginput" onChange="Sausages()" onchange="grandtotalfruits" value="1" min="0">
                                 </td>
                                 <td>
-                                    $<output id="Sausages_total" >1.54</output>
+                                    $<ouput class = "itemPrice" id="Sausages_total" >1.54</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                      <img src="https://www.washingtonpost.com/rf/image_982w/2010-2019/WashingtonPost/2020/08/13/Food/Images/v-howto-lobster_029.JPG"alt=" ;">
                                     <p>Lobster</p>
@@ -162,11 +162,11 @@
                                     <input type="number" id="Lobster" class="shoppinginput" onChange="Lobster()" onchange="grandtotalfruits" value="1" min="0">
                                 </td>
                                 <td>
-                                    $<output id="Lobster_total" >29.99</output>
+                                    $<ouput class = "itemPrice" id="Lobster_total" >29.99</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                             </tr>
-                            <tr>
+                            <tr >
                                 <td>
                                     <img src="https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT"alt=" ;">
                                     <p>Chocolate</p>
@@ -179,7 +179,7 @@
                                     <input type="number" id="Chocolate" class="shoppinginput" onChange="Chocolate()" onchange="grandtotalfruits" value="1" min="0" >
                                 </td>
                                 <td>
-                                    $<output id="Chocolate_total" >18.99</output>
+                                    $<ouput class = "itemPrice" id="Chocolate_total" >18.99</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                                  
@@ -198,23 +198,23 @@
                     <ul>
                         <li>subtotal
                             <span>
-                                $<output id="grandtotalfruitss" >71.36</output>
+                                $<ouput  id="grandtotalfruitss" >71.36</output>
                             </span>
                          </li>
                          
                         <li>QST
                             <span>
-                                $<output id="QST" >3.57</output>
+                                $<ouput  id="QST" >3.57</output>
                             </span>
                         </li>
                         <li class="GST">GST
                             <span>
-                                $<output id="GST" >7.12</output>
+                                $<ouput  id="GST" >7.12</output>
                             </span>
                         </li>
                         <li class="cart-total">Total
                             <span>
-                                $<output id="Total_Tax" >82.06</output>     
+                                $<ouput id="Total_Tax" >82.06</output>     
                             </span>
                         </li>
                         <!-- <li>
@@ -227,17 +227,8 @@
         </div>
     </div>
     <br><br>
-    <script type="text/javascript" src="js/cart.js"> </script>
+    <script type="text/javascript" src="js/cart.js"> removeButtonEvent() </script>
     <script type="text/javascript">
-
-        var remove = document.getElementsByClassName('remove');
-        for(i=0;i<remove.length;i++){
-           var button = remove[i];
-           button.addEventListener('click', function() {
-            var buttonClicked = event.target
-            buttonClicked.parentElement.parentElement.remove()
-            updateCartTotal()
-           })
-        }
+   ;
          </script>
 </body>
