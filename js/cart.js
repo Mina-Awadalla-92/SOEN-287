@@ -136,7 +136,7 @@ function displayItemPrice() {
      var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
      price = parseFloat(price.substring(1,price.indexOf('/')))
      var tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
-     tPrice.innerHTML = price * quantity;
+     tPrice.innerHTML = (price * quantity).toFixed(2);
      
   
     })
