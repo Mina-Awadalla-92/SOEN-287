@@ -109,11 +109,11 @@
                                     <h6>$3.69/Bottle</h6>
                                 </td>
                                 <td>
-                                    <input type="number" id="Red_Bull" class="shoppinginput" onChange="Red_Bull()" onchange="grandtotalfruits" value="1" min="0">
+                                    <input type="number" class="shoppinginput" value="1" min="0">
     
                                 </td>
                                 <td>
-                                    $<output class = "itemPrice" id="RedBull_total" >3.69</output>  
+                                     <span>$</span><output class = "itemPrice">3.69</output>  
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
                                 </td> 
                             </tr>
@@ -126,11 +126,11 @@
                                     <h6>$3.75/unit</h6>
                                 </td>
                                 <td>
-                                    <input type="number" id="Brioche" class="shoppinginput" onChange="Brioche()" onchange="grandtotalfruits" value="1" min="0">
+                                    <input type="number"  class="shoppinginput" value="1" min="0">
     
                                 </td>
                                 <td>
-                                    $<output class = "itemPrice" id="Brioche_total" >3.75</output>  
+                                     <span>$</span><output class = "itemPrice">3.75</output>  
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
                                 </td> 
                             </tr>
@@ -146,7 +146,7 @@
                                     <input type="number"  class="shoppinginput"  value="1" min="0">
                                 </td>
                                 <td>
-                                    $<output class = "itemPrice" id="Sausages_total" >1.54</output>
+                                     <span>$</span><output class = "itemPrice" >1.54</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                             </tr>
@@ -159,10 +159,10 @@
                                     <h6>$29.99/lb</h6>
                                 </td>
                                 <td>
-                                    <input type="number" id="Lobster" class="shoppinginput" onChange="Lobster()" onchange="grandtotalfruits" value="1" min="0">
+                                    <input type="number" id="Lobster" class="shoppinginput" value="1" min="0">
                                 </td>
                                 <td>
-                                    $<output class = "itemPrice" id="Lobster_total" >29.99</output>
+                                     <span>$</span><output class = "itemPrice">29.99</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                             </tr>
@@ -176,10 +176,10 @@
                                     <h6>$18.99/Bag</h6>
                                 </td>
                                 <td>
-                                    <input type="number" id="Chocolate" class="shoppinginput" onChange="Chocolate()" onchange="grandtotalfruits" value="1" min="0" >
+                                    <input type="number"  class="shoppinginput" value="1" min="0" >
                                 </td>
                                 <td>
-                                    $<output class = "itemPrice" id="Chocolate_total" >18.99</output>
+                                     <span>$</span><output class = "itemPrice" id="Chocolate_total" >18.99</output>
                                     <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp 
                                  </td>
                                  
@@ -198,23 +198,23 @@
                     <ul>
                         <li>subtotal
                             <span>
-                                $<output  id="grandtotalfruitss" >71.36</output>
+                                 <span>$</span><output  id="grandtotalfruitss" >71.36</output>
                             </span>
                          </li>
                          
                         <li>QST
                             <span>
-                                $<output  id="QST" >3.57</output>
+                                 <span>$</span><output  id="QST" >3.57</output>
                             </span>
                         </li>
                         <li class="GST">GST
                             <span>
-                                $<output  id="GST" >7.12</output>
+                                 <span>$</span><output  id="GST" >7.12</output>
                             </span>
                         </li>
                         <li class="cart-total">Total
                             <span>
-                                $<output id="Total_Tax" >82.06</output>     
+                                 <span>$</span><output id="Total_Tax" >82.06</output>     
                             </span>
                         </li>
                         <!-- <li>
@@ -227,7 +227,7 @@
         </div>
     </div>
     <br><br>
-    <script type="text/javascript" src="js/cart.js"> removeButtonEvent() </script>
+    <script type="text/javascript" src="js/cart.js"> </script>
     <script type="text/javascript">
    ;
          </script>
