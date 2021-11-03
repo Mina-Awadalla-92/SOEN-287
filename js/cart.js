@@ -92,4 +92,3 @@ function displaySubtotal() {
     total = total.innerHTML = (parseFloat(subtotal) +parseFloat(qst ) +parseFloat(gst)).toFixed(2);
   }
   
- 
