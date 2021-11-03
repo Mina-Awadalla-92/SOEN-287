@@ -10,25 +10,17 @@ function totalPriceP3(){
   
    if (quantityBox.value === 1 ) {
        pricePerUnit.innerHTML = pricePerUnit.textContent;
-       
-      
-    
    }
      
    else {
         pricePerUnit.innerHTML = "Total: " +  (price * quantityBox.value).toFixed(2) + "$";
-        
    }
-    
-    
-    
     localStorage.setItem(item,quantityBox.value);
-   
 }
 
 
 function onLoad() {
-   quantityBox.value = localStorage.getItem(item)
-    console.log(localStorage.getItem(item))
+quantityBox.value = localStorage.getItem(item)
+   
    
 }
