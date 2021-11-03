@@ -1,10 +1,13 @@
-var item;
-var pricePerUnit = document.getElementsByClassName('third')[0];
+
+let pricePerUnit = document.getElementsByClassName('third')[0];
 var price = pricePerUnit.textContent;
 price = parseFloat(price.substring(1,price.indexOf('/')));
+
 var quantityBox = document.getElementsByTagName('input')[0];
 quantityBox.addEventListener('change',totalPriceP3)
-item  = document.getElementsByClassName('product-name')[0].textContent
+console.log(quantityBox.value);
+
+
 
 function totalPriceP3(){
   
@@ -20,15 +23,9 @@ function totalPriceP3(){
         
    }
     
-    
-    
-    localStorage.setItem(item,quantityBox.value);
-   
 }
-
-
 function onLoad() {
-   quantityBox.value = localStorage.getItem(item)
-    console.log(localStorage.getItem(item))
-   
+    console.log(localStorage.getItem("pricePerUnit"))
+    
+    totalPriceP3();
 }
