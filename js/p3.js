@@ -5,6 +5,7 @@ var price = pricePerUnit.textContent;
 price = parseFloat(price.substring(1,price.indexOf('/')));
 var quantityBox = document.getElementsByTagName('input')[0];
 quantityBox.addEventListener('change',totalPriceP3)
+quantityBox.addEventListener('keyup',totalPriceP3)
 var item  = document.getElementsByClassName('product-name')[0].textContent
 
 
