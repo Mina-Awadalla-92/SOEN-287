@@ -1,15 +1,17 @@
-var item;
+
 var pricePerUnit = document.getElementsByClassName('third')[0];
+var initialPPU = pricePerUnit.innerHTML;
 var price = pricePerUnit.textContent;
 price = parseFloat(price.substring(1,price.indexOf('/')));
 var quantityBox = document.getElementsByTagName('input')[0];
 quantityBox.addEventListener('change',totalPriceP3)
-item  = document.getElementsByClassName('product-name')[0].textContent
+var item  = document.getElementsByClassName('product-name')[0].textContent
+
 
 function totalPriceP3(){
   
    if (quantityBox.value === 1 ) {
-       pricePerUnit.innerHTML = pricePerUnit.textContent;
+       pricePerUnit.innerHTML = initialPPU;
    }
      
    else {
@@ -21,6 +23,6 @@ function totalPriceP3(){
 
 function onLoad() {
 quantityBox.value = localStorage.getItem(item)
-   
+totalPriceP3()
    
 }
