@@ -11,7 +11,7 @@ var item  = document.getElementsByClassName('product-name')[0].textContent
 
 function totalPriceP3(){
   
-   if (quantityBox.value === 1 ) {
+   if (quantityBox.value == 1 || quantityBox.value == 0) {
        pricePerUnit.innerHTML = initialPPU;
    }
      

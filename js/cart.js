@@ -25,13 +25,6 @@ for(i=0;i<remove.length;i++){
  }
 
 
-var itemName = "Test";
-var priceWunit = "$13.33/unit"
-var price = 20.99;
-var imageSrc = "https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT"
-
-
-
 
 
 function calcTotalPrice() {
