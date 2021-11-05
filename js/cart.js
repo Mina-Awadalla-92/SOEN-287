@@ -55,6 +55,10 @@ function displayItemPrice() {
  }
 
 }
+  function displayTotalItems() {
+    
+  }
+
 
 
 function displaySubtotal() {
