@@ -16,6 +16,7 @@ for(i=0;i<remove.length;i++){
     buttonClicked.parentElement.parentElement.remove()
     calcTotalPrice();
     displaySubtotal();
+    displayTotalItems();
    })
 }
   
@@ -23,6 +24,7 @@ for(i=0;i<remove.length;i++){
  function onLoad() {
   removeButtonEvent();
   calcTotalPrice();
+  displayTotalItems();
   displayItemPrice();
   displaySubtotal();
   displayQST();
@@ -47,19 +49,18 @@ function displayItemPrice() {
   quantityButton = document.getElementsByClassName("shoppinginput");
   
   for(i=0;i<quantityButton.length;i++){
-    quantityButton[i].addEventListener('change',function(event) {
+      quantityButton[i].addEventListener('change',function(event) {
       buttonClicked = event.target
-    quantity= buttonClicked.value;
-     var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
-     price = parseFloat(price.substring(1,price.indexOf('/')))
-     tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
-     tPrice.innerHTML = (price * quantity).toFixed(2);
+      quantity= buttonClicked.value;
+      var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
+      price = parseFloat(price.substring(1,price.indexOf('/')))
+      tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
+      tPrice.innerHTML = (price * quantity).toFixed(2);
       displaySubtotal();
       displayTotalItems();
-
      
   
-      
+
     })
  }
 
@@ -67,14 +68,17 @@ function displayItemPrice() {
 
 
 function displayTotalItems() {
-  var totalItems = document.getElementById("numOfItems");
-  
-  for (var i = 0; quantityButton.length; i++) {
-    var itemCount = itemCount + buttonClicked.value;
-    console.log(itemCount);
-    totalItems.innerHTML = itemCount;
+  var itemQty = document.getElementsByTagName('input');
+  var totalItems =document.getElementById("numOfItems");
+  var totalCount = parseInt(0);
+  for(var i = 0; i < itemQty.length;i++) 
+  {
+    totalCount = parseInt(totalCount +parseInt(itemQty[i].value));
+    
    
   }
+  totalItems.innerHTML = totalCount;
+  
 }
 
 
