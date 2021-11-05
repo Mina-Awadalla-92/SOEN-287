@@ -3,6 +3,10 @@ var subtotal;
 var qst;
 var gst;
 var total;
+var totalItems;
+var quantityButton;
+var quantity;
+var buttonClicked;
 function removeButtonEvent() {
    var remove = document.getElementsByClassName('remove');
 for(i=0;i<remove.length;i++){
@@ -40,25 +44,38 @@ function calcTotalPrice() {
 }
 
 function displayItemPrice() {
-  var quantityButton = document.getElementsByClassName("shoppinginput");
+  quantityButton = document.getElementsByClassName("shoppinginput");
   
   for(i=0;i<quantityButton.length;i++){
     quantityButton[i].addEventListener('change',function(event) {
-     var buttonClicked = event.target
-     var quantity= buttonClicked.value;
+      buttonClicked = event.target
+    quantity= buttonClicked.value;
      var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
      price = parseFloat(price.substring(1,price.indexOf('/')))
      tPrice = buttonClicked.parentElement.parentElement.querySelector(".itemPrice");
      tPrice.innerHTML = (price * quantity).toFixed(2);
       displaySubtotal();
+      displayTotalItems();
+
+     
+  
+      
     })
  }
 
 }
-  function displayTotalItems() {
-    
-  }
 
+
+function displayTotalItems() {
+  var totalItems = document.getElementById("numOfItems");
+  
+  for (var i = 0; quantityButton.length; i++) {
+    var itemCount = itemCount + buttonClicked.value;
+    console.log(itemCount);
+    totalItems.innerHTML = itemCount;
+   
+  }
+}
 
 
 function displaySubtotal() {
