@@ -1,195 +1,187 @@
-.cover{
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    background: #e79702;
+.cover {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  background: #e79702;
 }
-.phone{
-    z-index: 1;
-    font-weight: 200;
+.phone {
+  z-index: 1;
+  font-weight: 200;
 }
-.phone i{
-    color: #000;
+.phone i {
+  color: #000;
 }
-.phone a{
-    color:#000;
-    font-size: 13px;
-    font-weight: bold;
+.phone a {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
 }
-.reg{
-    width: 50%;
-    text-align:right;
+.reg {
+  width: 50%;
+  text-align: right;
 }
-.reg a{
-    color:#000;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: bold;
+.reg a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
 }
-.social-icon{
-    display: inline-block;
-    width: 50%;
-    
+.social-icon {
+  display: inline-block;
+  width: 50%;
 }
-.social-icon p{
-    display:block;
-    width: 100%;
-
+.social-icon p {
+  display: block;
+  width: 100%;
 }
-.social-icon p a{
-    height: 30px;
-    margin-right: 10px;
+.social-icon p a {
+  height: 30px;
+  margin-right: 10px;
 }
-.social-icon p a i{
-    font-size: 13px;
-    color: #000;
+.social-icon p a i {
+  font-size: 13px;
+  color: #000;
 }
-.social-icon p a:hover{
-    background: #f8aa02;
-    border-color: #f8aa02;
+.social-icon p a:hover {
+  background: #f8aa02;
+  border-color: #f8aa02;
 }
-.social-icon p a:hover i{ 
-    color:#fff;
+.social-icon p a:hover i {
+  color: #fff;
 }
 
-
-.cart .table{
-    margin-top: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #fff;
+.cart .table {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #fff;
 }
-.cart .table thead tr th{
-    border-top:0px;
-    font-size:16px;
-    font-weight: bold;
-    border-bottom:0px;
+.cart .table thead tr th {
+  border-top: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 0px;
 }
-.cart .table thead tr td{
-    padding-top:30px;
-    padding-bottom: 30px;
-    vertical-align: middle;
-    align-self: center;
+.cart .table thead tr td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: middle;
+  align-self: center;
 }
-.cart .table tbody tr td .main .d-flex{
-    padding-right:30px;
+.cart .table tbody tr td .main .d-flex {
+  padding-right: 30px;
 }
-.cart .table tbody tr td .main .d-flex img{
-    border: 2px solid #000;
-    border-radius: 3px;
+.cart .table tbody tr td .main .d-flex img {
+  border: 2px solid #000;
+  border-radius: 3px;
 }
-.cart .table tbody tr td .main .des{
-    vertical-align: middle;
-    align-self: center;
+.cart .table tbody tr td .main .des {
+  vertical-align: middle;
+  align-self: center;
 }
-.cart .table tbody tr td .main .des p{
-    margin-bottom:0px;
-    width: 100%;
+.cart .table tbody tr td .main .des p {
+  margin-bottom: 0px;
+  width: 100%;
 }
-.cart .table tbody tr td h6{
-    font-size:16px;
-    color:#000;
-    margin-bottom: 0px;
+.cart .table tbody tr td h6 {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0px;
 }
-tbody img{
-    width: 145px; 
-    height: 98px
+tbody img {
+  width: 145px;
+  height: 98px;
 }
-.checkout ul{
-    border: 2px solid #ebebeb;
-    background: #f3f3f3;
-    padding-left:25px;
-    padding-right:25px;
-    padding-top:16px;
-    padding-bottom: 20px;
+.checkout ul {
+  border: 2px solid #ebebeb;
+  background: #f3f3f3;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
-.checkout ul li{
-    list-style: none;
-    font-size:16px;
-    font-weight: bold;
-    color:#252525;
-    text-transform: uppercase;
-    overflow: hidden;
+.checkout ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #252525;
+  text-transform: uppercase;
+  overflow: hidden;
 }
-.checkout ul li.subtotal{
-    font-weight: bold;
-    text-transform: capitalize;
-    border-bottom:1px solid #fff;
-    padding-bottom: 14px;
+.checkout ul li.subtotal {
+  font-weight: bold;
+  text-transform: capitalize;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 14px;
 }
-.checkout ul li.subtotal span{
-    font-weight: bold;
+.checkout ul li.subtotal span {
+  font-weight: bold;
 }
-.checkout ul li.cart-total{
-    padding-top: 10px
+.checkout ul li.cart-total {
+  padding-top: 10px;
 }
-.checkout ul li.cart-total span{
-    color:#e7ab3c;
+.checkout ul li.cart-total span {
+  color: #e7ab3c;
 }
-.checkout ul li span{
-    float:right;
+.checkout ul li span {
+  float: right;
 }
-.checkout .proceed-btn{
-    font-size:15px;
-    font-weight: bold;
-    color:#fff;
-    background:#252525;
-    text-transform: uppercase;
-    padding:15px 25px 14px 25px;
-    display: block;
-    text-align: center;
+.checkout .proceed-btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #252525;
+  text-transform: uppercase;
+  padding: 15px 25px 14px 25px;
+  display: block;
+  text-align: center;
 }
-input{
-    border: none;
-    outline: none;
-    padding: 5px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+input {
+  border: solid;
+  outline: none;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: black;
 }
-.total{
-    margin-top: 5rem;
+.total {
+  margin-top: 5rem;
 }
-.items-list{
-    margin-top: 5rem;
-    
+.items-list {
+  margin-top: 5rem;
 }
-
 
 /* new  */
 .item {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .btn-pay {
-    background-color: #C800Da;
-    border: 0;
-    color: #fff;
-    font-weight: 600;
-  }
-  
-  .fa-ticket {
-    color: #0e1fa1;
-  }
-  .quantity button {
-    width: 45px;
-    height: 45px;
-    border: 1px solid #000;
-    color: #000;
-    border-radius: 0;
-    background: #fff
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-pay {
+  background-color: #c800da;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.fa-ticket {
+  color: #0e1fa1;
+}
+.quantity button {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0;
+  background: #fff;
 }
 .quantity input {
-    border: none;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    text-align: center;
-    width: 100px;
-    font-size: 20px;
-    color: #000;
-    font-weight: 300;
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  width: 100px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
 }
-
-
-
