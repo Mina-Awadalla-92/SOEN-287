@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <meta http-equiv="refresh" 
-        content="5; url = " />
-    <meta charset="UTF-8" />
+  
 
     <title>Home</title>
     <link rel="icon" href="../SOEN-287/Munchies.jpg">
