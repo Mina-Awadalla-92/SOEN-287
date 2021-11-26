@@ -1,3 +1,3 @@
-Link: https://muchiesmarket.netlify.app/
+Link: https://munchiesmarket.netlify.app/
 
 
