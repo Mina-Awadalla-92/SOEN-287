@@ -5,7 +5,7 @@ session_start();
 
 if (isset($_POST['add'])) {
     //open xml file
-    $orderlist = simplexml_load_file('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml');
+    $orderlist = simplexml_load_file("../../Database/orderlist.xml");
 //    $orderlist = simplexml_load_file('../Da');
 
 
