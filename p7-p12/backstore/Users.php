@@ -126,7 +126,7 @@
                 <a href="EditUsers.php" class="fa fa-edit"></a>
               </td>
               <td>
-                <a class="fa fa-trash"></a>
+                <a href="deleteUser.php?deleteId=(put id variable here)" class="fa fa-trash"></a>
               </td>
             </tr>
             <tr>
@@ -143,7 +143,7 @@
                   <a href="EditUsers.php" class="fa fa-edit"></a>
                 </td>
                 <td>
-                  <a class="fa fa-trash"></a>
+                  <a href="deleteUser.php?id" class="fa fa-trash"></a>
                 </td>
               </tr>
               <tr>
@@ -160,7 +160,7 @@
                   <a href="EditUsers.php" class="fa fa-edit"></a>
                 </td>
                 <td>
-                  <a class="fa fa-trash"></a>
+                  <a href="deleteUser.php?id" class="fa fa-trash"></a>
                 </td>
               </tr>
           </tbody>
