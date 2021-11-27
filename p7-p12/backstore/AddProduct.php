@@ -1,3 +1,23 @@
+<?php
+include "connectDB.php";
+if (isset($_POST['submit'])) {
+  $image = $_POST['image_path'];
+  $title = $_POST['title'];
+  $description = $_POST['description'];
+  $quantity = $_POST['quantity'];
+  $price = $_POST['price'];
+
+  $sql = "insert into products (image, title, description, quantity, price) values('$image', '$title', '$description', '$quantity', '$price')";
+  $result = mysqli_query($connection, $sql);
+  if ($result) {
+    header('location: backStore.php');
+  } else {
+    die(mysqli_error($connection));
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +26,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <link rel="stylesheet" type="text/css" href="../CSS/style aisle.css" />
   <link rel="stylesheet" href="../CSS/bootstrap.css">
   <link rel="stylesheet" href="../CSS/bootstrap.min.css">
@@ -14,28 +34,20 @@
   <script src="../js/bootstrap.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<link rel="stylesheet" href="../CSS/backStore.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/backStore.css">
   <title>Back Store - MUNCHIES Market</title>
 
 </head>
 
 <body>
- 
+
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <a class="navbar-brand" href="../../Home.html">
-        <img
-          src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg"
-          height="50" width="80" />
+        <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
         <p class="logo" style="display: inline">
           <span class="logo-sub">MUNCHIES</span>Market
         </p>
@@ -82,7 +94,7 @@
         </ul>
       </div>
       <div>
-        <a class = "cartIcon" href="../../Shopping%20Cart.php"><img src="../../cartfinal-removebg-preview.png" alt="Cart" style="width: 40px; height:40px;"  ></a>
+        <a class="cartIcon" href="../../Shopping%20Cart.php"><img src="../../cartfinal-removebg-preview.png" alt="Cart" style="width: 40px; height:40px;"></a>
       </div>
     </nav>
   </div>
@@ -90,34 +102,34 @@
   <br>
 
   <div class="container">
-          <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Upload Image</label>
-                <input type="file" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Product Title</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Description</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Description">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Quantity</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Quantity">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Price Per Unit</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Price">
-              </div>
-            
-            <button type="submit" class="btn btn-primary">Save</button>
-          </form>
-        
-      
+    <form method="POST">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Upload Image</label>
+        <input type="file" class="form-control" name="image_path">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Product Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title" name="title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Description</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Description" name="description">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Quantity</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Quantity" name="quantity">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Price Per Unit</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Price" name="price">
+      </div>
+
+      <button type="submit" class="btn btn-primary" name="submit">Save</button>
+    </form>
+
+
   </div>
-  
+
 </body>
 
 </html>

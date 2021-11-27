@@ -1,3 +1,8 @@
+<?php
+include "connectDB.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +11,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <link rel="stylesheet" type="text/css" href="../CSS/style aisle.css" />
   <link rel="stylesheet" href="../CSS/bootstrap.css">
   <link rel="stylesheet" href="../CSS/bootstrap.min.css">
@@ -14,48 +19,40 @@
   <script src="../js/bootstrap.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../CSS/backStore.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/backStore.css">
   <title>Back Store - MUNCHIES Market</title>
 
 </head>
 
 <body>
-  
+
 
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <a class="navbar-brand" href="../../Home.php">
-        <img
-          src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg"
-          height="50" width="80" />
+        <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
         <p class="logo" style="display: inline">
           <span class="logo-sub">MUNCHIES</span>Market
         </p>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="../../Home.php">Home</a>
-        </li>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../Home.php">Home</a>
+          </li>
 
-        <li class="nav-item dropdown">
-          <button class="dropbtn">
-            Aisle
-            <i class="fa fa-caret-down"></i>
-          </button>
+          <li class="nav-item dropdown">
+            <button class="dropbtn">
+              Aisle
+              <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="../../Aisle/FruitsAndVegetables.php">Fruits and vegetables</a>
               <a class="dropdown-item" href="../../Aisle/Beverages.php">Beverages</a>
@@ -71,8 +68,8 @@
           <li class="nav-item">
             <a class="nav-link" href="../../Aisle/login.php">Login</a>
           </li>
-          
-          
+
+
           <li class="nav-item dropdown">
             <button class="dropbtn">
               BackStore
@@ -87,11 +84,11 @@
         </ul>
       </div>
       <div>
-        <a class = "cartIcon" href="../../Shopping Cart.php"><img src="../../cartfinal-removebg-preview.png" alt="Cart" style="width: 40px; height:40px;"  ></a>
+        <a class="cartIcon" href="../../Shopping Cart.php"><img src="../../cartfinal-removebg-preview.png" alt="Cart" style="width: 40px; height:40px;"></a>
       </div>
     </nav>
   </div>
-  
+
   <br>
   <div class="container">
     <div class="row">
@@ -116,11 +113,38 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <?php
+            $sql = "Select * from products";
+            $result = mysqli_query($connection, $sql);
+            if ($result) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                $id = $row['id'];
+                $image = $row['image'];
+                $title = $row['title'];
+                $description = $row['description'];
+                $quantity = $row['quantity'];
+                $price = $row['price'];
+                echo ' 
+                <tr>
+                <th scope="row">' . $id . '</th>
+                <td><img src="https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" style="width: 50px; height: 50px;" /> </td>
+                <td>' . $title . '</td>
+                <td>' . $quantity . '</td>
+                <td>' . $price . '$ / ' . $title . '</td>
+                <td>
+                  <a href="updateProduct.php?updateId=' . $id . '" class="fa fa-edit "></a>
+                </td>
+                <td>
+                  <a href="deleteProduct.php?deleteId=' . $id . '" class="fa fa-trash"></a>
+                </td>
+              </tr>
+                ';
+              }
+            }
+            ?>
+            <!-- <tr>
               <th scope="row">1</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" style="width: 50px; height: 50px;" /> </td>
               <td>French Baguettes</td>
               <td>20</td>
               <td>$1.00 / Baguette</td>
@@ -133,9 +157,7 @@
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80.jpg"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80.jpg" style="width: 50px; height: 50px;" /> </td>
               <td>Rye Bread</td>
               <td>10</td>
               <td>$4.55 / Loaf</td>
@@ -148,9 +170,7 @@
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" style="width: 50px; height: 50px;" /> </td>
               <td>Sourdough Bread</td>
               <td>100</td>
               <td>$6.96 / Loaf</td>
@@ -163,9 +183,7 @@
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" style="width: 50px; height: 50px;" /> </td>
               <td>Challah Bread</td>
               <td>50</td>
               <td>$3.50 / Loaf</td>
@@ -178,9 +196,7 @@
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="width: 50px; height: 50px;" /> </td>
               <td>Bagels</td>
               <td>0</td>
               <td>$1.55 / Bagel</td>
@@ -193,9 +209,7 @@
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td><img
-                  src="https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80"
-                  style="width: 50px; height: 50px;" /> </td>
+              <td><img src="https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" style="width: 50px; height: 50px;" /> </td>
               <td>Whole Wheat Bread</td>
               <td>567</td>
               <td>$3.25 / Loaf</td>
@@ -205,7 +219,7 @@
               <td>
                 <a class="fa fa-trash"></a>
               </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
       </div>
@@ -214,7 +228,7 @@
 
   </div>
 
-  
+
 
 </body>
 

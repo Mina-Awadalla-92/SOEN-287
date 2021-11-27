@@ -9,7 +9,7 @@ class CreateDb
     public $con;
 
     //change server name to something else, since we are not using localhost for this example.
-    public function __construct($dbname = "Newdb", $tablename = "Productdb", $servername = "localhost", $username = "root", $password = ""){
+    public function __construct($dbname = "munchiesDB", $tablename = "Productdb", $servername = "localhost", $username = "root", $password = ""){
 
         $this->dbname = $dbname;
         $this->tablename = $tablename;
@@ -26,6 +26,9 @@ class CreateDb
         if(!$this->con){
             die("Connection failed:".mysqli_connect_error());
         }
+        // else{
+        //     echo "created successfully";
+        // }
 
         //query
 
@@ -56,4 +59,4 @@ class CreateDb
     }   
 }
 
-?>
+// $newDB = new CreateDb();
