@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,19 +91,50 @@
     </nav>
   </div>
   <br>
+  <br/>
+  <h1 style="text-align: center; margin-top: 20px;">Order Manager</h1>
   <div class="container">
+
     <div class="row">
       <div class="col-2">
+
         <a class="btn btn-success" href="editOrder.php">Add Orders</a>
       </div>
+
+<!--        --><?php
+//        session_start();
+//        if (isset($_SESSION['message'])) {
+//            ?>
+<!--            <div class="alert alert-info text-center" style="margin-top:20px;">-->
+<!--                --><?php //echo $_SESSION['message']; ?>
+<!--            </div>-->
+<!--            --><?php
+//
+//            unset($_SESSION['message']);
+//        }
+//        ?>
+
     </div>
+
     <div class="row">
       <div class="col-12">
+          <?php
+          session_start();
+          if (isset($_SESSION['message'])) {
+              ?>
+              <div class="alert alert-info text-center" style="margin-top:20px;">
+                  <?php echo $_SESSION['message']; ?>
+              </div>
+              <?php
+
+              unset($_SESSION['message']);
+          }
+          ?>
         <table class="table table-striped">
           <thead>
             <tr>
             <tr>
-              <th scope="col">Sr No.</th>
+<!--              <th scope="col">Sr No.</th>-->
               <th scope="col">Order No</th>
               <th scope="col">First Name</th>
               <th scope="col">Last Name</th>
@@ -109,69 +144,103 @@
               <th scope="col">Item</th>
               <th scope="col">Quantity</th>
               <th scope="col">Bill</th>
-              <th scope="col"> Edit</th>
-              <th scope="col">Delete</th>
+<!--              <th scope="col"> Edit</th>-->
+<!--              <th scope="col">Delete</th>-->
             </tr>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <th>O122B</th>
-              <td>Alison</td>
-              <td>Floyd</td>
-              <td>alisonfloyd@gmail.com</td>
-              <td>+6137650987</td>
-              <td>24 Harley Street</td>
-              <td>French Baguettes	</td>
-              <td>10</td>
-              <td>$10.00</td>
-              <td>
-                <a href="editOrder.php" class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <th>O123B</th>
-              <td>John</td>
-              <td>Carter</td>
-              <td>johncarter@gmail.com</td>
-              <td>+5149561408</td>
-              <td>545 Charest Street</td>
-              <td>Rye Bread	</td>
-              <td>3</td>
-              <td>$13.65</td>
-              <td>
-                <a href="editOrder.php" class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
+<!--            --------------------------- >start-->
+            <tbody>
+            <?php
+            //load xml file
+            $xml = simplexml_load_file('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml');
 
-            <tr>
-              <th scope="row">1</th>
-              <th>O124B</th>
-              <td>Bryan</td>
-              <td>Green</td>
-              <td>b.green123@yahoo.com</td>
-              <td>+3059806170</td>
-              <td>2120 Collin Street</td>
-              <td>Challah Bread	</td>
-              <td>5</td>
-              <td>$17.50</td>
-              <td>
-                <a href="editOrder.php" class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-           
-          </tbody>
+            foreach ($xml->order as $row) {
+                ?>
+                <tr>
+                    <td><?php echo $row->id; ?></td>
+                    <td><?php echo $row->First_Name; ?></td>
+                    <td><?php echo $row->Last_Name; ?></td>
+                    <td><?php echo $row->Email; ?></td>
+                    <td><?php echo $row->Contact; ?></td>
+                    <td><?php echo $row->Address; ?></td>
+                    <td><?php echo $row->products; ?></td>
+                    <td><?php echo $row->Quantity; ?></td>
+                    <td><?php echo $row->totalprice; ?></td>
+
+                    <td>
+                        <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+                        <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+                    </td>
+                    <?php include('edit_delete_modal.php'); ?>
+                </tr>
+                <?php
+            }
+
+            ?>
+            </tbody>
+
+
+
+<!--          <tbody>-->
+<!--            <tr>-->
+<!--              <th scope="row">1</th>-->
+<!--              <th>O122B</th>-->
+<!--              <td>Alison</td>-->
+<!--              <td>Floyd</td>-->
+<!--              <td>alisonfloyd@gmail.com</td>-->
+<!--              <td>+6137650987</td>-->
+<!--              <td>24 Harley Street</td>-->
+<!--              <td>French Baguettes	</td>-->
+<!--              <td>10</td>-->
+<!--              <td>$10.00</td>-->
+<!--              <td>-->
+<!--                <a href="editOrder.php" class="fa fa-edit"></a>-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <a class="fa fa-trash"></a>-->
+<!--              </td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--              <th scope="row">1</th>-->
+<!--              <th>O123B</th>-->
+<!--              <td>John</td>-->
+<!--              <td>Carter</td>-->
+<!--              <td>johncarter@gmail.com</td>-->
+<!--              <td>+5149561408</td>-->
+<!--              <td>545 Charest Street</td>-->
+<!--              <td>Rye Bread	</td>-->
+<!--              <td>3</td>-->
+<!--              <td>$13.65</td>-->
+<!--              <td>-->
+<!--                <a href="editOrder.php" class="fa fa-edit"></a>-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <a class="fa fa-trash"></a>-->
+<!--              </td>-->
+<!--            </tr>-->
+<!---->
+<!--            <tr>-->
+<!--              <th scope="row">1</th>-->
+<!--              <th>O124B</th>-->
+<!--              <td>Bryan</td>-->
+<!--              <td>Green</td>-->
+<!--              <td>b.green123@yahoo.com</td>-->
+<!--              <td>+3059806170</td>-->
+<!--              <td>2120 Collin Street</td>-->
+<!--              <td>Challah Bread	</td>-->
+<!--              <td>5</td>-->
+<!--              <td>$17.50</td>-->
+<!--              <td>-->
+<!--                <a href="editOrder.php" class="fa fa-edit"></a>-->
+<!--              </td>-->
+<!--              <td>-->
+<!--                <a class="fa fa-trash"></a>-->
+<!--              </td>-->
+<!--            </tr>-->
+<!---->
+<!--          </tbody>-->
+
         </table>
       </div>
 

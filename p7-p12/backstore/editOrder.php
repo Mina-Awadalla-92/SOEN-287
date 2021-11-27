@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,45 +95,47 @@
   <br>
 
   <div class="container">
-          <form>
+
+          <form method="post" action="add.php">
+
             <div class="form-group">
                 <label for="exampleInputEmail1">Order No</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Order No">
+                <input type="text" class="form-control" name="id" aria-describedby="emailHelp" placeholder="Enter Order No">
               </div>
 
             <div class="form-group">
               <label for="exampleInputEmail1">First Name</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+              <input type="text" class="form-control" name="FN" aria-describedby="emailHelp" placeholder="Enter First Name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                <input type="text" class="form-control" name="LN" aria-describedby="emailHelp" placeholder="Enter Last Name">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                <input type="email" class="form-control" name="EM" aria-describedby="emailHelp" placeholder="Enter Email">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contact No.</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                <input type="text" class="form-control" name="PH" aria-describedby="emailHelp" placeholder="Enter Phone">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+                <input type="text" class="form-control" name="AD" aria-describedby="emailHelp" placeholder="Enter Address">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Item</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Item">
+                <input type="text" class="form-control" name="IT" aria-describedby="emailHelp" placeholder="Enter Item">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Quantity</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Quantity">
+                <input type="text" class="form-control" name="Q" aria-describedby="emailHelp" placeholder="Enter Quantity">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Bill</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Bill">
+                <input type="text" class="form-control" name="BL" aria-describedby="emailHelp" placeholder="Enter Bill">
               </div>
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" name="add" class="btn btn-primary">Save</button>
           </form>
         
       

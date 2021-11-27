@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<orderlist>
+
+
+  
+
+
+<order><id>1</id><First_Name>Minaaa</First_Name><Last_Name>Awadalla</Last_Name><Email>mina.hany@hotmail.com</Email><Contact>514</Contact><Address>13 - 15888 Rue de la Caserne, Sainte-Geneviève</Address><products>23</products><Quantity>21</Quantity><totalprice>122</totalprice><customer>1</customer></order><order><id>32</id><First_Name>Mina</First_Name><Last_Name>Awadalla</Last_Name><Email>mina.hany@hotmail.com</Email><Contact>12</Contact><Address>13 - 15888 Rue de la Caserne, Sainte-Geneviève</Address><products>31</products><Quantity>31</Quantity><totalprice>231</totalprice></order><order><id>35</id><First_Name>Mina</First_Name><Last_Name>Awadalla</Last_Name><Email>mina.hany@hotmail.com</Email><Contact>23</Contact><Address>13 - 15888 Rue de la Caserne, Sainte-Geneviève</Address><products>23</products><Quantity>1</Quantity><totalprice>32</totalprice></order></orderlist>
