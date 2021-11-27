@@ -96,11 +96,11 @@
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">First Name</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
@@ -108,11 +108,11 @@
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contact No.</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
               </div>
             
             <button type="submit" class="btn btn-primary">Save</button>
