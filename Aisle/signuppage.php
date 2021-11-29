@@ -117,7 +117,9 @@
       </form>
   
       </div>
-
+      <?php if(isset($_POST['signUp']))
+          echo "<h1> test </h1>"
+          ?>
       <div class="dont">
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
     </div>
