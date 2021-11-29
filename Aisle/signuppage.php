@@ -1,7 +1,5 @@
 <?php
-  session_start();
-
-  $user_data = check_login($con);
+ 
 ?>
 
 <!DOCTYPE html>
@@ -97,9 +95,30 @@
       <div>
        
       </div>
+      <?php
+      if(isset($_REQUEST['signUp'])){
+        $xml = new DOMDocument("1.0","UTF-8");
+        $xml -> load("user.xml");
+
+        $rootTag = $xml -> getElementsByTagName("Users")->item(0);
+        $userTag = $xml -> createElement('user');
+
+        $nameTag = $xml -> createElement('user');
+        $lNameTag = $xml -> createElement('');
+        $addresTag = $xml -> createElement('user');
+        $cityTag = $xml -> createElement('user');
+        $provTag = $xml -> createElement('user');
+        $postalTag = $xml -> createElement('user');
+        $emailTag = $xml -> createElement('user');
+        $passwrodTag = $xml -> createElement('user');
+
+
+
+      }
+      ?>
       
      <div class="textboxSignup">
-      <form action=""> 
+      <form action="signuppage.php" , method = "POST"> 
         <input type="firstName" placeholder = "First Name" action="" ><br>
         <input type="lastName" placeholder = "Last Name" action="" ><br>
         <input type="address" placeholder = "Street Address" action="" ><br>
@@ -110,7 +129,7 @@
         <input type="password" placeholder = "Password" action="" ><br>
 
     <div class = "buttons">
-      <button class = "signUp">Sign Up</button>
+      <button class = "signUp" type = "submit" name="signUp">Sign Up</button>
       <button class = "reset">Reset</button>
 
       </form>
