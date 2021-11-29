@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+
+    <title>Home</title>
+    <link rel="icon" href="../SOEN-287/Munchies.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  
+  <body>
+
+    <!-- <div class="container"> -->
+      <!-- <div class="col-lg"> -->
+
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="Home.php">
+          <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
+          <p class="logo" style="display: inline">
+            <span class="logo-sub">MUNCHIES</span>Market
+          </p>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.php">Home</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <button class="dropbtn">
+                Aisle
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="Aisle/FruitsAndVegetables.php">Fruits and vegetables</a>
+                <a class="dropdown-item" href="Aisle/Beverages.php">Beverages</a>
+                <a class="dropdown-item" href="Aisle/Bakery.php">Bakery</a>
+                <a class="dropdown-item" href="Aisle/Frozen.php">Frozen</a>
+                <a class="dropdown-item" href="Aisle/Butchery.php">Butchery</a>
+                <a class="dropdown-item" href="Aisle/Seafood.php">Seafood</a>
+                <a class="dropdown-item"  href="Aisle/Snacks.php">Snacks</a>
+
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Aisle/login.php">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"0
+                href="p7-p12/backstore/backStore.php" >Back Store Page</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class = "navbar-brand" href="Shopping Cart.php">
+            <img src="cartfinal-removebg-preview.png" alt="Cart" 
+            style="width: 40px; height:40px;"  /></a>
+        </div>
+        
+      </nav>
+
+   <br><br>
+
+   <div style="background-color: #ff2750;">1vh
+    <h1 align = "center"><strong><em>
+      Welcome to MUNCHIES Market
+      </em></strong></h1>
+     <div>
+      <a href="Home.php">
+        <img
+            class="p_logo"
+            src="PNGLogo-removebg-preview.png" 
+            alt="logo"
+            style="width: calc(95px + 7.75vw);  display: block; margin: auto; height: auto; margin-bottom: 1vh; "
+          />
+        </a>
+     </div>
+    </div>
+    
+
+    <div class = "itemsweek">
+      <h2 align = "center"><strong>Items of the week</strong></h2>
+      <div class="container" style="text-align: center; padding-top: 45px">
+      <div class="row">
+        <div class="item col-sm-4 col-md-4 col-lg-4">
+          <a href="Aisle\Product Description\kiwis.php" style="color:black">
+            <img
+              class="item-pic"
+              src="https://images.unsplash.com/photo-1616684000067-36952fde56ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80 " 
+              alt="Fruits"
+
+            <p class="item-title"style="color: Black;">Kiwis</p>
+          </a>
+        </div>
+        <div class="item col-sm-4 col-md-4 col-lg-4">
+          <a href="Aisle\Product Description\sirloin steak.php" style="color:black">
+            <img
+              class="item-pic"
+              src="https://cdn.pixabay.com/photo/2018/04/29/07/57/meat-3359248_1280.jpg"
+              alt="Butchery"
+
+            <p class="item-title"style="color: Black;">Sirloin steak</p>
+          </a>
+        </div>
+        <div class="item col-sm-4 col-md-4 col-lg-4">
+          <a href="Aisle\Product Description\sourdough bread.php" style="color:black">
+            <img
+              class="item-pic"
+              src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+              alt="Bakery"
+
+            <p class="item-title" style="color: rgb(0, 0, 0);">Sourdough Bread</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+
+    
+    
+    
+    <footer>
+      <p class ="copyRight"> &copy MUNCHIES Team 2021 </p>
+
+    </footer>
+  
+  </body>
+</html>
+
