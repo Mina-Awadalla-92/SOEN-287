@@ -125,6 +125,8 @@
     </div>
       </div>
       
+          <?php echo "<h1?>"."<a href="."../Database/user.xml"."></a>"."</h1>"?>
+      
   
 
 </body>
