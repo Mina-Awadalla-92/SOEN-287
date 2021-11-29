@@ -1,3 +1,18 @@
+<?php
+if(isset($_POST('login')))
+{
+  $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
+  $password = md5($_POST('password'));
+  if(file_exists('users/' .$username.'.xml' )){
+
+    $xml = new SimpleXMLElement('users/'.$username.'.xml', 0, true);
+    print_r($xml);
+  }
+
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
