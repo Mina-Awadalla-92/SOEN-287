@@ -31,6 +31,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        
 
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -120,6 +121,42 @@
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
     </div>
       </div>
+      <?php
+      session_start();
+ 
+      
+      if(isset($_REQUEST['signUp'])){
+        
+        $xml = new DOMDocument("1.0","UTF-8");
+        $xml -> load("Database/user.xml");
+
+        $rootTag = $xml -> getElementsByTagName("Users")->item(0);
+        $userTag = $xml -> createElement('user');
+
+        $nameTag = $xml -> createElement('firstName',  $_POST['firstName']);
+        $lNameTag = $xml -> createElement('lastName', $_POST['lastName']);
+        $addresTag = $xml -> createElement('address', $_POST['address']);
+        $cityTag = $xml -> createElement('city', $_POST['city']);
+        $provTag = $xml -> createElement('province', $_POST['province']);
+        $postalTag = $xml -> createElement('postalCode', $_POST['postalCode']);
+        $emailTag = $xml -> createElement('email', $_POST['email']);
+        $passwrodTag = $xml -> createElement('password', $_POST['password']);
+        
+        $userTag -> appendChild($nameTag);
+        $userTag -> appendChild($lNameTag);
+        $userTag -> appendChild($addresTag);
+        $userTag -> appendChild($cityTag);
+        $userTag -> appendChild($provTag);
+        $userTag -> appendChild($postalTag);
+        $userTag -> appendChild($emailTag);
+        $userTag -> appendChild($passwrodTag);
+        
+        $rootTag -> appendChild($userTag);
+
+        echo ($_POST['firstName']);
+        echo $xml->save("Database/user.xml");
+      }
+      ?>
   
 
 </body>
