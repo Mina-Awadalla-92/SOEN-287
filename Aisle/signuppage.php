@@ -95,7 +95,7 @@
     <div class= "login-text" >Sign Up</div >
       <br><br><br>
       <div>
-       
+      <h1><a href="../Database/user.xml">xmlfileusers</a></h1>
       </div>
       
      
@@ -117,7 +117,7 @@
       </form>
     
       </div> 
-      <h1><a href="../Database/user.xml"></a></h1>
+      
       <?php if(isset($_POST['signUp']))
           echo "<h1>"."Hello" . $_POST['firstName']. "</h1>"
           ?>
