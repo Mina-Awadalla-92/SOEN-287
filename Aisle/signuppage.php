@@ -51,7 +51,6 @@
         
         $rootTag -> appendChild($userTag);
 
-        echo ($_POST['firstName']);
         echo $xml->save("Database/user.xml");
       }
       ?>
