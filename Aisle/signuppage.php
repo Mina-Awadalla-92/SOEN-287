@@ -141,7 +141,7 @@
  if(isset($_POST['signUp'])){
         
   $xml = new DOMDocument("1.0","UTF-8");
-  $xml -> load("Database/user.xml");
+  $xml -> load("../Database/user.xml");
 
   $rootTag = $xml -> getElementsByTagName("Users")->item(0);
   $userTag = $xml -> createElement('user');
@@ -166,7 +166,7 @@
   
   $rootTag -> appendChild($userTag);
 
-  $xml->save("Database/user.xml"); 
+  $xml->save("../Database/user.xml"); 
  }
 ?>
 
