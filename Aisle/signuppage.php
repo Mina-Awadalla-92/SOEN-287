@@ -116,14 +116,15 @@
 
       </form>
   
-      </div>
+      </div> 
+      <?php echo ("<h1>"."<a href="."\"../Database/user.xml\""."></a>"."</h1>")?>
       <?php if(isset($_POST['signUp']))
-          echo "<h1>" . $_POST['firstName']. "</h1>"
+          echo "<h1>"."Hello" . $_POST['firstName']. "</h1>"
           ?>
       <div class="dont">
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
     </div>
-      <?php echo ("<h1?>"."<a href="."../Database/user.xml"."></a>"."</h1>")?>
+     
       </div>
       
         
