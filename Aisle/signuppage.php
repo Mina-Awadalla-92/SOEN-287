@@ -26,7 +26,7 @@
       if(isset($_REQUEST['signUp'])){
         
         $xml = new DOMDocument("1.0","UTF-8");
-        $xml -> load("Database/user.xml");
+        $xml -> load("https://munchies-market.herokuapp.com/Database/user.xml");
 
         $rootTag = $xml -> getElementsByTagName("Users")->item(0);
         $userTag = $xml -> createElement('user');
@@ -52,7 +52,7 @@
         $rootTag -> appendChild($userTag);
 
         echo ($_POST['firstName']);
-        echo $xml->save("Database/user.xml");
+        echo $xml->save("https://munchies-market.herokuapp.com/Database/user.xml");
       }
       ?>
 
