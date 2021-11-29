@@ -133,7 +133,7 @@
       
       
      <div class="textboxSignup">
-      <form action="signuppage.php" , method = "POST"> 
+      <form action="" , method = "POST"> 
         <input type="firstName" placeholder = "First Name" name="firstName"><br>
         <input type="lastName" placeholder = "Last Name" action="" name="lastName"><br>
         <input type="address" placeholder = "Street Address" action="" name="address"><br>
