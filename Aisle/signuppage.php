@@ -2,7 +2,7 @@
       session_start();
  
       
-      if(isset($_REQUEST['signUp'])){
+      if(isset($_POST['signUp'])){
         
         $xml = new DOMDocument("1.0","UTF-8");
         $xml -> load("Database/user.xml");
