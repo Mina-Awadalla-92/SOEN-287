@@ -138,7 +138,7 @@
         <input type="email" placeholder = "E-mail" action="" name="email"><br>
         <input type="password" placeholder = "Password" action="" name="password"><br>
 
-    <div class = "buttons">name=""
+    <div class = "buttons">
       <button class = "signUp" type = "submit" name="signUp">Sign Up</button>
       <button class = "reset">Reset</button>
 
