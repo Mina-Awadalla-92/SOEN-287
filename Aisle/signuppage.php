@@ -25,7 +25,7 @@
  
       
       if(isset($_POST['signUp'])){
-        echo "hello world";
+        
         $xml = new DOMDocument("1.0","UTF-8");
         $xml -> load("Database/user.xml");
 
