@@ -98,37 +98,47 @@
       <?php
       if(isset($_REQUEST['signUp'])){
         $xml = new DOMDocument("1.0","UTF-8");
-        $xml -> load("user.xml");
+        $xml -> load("../Database/user.xml");
 
         $rootTag = $xml -> getElementsByTagName("Users")->item(0);
         $userTag = $xml -> createElement('user');
 
-        $nameTag = $xml -> createElement('user');
-        $lNameTag = $xml -> createElement('');
-        $addresTag = $xml -> createElement('user');
-        $cityTag = $xml -> createElement('user');
-        $provTag = $xml -> createElement('user');
-        $postalTag = $xml -> createElement('user');
-        $emailTag = $xml -> createElement('user');
-        $passwrodTag = $xml -> createElement('user');
+        $nameTag = $xml -> createElement('firstName',  $_REQUEST['firstName']);
+        $lNameTag = $xml -> createElement('lastName', $_REQUEST['lastName']);
+        $addresTag = $xml -> createElement('address', $_REQUEST['address']);
+        $cityTag = $xml -> createElement('city', $_REQUEST['city']);
+        $provTag = $xml -> createElement('province', $_REQUEST['province']);
+        $postalTag = $xml -> createElement('postalCode', $_REQUEST['postalCode']);
+        $emailTag = $xml -> createElement('email', $_REQUEST['email']);
+        $passwrodTag = $xml -> createElement('password', $_REQUEST['password']);
+        
+        $userTag -> appendChild($nameTag);
+        $userTag -> appendChild($lNameTag);
+        $userTag -> appendChild($addresTag);
+        $userTag -> appendChild($cityTag);
+        $userTag -> appendChild($provTag);
+        $userTag -> appendChild($postalTag);
+        $userTag -> appendChild($emailTag);
+        $userTag -> appendChild($passwrodTag);
+        
+        $rootTag -> appendChild($userTag);
 
-
-
+        $xml->save("../Database/user.xml");
       }
       ?>
       
      <div class="textboxSignup">
       <form action="signuppage.php" , method = "POST"> 
-        <input type="firstName" placeholder = "First Name" action="" ><br>
-        <input type="lastName" placeholder = "Last Name" action="" ><br>
-        <input type="address" placeholder = "Street Address" action="" ><br>
-        <input type="city" placeholder = "City" action="" ><br>
-        <input type="province" placeholder = "State or Province" action="" ><br>
-        <input type="postalCode" placeholder = "Postal Code" action="" ><br>
-        <input type="email" placeholder = "E-mail" action="" ><br>
-        <input type="password" placeholder = "Password" action="" ><br>
+        <input type="firstName" placeholder = "First Name" action="" name="firstName"><br>
+        <input type="lastName" placeholder = "Last Name" action="" name="lastName"><br>
+        <input type="address" placeholder = "Street Address" action="" name="address"><br>
+        <input type="city" placeholder = "City" action="" name="city"><br>
+        <input type="province" placeholder = "State or Province" action=""name="province" ><br>
+        <input type="postalCode" placeholder = "Postal Code" action="" name="postalCode"><br>
+        <input type="email" placeholder = "E-mail" action="" name="email"><br>
+        <input type="password" placeholder = "Password" action="" name="password"><br>
 
-    <div class = "buttons">
+    <div class = "buttons">name=""
       <button class = "signUp" type = "submit" name="signUp">Sign Up</button>
       <button class = "reset">Reset</button>
 
