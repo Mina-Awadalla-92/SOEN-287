@@ -89,39 +89,7 @@
       </div>
     </nav>
   </div>
-
-  <div class="login">
-    <div class= "login-text" >Sign Up</div >
-      <br><br><br>
-      <div>
-       
-      </div>
-      
-     
-     <div class="textboxSignup">
-      <form action="signuppage.php" , method = "POST"> 
-        <input type="firstName" placeholder = "First Name" name="firstName"><br>
-        <input type="lastName" placeholder = "Last Name" action="" name="lastName"><br>
-        <input type="address" placeholder = "Street Address" action="" name="address"><br>
-        <input type="city" placeholder = "City" action="" name="city"><br>
-        <input type="province" placeholder = "State or Province" action=""name="province" ><br>
-        <input type="postalCode" placeholder = "Postal Code" action="" name="postalCode"><br>
-        <input type="email" placeholder = "E-mail" action="" name="email"><br>
-        <input type="password" placeholder = "Password" action="" name="password"><br>
-
-    <div class = "buttons">
-      <button class = "signUp" type = "submit" name="signUp">Sign Up</button>
-      <button class = "reset">Reset</button>
-
-      </form>
-  
-      </div>
-
-      <div class="dont">
-        Already have an account? <a id="signup" href="login.php"> Login here!</a>
-    </div>
-      </div>
-      <?php
+  <?php
       session_start();
  
       
@@ -157,6 +125,38 @@
         echo $xml->save("Database/user.xml");
       }
       ?>
+  <div class="login">
+    <div class= "login-text" >Sign Up</div >
+      <br><br><br>
+      <div>
+       
+      </div>
+      
+     
+     <div class="textboxSignup">
+      <form action="signuppage.php" , method = "POST"> 
+        <input type="firstName" placeholder = "First Name" name="firstName"><br>
+        <input type="lastName" placeholder = "Last Name" action="" name="lastName"><br>
+        <input type="address" placeholder = "Street Address" action="" name="address"><br>
+        <input type="city" placeholder = "City" action="" name="city"><br>
+        <input type="province" placeholder = "State or Province" action=""name="province" ><br>
+        <input type="postalCode" placeholder = "Postal Code" action="" name="postalCode"><br>
+        <input type="email" placeholder = "E-mail" action="" name="email"><br>
+        <input type="password" placeholder = "Password" action="" name="password"><br>
+
+    <div class = "buttons">
+      <button class = "signUp" type = "submit" name="signUp">Sign Up</button>
+      <button class = "reset">Reset</button>
+
+      </form>
+  
+      </div>
+
+      <div class="dont">
+        Already have an account? <a id="signup" href="login.php"> Login here!</a>
+    </div>
+      </div>
+      
   
 
 </body>
