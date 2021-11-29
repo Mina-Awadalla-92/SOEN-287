@@ -1,6 +1,4 @@
-<?php
- 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +20,42 @@
  
 </head>
 <body>
+<?php
+ session_start();
+ 
+      
+      if(isset($_REQUEST['signUp'])){
+        echo "hello world";
+        $xml = new DOMDocument("1.0","UTF-8");
+        $xml -> load("../Database/user.xml");
+
+        $rootTag = $xml -> getElementsByTagName("Users")->item(0);
+        $userTag = $xml -> createElement('user');
+
+        $nameTag = $xml -> createElement('firstName',  $_REQUEST['firstName']);
+        $lNameTag = $xml -> createElement('lastName', $_REQUEST['lastName']);
+        $addresTag = $xml -> createElement('address', $_REQUEST['address']);
+        $cityTag = $xml -> createElement('city', $_REQUEST['city']);
+        $provTag = $xml -> createElement('province', $_REQUEST['province']);
+        $postalTag = $xml -> createElement('postalCode', $_REQUEST['postalCode']);
+        $emailTag = $xml -> createElement('email', $_REQUEST['email']);
+        $passwrodTag = $xml -> createElement('password', $_REQUEST['password']);
+        
+        $userTag -> appendChild($nameTag);
+        $userTag -> appendChild($lNameTag);
+        $userTag -> appendChild($addresTag);
+        $userTag -> appendChild($cityTag);
+        $userTag -> appendChild($provTag);
+        $userTag -> appendChild($postalTag);
+        $userTag -> appendChild($emailTag);
+        $userTag -> appendChild($passwrodTag);
+        
+        $rootTag -> appendChild($userTag);
+
+        $xml->save("../Database/user.xml");
+      }
+      ?>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -95,41 +129,11 @@
       <div>
        
       </div>
-      <?php
-      if(isset($_REQUEST['signUp'])){
-        $xml = new DOMDocument("1.0","UTF-8");
-        $xml -> load("../Database/user.xml");
-
-        $rootTag = $xml -> getElementsByTagName("Users")->item(0);
-        $userTag = $xml -> createElement('user');
-
-        $nameTag = $xml -> createElement('firstName',  $_REQUEST['firstName']);
-        $lNameTag = $xml -> createElement('lastName', $_REQUEST['lastName']);
-        $addresTag = $xml -> createElement('address', $_REQUEST['address']);
-        $cityTag = $xml -> createElement('city', $_REQUEST['city']);
-        $provTag = $xml -> createElement('province', $_REQUEST['province']);
-        $postalTag = $xml -> createElement('postalCode', $_REQUEST['postalCode']);
-        $emailTag = $xml -> createElement('email', $_REQUEST['email']);
-        $passwrodTag = $xml -> createElement('password', $_REQUEST['password']);
-        
-        $userTag -> appendChild($nameTag);
-        $userTag -> appendChild($lNameTag);
-        $userTag -> appendChild($addresTag);
-        $userTag -> appendChild($cityTag);
-        $userTag -> appendChild($provTag);
-        $userTag -> appendChild($postalTag);
-        $userTag -> appendChild($emailTag);
-        $userTag -> appendChild($passwrodTag);
-        
-        $rootTag -> appendChild($userTag);
-
-        $xml->save("../Database/user.xml");
-      }
-      ?>
+      
       
      <div class="textboxSignup">
       <form action="signuppage.php" , method = "POST"> 
-        <input type="firstName" placeholder = "First Name" action="" name="firstName"><br>
+        <input type="firstName" placeholder = "First Name" name="firstName"><br>
         <input type="lastName" placeholder = "Last Name" action="" name="lastName"><br>
         <input type="address" placeholder = "Street Address" action="" name="address"><br>
         <input type="city" placeholder = "City" action="" name="city"><br>
