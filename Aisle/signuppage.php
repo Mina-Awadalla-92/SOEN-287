@@ -52,7 +52,8 @@
         
         $rootTag -> appendChild($userTag);
 
-        $xml->save("../Database/user.xml");
+
+        echo $xml->save("../Database/user.xml");
       }
       ?>
 
