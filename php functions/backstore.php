@@ -38,7 +38,7 @@ function checkAcc() {
     global $xml;
    $emails = $xml -> getElementsByTagName('email');
    global $a;
-   echo $a;
+   echo "<h1>".$a."</h1>";
 }
  
 

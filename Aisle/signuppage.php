@@ -119,11 +119,8 @@
       </div> 
       
       <?php 
-      include("../php functions/backstore.php");
-      checkAcc();
       if(isset($_POST['signUp']))
           echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>"
-          
           ?>
           
       <div class="dont">
