@@ -1,5 +1,6 @@
 <?php
-function createUser(){
+
+
 
 
  if(isset($_POST['signUp'])){
@@ -32,5 +33,4 @@ function createUser(){
 
   $xml->save("../Database/user.xml"); 
  }
-}
 ?>

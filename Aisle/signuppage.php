@@ -139,7 +139,6 @@
 </html>
 <?php
  include("backstore.php");
- createUser();
 ?>
 
 
