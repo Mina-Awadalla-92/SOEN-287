@@ -125,10 +125,6 @@
           
       <div class="dont">
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
-        <?php
-        include("../php functions/backstore.php");
-        checkAcc();
-        ?>
     </div>
      
       </div>
