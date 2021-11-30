@@ -7,7 +7,7 @@
     <city></city>
     <province></province>
     <postalCode></postalCode>
-    <email>test@example.com</email>
-    <password>test123</password>
+    <email>admin@admin.com</email>
+    <password>Admin</password>
 </user>
 </Users>
