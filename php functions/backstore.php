@@ -34,16 +34,23 @@ function createAccount() {
 }
  
 function checkAcc() {
- global $xml;
-  $xml -> load("../Database/user.xml");
-  $emails = $xml -> getElementsByTagName('email');
-  for($i = 0; $i < $emails->length; $i++) {
-    echo $emails->item($i);
+    global $xml;
+    $xml -> load("../Database/user.xml");
+    $emails = $xml -> getElementsByTagName('email');
+    if(isset($_POST['signUp'])){
+    foreach ($emails as $key => $value){
+      if ( $_POST['email'] == $value -> nodeValue){
+        echo "<h1>cant create </h1>";
+        return false;
   }
+    }
+  createAccount();
+    
+    
   
-
-
-}
+  
+  }
+  }
  
 
 
