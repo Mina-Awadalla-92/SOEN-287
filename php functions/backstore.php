@@ -1,10 +1,9 @@
 <?php
-$xml;
-$a = 1;
+  $xml = new DOMDocument("1.0","UTF-8");
 function createAccount() {
     if(isset($_POST['signUp'])){
         
-  $xml = new DOMDocument("1.0","UTF-8");
+  global $xml;
   $xml -> load("../Database/user.xml");
 
   $rootTag = $xml -> getElementsByTagName("Users")->item(0);
@@ -35,10 +34,15 @@ function createAccount() {
 }
  
 function checkAcc() {
-    global $xml;
-   $emails = $xml -> getElementsByTagName('email');
-   global $a;
-   echo "<h1>".$a."test"."</h1>";
+ global $xml;
+  $xml -> load("../Database/user.xml");
+  $emails = $xml -> getElementsByTagName('email');
+  for($i = 0; $i < $emails->length; $i++) {
+    echo $emails->item($i);
+  }
+  
+
+
 }
  
 
