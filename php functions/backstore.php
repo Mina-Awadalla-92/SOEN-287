@@ -1,5 +1,5 @@
 <?php
-
+    include("signuppage.php");
  if(isset($_POST['signUp'])){
         
   $xml = new DOMDocument("1.0","UTF-8");
