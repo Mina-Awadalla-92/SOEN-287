@@ -125,6 +125,9 @@
           
       <div class="dont">
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
+        <?php
+        checkAcc();
+        ?>
     </div>
      
       </div>
