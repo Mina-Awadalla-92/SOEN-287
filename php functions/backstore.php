@@ -1,6 +1,6 @@
 <?php
-
- if(isset($_POST['signUp'])){
+function createAccount() {
+    if(isset($_POST['signUp'])){
         
   $xml = new DOMDocument("1.0","UTF-8");
   $xml -> load("../Database/user.xml");
@@ -30,4 +30,8 @@
 
   $xml->save("../Database/user.xml"); 
  }
+}
+ 
+
+
 ?>

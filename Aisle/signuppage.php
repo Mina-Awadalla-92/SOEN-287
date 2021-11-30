@@ -139,6 +139,7 @@
 </html>
 <?php
  include("../php functions/backstore.php");
+ createAccount();
 ?>
 
 
