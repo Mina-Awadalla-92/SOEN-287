@@ -118,9 +118,12 @@
     
       </div> 
       
-      <?php if(isset($_POST['signUp']))
+      <?php 
+      include("../php functions/backstore.php");
+      if(isset($_POST['signUp']))
           echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>"
           ?>
+          checkAcc();
       <div class="dont">
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
     </div>
