@@ -78,7 +78,7 @@
         <?php 
            if (isset($_SESSION['first'])){
              
-          echo "<p style=\"color:white\">Hello ".$_SESSION['first']."</p>";
+          echo "<span style=\"color:white\">Hello ".$_SESSION['first']."</span>";
       } ?> 
           <a class = "navbar-brand" href="Shopping Cart.php">
             <img src="cartfinal-removebg-preview.png" alt="Cart" 
