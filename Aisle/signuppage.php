@@ -144,7 +144,10 @@
 </footer>
 </html>
 <?php
- checkAcc();
+if(isset($_POST['signUp'])){
+   checkAcc();
+}
+
 ?>
 
 
