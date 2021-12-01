@@ -134,7 +134,15 @@
         Already have an account? <a id="signup" href="login.php"> Login here!</a>
 
     </div>
+    <?php
+     if(isset($_POST['signUp'])){
+       if($accCreated == false){
+       echo "<h1> Can't create account</h1>";
+      }
      
+     }
+      
+     ?>
       </div>
       
         
