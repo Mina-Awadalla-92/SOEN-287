@@ -1,5 +1,6 @@
 <?php
       session_start();
+      include("../php functions/backstore.php");
       ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,8 +120,10 @@
       </div> 
       
       <?php 
-      if(isset($_POST['signUp']))
-          echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>"
+      if($_SESSION['accExist'] == "true"){
+        echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>";
+      }
+          
           ?>
           
       <div class="dont">
@@ -141,7 +144,6 @@
 </footer>
 </html>
 <?php
- include("../php functions/backstore.php");
  checkAcc();
 ?>
 
