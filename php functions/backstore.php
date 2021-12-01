@@ -40,7 +40,7 @@ function checkAcc() {
     if(isset($_POST['signUp'])){
     foreach ($emails as $key => $value){
       if ( $_POST['email'] == $value -> nodeValue){
-        echo "<h1>cant create </h1>";
+        
         return false;
   }
     }
