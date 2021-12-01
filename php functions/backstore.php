@@ -45,15 +45,23 @@ function checkAcc() {
     if ( $_POST['email'] == $value -> nodeValue){
      $accCreated = false;
      $_SESSION['accExist'] = "false";
-     header('location: ../Aisle/login.php');
-     return;
+     if($_SESSION['accExist'] = "false"){
+       header('location: ../Aisle/login.php');
+       exit();
+      return false;
+     }
+     
+    
 }
   }
-createAccount();
+  
+    createAccount();
 $_SESSION['first'] = $_POST['firstName'];
 $_SESSION['accExist'] = "true";
   $accCreated = true;
-}
+  }
+
+
 }
  
 
