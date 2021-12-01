@@ -104,11 +104,14 @@
      <div class="textboxSignup">
        <?php 
        if($_SESSION['accExist'] == false){
-         echo "<h1>This E-Mail Already Exists<\h1>";
+         echo "<h1>This E-Mail Already Exists</h2>";
        }
        ?>
-        <form> <input type="email" placeholder = "E-mail" action="" >
+       <div>
+         <form> <input type="email" placeholder = "E-mail" action="" >
         <input type="password" placeholder = "Password" action="" >
+       </div>
+        
       
 
     <div class = "buttons">
