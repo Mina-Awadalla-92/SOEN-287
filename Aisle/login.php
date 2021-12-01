@@ -106,9 +106,12 @@
       
      <div class="textboxSignup">
        <?php 
-       if($_SESSION['accExist'] == false && isset($_SESSION['first'])){
+       if(isset($_POST['signUp'])){
+         if($_SESSION['accExist'] == false){
          echo "<h1>This E-Mail Already Exists</h2>";
        }
+       }
+       
        ?>
        <div>
          <form> <input type="email" placeholder = "E-mail" action="" >
