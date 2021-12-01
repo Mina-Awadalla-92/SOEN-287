@@ -120,7 +120,10 @@
       </div> 
       
       <?php 
-      checkAcc();
+      if(isset($_POST['signUp'])){
+        checkAcc();
+      }
+      
       if($_SESSION['accExist'] == "true"){
         echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>";
       }

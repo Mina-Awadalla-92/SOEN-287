@@ -50,11 +50,11 @@ function checkAcc() {
       // exit();
       return false;
      }
-     createAccount();
+    
       $_SESSION['first'] = $_POST['firstName'];
       $_SESSION['accExist'] = "true";
       $accCreated = true;
-      
+       createAccount();
      
      
     
