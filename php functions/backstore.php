@@ -41,6 +41,7 @@ function checkAcc() {
     $xml -> load("../Database/user.xml");
     $emails = $xml -> getElementsByTagName('email');
     if(isset($_POST['signUp'])){
+      $_SESSION['attempt'] = true;
     foreach ($emails as $key => $value){
       if ( $_POST['email'] == $value -> nodeValue){
         $accCreated = false;
@@ -49,6 +50,7 @@ function checkAcc() {
         return false;
   }
     }
+    $_SESSION['attempt'] = false;
     $_SESSION['accExist'] = true;
     $accCreated = true;
     createAccount();
