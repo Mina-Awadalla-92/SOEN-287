@@ -43,19 +43,17 @@ function checkAcc() {
   if(isset($_POST['signUp'])){
   foreach ($emails as $key => $value){
     if ( $_POST['email'] == $value -> nodeValue){
-     $accCreated = false;
-     $_SESSION['accExist'] = "false";
-     if($_SESSION['accExist'] = "false"){
+     //$accCreated = false;
+     //$_SESSION['accExist'] = "false";
+     //if($_SESSION['accExist'] = "false"){
        header('location: ../Aisle/login.php');
-       exit();
+      // exit();
       return false;
      }
      
     
 }
-  }
-  
-    createAccount();
+createAccount();
 $_SESSION['first'] = $_POST['firstName'];
 $_SESSION['accExist'] = "true";
   $accCreated = true;
