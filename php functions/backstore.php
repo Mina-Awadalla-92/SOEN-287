@@ -1,6 +1,7 @@
 <?php
   ob_start();
   $accCreated;
+  $_SESSION['accExist'] = true;
   $xml = new DOMDocument("1.0","UTF-8");
 function createAccount() {
     if(isset($_POST['signUp'])){
