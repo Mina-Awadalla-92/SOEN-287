@@ -1,4 +1,5 @@
 <?php
+  ob_start();
   $accCreated;
   $xml = new DOMDocument("1.0","UTF-8");
 function createAccount() {
@@ -43,6 +44,7 @@ function checkAcc() {
     foreach ($emails as $key => $value){
       if ( $_POST['email'] == $value -> nodeValue){
         $accCreated = false;
+        header("Location: ../Aisle/login.php");
         return false;
   }
     }
