@@ -44,12 +44,14 @@ function checkAcc() {
     foreach ($emails as $key => $value){
       if ( $_POST['email'] == $value -> nodeValue){
         $accCreated = false;
+        $_SESSION['accExist'] = false;
         header("Location: ../Aisle/login.php");
         return false;
   }
     }
+    $_SESSION['accExist'] = true;
     $accCreated = true;
-  createAccount();
+    createAccount();
 
 
 
