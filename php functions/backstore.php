@@ -42,10 +42,11 @@ function checkAcc() {
     if(isset($_POST['signUp'])){
     foreach ($emails as $key => $value){
       if ( $_POST['email'] == $value -> nodeValue){
-        
+        $accCreated = false;
         return false;
   }
     }
+    $accCreated = true;
   createAccount();
 
 
