@@ -49,14 +49,17 @@ function checkAcc() {
        header('location: ../Aisle/login.php');
       // exit();
       return false;
+     }else{
+       $_SESSION['first'] = $_POST['firstName'];
+      $_SESSION['accExist'] = "true";
+      $accCreated = true;
+      createAccount();
      }
      
     
 }
-createAccount();
-$_SESSION['first'] = $_POST['firstName'];
-$_SESSION['accExist'] = "true";
-  $accCreated = true;
+
+
   }
 
 
