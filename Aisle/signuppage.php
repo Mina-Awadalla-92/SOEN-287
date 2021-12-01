@@ -120,6 +120,7 @@
       </div> 
       
       <?php 
+      checkAcc();
       if($_SESSION['accExist'] == "true"){
         echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>";
       }
@@ -143,10 +144,6 @@
   <p class ="copyRight"> &copy MUNCHIES Team 2021 </p>
 </footer>
 </html>
-<?php
-if(isset($_POST['signUp'])){
-   checkAcc();
-}
 
 ?>
 
