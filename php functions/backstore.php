@@ -40,19 +40,13 @@ function checkAcc() {
   global $xml;
   $xml -> load("../Database/user.xml");
   $emails = $xml -> getElementsByTagName('email');
-  if(isset($_POST['signUp'])){
   foreach ($emails as $key => $value){
     if ( $_POST['email'] == $value -> nodeValue){
-     //$_SESSION['accExist'] = "false";
-     //if($_SESSION['accExist'] = "false"){
-       //header('location: ../Aisle/login.php');
-      // exit();
       $accCreated = false;
       return false;
      }
       createAccount();
       $_SESSION['first'] = $_POST['firstName'];
-      //$_SESSION['accExist'] = "true";
       $accCreated = true;
        
      
@@ -61,7 +55,7 @@ function checkAcc() {
 }
 
 
-  }
+  
 
 
 }
