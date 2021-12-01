@@ -1,4 +1,5 @@
-<?php session_start(); ?> 
+<?php session_start(); 
+?> 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,6 +74,11 @@
           </ul>
         </div>
         <div>
+        <?php 
+           if (isset($_SESSION['first'])){
+             
+          echo "Hello ".$_SESSION['first'];
+      } ?> 
           <a class = "navbar-brand" href="Shopping Cart.php">
             <img src="cartfinal-removebg-preview.png" alt="Cart" 
             style="width: 40px; height:40px;"  /></a>
