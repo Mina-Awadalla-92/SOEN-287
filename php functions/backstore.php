@@ -1,10 +1,8 @@
 <?php
-ob_start();
-$accCreated;
   $xml = new DOMDocument("1.0","UTF-8");
 function createAccount() {
     if(isset($_POST['signUp'])){
-        
+
   global $xml;
   $xml -> load("../Database/user.xml");
 
@@ -19,7 +17,7 @@ function createAccount() {
   $postalTag = $xml -> createElement('postalCode', $_POST['postalCode']);
   $emailTag = $xml -> createElement('email', $_POST['email']);
   $passwrodTag = $xml -> createElement('password', $_POST['password']);
-  
+
   $userTag -> appendChild($nameTag);
   $userTag -> appendChild($lNameTag);
   $userTag -> appendChild($addresTag);
@@ -28,7 +26,7 @@ function createAccount() {
   $userTag -> appendChild($postalTag);
   $userTag -> appendChild($emailTag);
   $userTag -> appendChild($passwrodTag);
-  
+
   $rootTag -> appendChild($userTag);
 
   $xml->save("../Database/user.xml"); 
@@ -36,29 +34,23 @@ function createAccount() {
 }
  
 function checkAcc() {
-  global $accCreated;
-  global $xml;
-  $xml -> load("../Database/user.xml");
-  $emails = $xml -> getElementsByTagName('email');
-  foreach ($emails as $key => $value){
-    if ( $_POST['email'] == $value -> nodeValue){
-      $accCreated = false;
-      return false;
-     }
-      createAccount();
-      $_SESSION['first'] = $_POST['firstName'];
-      $accCreated = true;
-       
-     
-     
-    
-}
+    global $xml;
+    $xml -> load("../Database/user.xml");
+    $emails = $xml -> getElementsByTagName('email');
+    if(isset($_POST['signUp'])){
+    foreach ($emails as $key => $value){
+      if ( $_POST['email'] == $value -> nodeValue){
+        echo "<h1>cant create </h1>";
+        return false;
+  }
+    }
+  createAccount();
 
 
-  
 
 
-}
+  }
+  }
  
 
 
