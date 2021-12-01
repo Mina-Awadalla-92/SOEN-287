@@ -73,11 +73,12 @@
             </li>
           </ul>
         </div>
+        
         <div>
         <?php 
            if (isset($_SESSION['first'])){
              
-          echo "Hello ".$_SESSION['first'];
+          echo "<p style=\"color:white\">Hello ".$_SESSION['first']."</p>";
       } ?> 
           <a class = "navbar-brand" href="Shopping Cart.php">
             <img src="cartfinal-removebg-preview.png" alt="Cart" 
