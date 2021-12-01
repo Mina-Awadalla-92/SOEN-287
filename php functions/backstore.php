@@ -1,4 +1,5 @@
 <?php
+  $accCreated;
   $xml = new DOMDocument("1.0","UTF-8");
 function createAccount() {
     if(isset($_POST['signUp'])){
@@ -34,6 +35,7 @@ function createAccount() {
 }
  
 function checkAcc() {
+    global $accCreated;
     global $xml;
     $xml -> load("../Database/user.xml");
     $emails = $xml -> getElementsByTagName('email');
