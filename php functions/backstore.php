@@ -38,7 +38,7 @@ function createAccount() {
 function checkAcc() {
   global $accCreated;
   global $xml;
-  $xml -> load("user.xml");
+  $xml -> load("../Database/user.xml");
   $emails = $xml -> getElementsByTagName('email');
   if(isset($_POST['signUp'])){
   foreach ($emails as $key => $value){
@@ -48,6 +48,7 @@ function checkAcc() {
      //if($_SESSION['accExist'] = "false"){
        //header('location: ../Aisle/login.php');
       // exit();
+      return false;
      }
      createAccount();
       $_SESSION['first'] = $_POST['firstName'];
