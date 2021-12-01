@@ -103,7 +103,7 @@
       
      <div class="textboxSignup">
        <?php 
-       if($_SESSION['accExist'] == false){
+       if($_SESSION['accExist'] == "false"){
          echo "<h1>This E-Mail Already Exists</h2>";
        }
        ?>
