@@ -24,7 +24,20 @@
    
     <a rel="icon" href="../Munchies.jpg">
     <!-- <link rel="icon" href="../../Metadata/icon.svg"> -->
+  <style>
+    .alert{
+     margin:auto;
+     margin-bottom: 5px;
+      font-size: 25px;
+    text-align: center;
+    color: red;
+    border: 3px solid red;
+    width: 400px;
+    background-color:pink;
+}
 
+    
+  </style>
   
 </head>
 <body>
@@ -114,10 +127,9 @@
        if($_SESSION['accExist'] == true){
          echo "<h3 style=\"color:#FF2750\">The email you previously tried to sign in with already exists</h3>";
        }
-       
-       
-       
+       checkEandP();     
        ?>
+
        
        <div>
          <form action = "login.php" method = "POST"> 
@@ -142,6 +154,5 @@
   <p class ="copyRight"> &copy MUNCHIES Team 2021 </p>
 </footer>
 </html> 
-<?php
-checkEandP();     
-  ?>
+
+   

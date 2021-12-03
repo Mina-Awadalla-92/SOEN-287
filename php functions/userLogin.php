@@ -35,13 +35,17 @@ $xml = new DOMDocument("1.0","UTF-8");
           
           if (strcasecmp($_POST['email'],$emails[$i] -> nodeValue) ==0){
             if ($_POST['password'] == $passwords[$i] -> nodeValue){
-              
                 logIn();
+                return true;
             }
       }
        $count = $count + 1;
        
         }
+        echo "<div class =\"alert\"> 
+        Email or password incorrect
+       
+            </div>";
 
        
      }
