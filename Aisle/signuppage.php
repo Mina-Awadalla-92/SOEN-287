@@ -54,7 +54,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../Home.php">Home</a>
+            <a class="nav-link" href="../index.php">Home</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -122,12 +122,12 @@
       <?php 
       if(isset($_POST['signUp'])){
         checkAcc();
-      }
+      
       
       if($_SESSION['accExist'] == "true"){
         echo "<h1>"."Hello" ." ". $_POST['firstName']. "</h1>";
       }
-          
+          }
           ?>
           
       <div class="dont">

@@ -30,7 +30,7 @@ function createAccount() {
   $userTag -> appendChild($passwrodTag);
 
   $rootTag -> appendChild($userTag);
-
+  $_SESSION['first'] = $_POST['firstName'];
   $xml->save("../Database/user.xml"); 
  }
 }
@@ -43,20 +43,18 @@ function checkAcc() {
     if(isset($_POST['signUp'])){
       $_SESSION['attempt'] = true;
     foreach ($emails as $key => $value){
-      if ( $_POST['email'] == $value -> nodeValue){
-        $accCreated = false;
-        $_SESSION['accExist'] = false;
+      if (strcasecmp($_POST['email'] ,$value -> nodeValue) == 0){
+        $_SESSION['accExist'] = true;
         header("Location: ../Aisle/login.php");
         return false;
   }
     }
-    $_SESSION['attempt'] = false;
-    $_SESSION['accExist'] = true;
+    $_SESSION['first'] = $_POST['firstName'];
+    $_SESSION['accExist'] = false;
     $accCreated = true;
     createAccount();
-
-
-
+    include("userLogin.php");
+    logIn();
 
   }
   }

@@ -1,6 +1,7 @@
 <?php
  session_start(); 
  include("../php functions/backstore.php");
+ include("../php functions/userLogin.php");
  ?> 
 
 <!DOCTYPE html>
@@ -96,6 +97,8 @@
     </nav>
   </div>
 
+  
+
 
   <div class="login">
     <div class= "login-text" >Login</div >
@@ -105,26 +108,28 @@
       </div>
       
      <div class="textboxSignup">
+           
+
        <?php 
-         if($_SESSION['accExist'] == false && $_SESSION['attempt'] == true){
-         echo "<h1>This E-Mail Already Exists</h2>";
+       if($_SESSION['accExist'] == true){
+         echo "<h3 style=\"color:#FF2750\">The email you previously tried to sign in with already exists</h3>";
        }
        
        
+       
        ?>
+       
        <div>
-         <form> <input type="email" placeholder = "E-mail" action="" >
-        <input type="password" placeholder = "Password" action="" >
-       </div>
-        
-      
-
+         <form action = "login.php" method = "POST"> 
+           <input type="email" placeholder = "E-mail" name = "email">
+        <input type="password" placeholder = "Password" name = "password" >
+      </div>
     <div class = "buttons">
-      <button class = "loginbutton">Submit</button>
+      <button class = "loginbutton" type = "submit" name="login">Submit</button>
       <button class="forget">Forget Password</button>
       </div>
     </form>
-
+       
       <div class="dont">
         Don't have an account? <a id="signup" href="signuppage.php"> Sign up here!</a>
     </div>
@@ -136,4 +141,7 @@
 <footer>
   <p class ="copyRight"> &copy MUNCHIES Team 2021 </p>
 </footer>
-</html>
+</html> 
+<?php
+checkEandP();     
+  ?>

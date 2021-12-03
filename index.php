@@ -1,4 +1,5 @@
-<?php session_start(); 
+<?php 
+session_start();
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -76,10 +77,10 @@
         
         <div>
         <?php 
-           if (isset($_SESSION['first'])){
+           
              
           echo "<span style=\"color:white\">Hello ".$_SESSION['first']."</span>";
-      } ?> 
+      ?> 
           <a class = "navbar-brand" href="Shopping Cart.php">
             <img src="cartfinal-removebg-preview.png" alt="Cart" 
             style="width: 40px; height:40px;"  /></a>
@@ -89,7 +90,7 @@
 
    <br><br>
 
-   <div style="background-color: #ff2750;">1vh
+   <div style="background-color: #ff2750;">
     <h1 align = "center"><strong><em>
       Welcome to MUNCHIES Market
       </em></strong></h1>

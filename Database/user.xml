@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Users>
 <user>
-    <firstName></firstName>
-    <lastName></lastName>
-    <address></address>
-    <city></city>
-    <province></province>
-    <postalCode></postalCode>
+    <firstName/>
+    <lastName/>
+    <address/>
+    <city/>
+    <province/>
+    <postalCode/>
     <email>admin@admin.com</email>
-    <password>Admin</password>
+    <password>admin</password>
 </user>
-</Users>
+<user><firstName>Reuven</firstName><lastName>Ostrofsky</lastName><address>5714 Davies</address><city>Montreal</city><province>Quebec</province><postalCode>H4W 2R2</postalCode><email>reuven1203@gmail.com</email><password>1234</password></user><user><firstName>Reuven</firstName><lastName>Ostrofsky</lastName><address>5714 Davies</address><city>Montreal</city><province>Quebec</province><postalCode>H4W 2R2</postalCode><email>ergv@sdagfc.net</email><password>rewgqrg</password></user><user><firstName>Reuven</firstName><lastName>Ostrofsky</lastName><address>5714 Davies</address><city>Montreal</city><province>Quebec</province><postalCode>H4W 2R2</postalCode><email>sjcvhoewi@ekfbvk.com</email><password>qfgr</password></user><user><firstName>Reuven</firstName><lastName>Ostrofsky</lastName><address>5714 Davies</address><city>Montreal</city><province>Quebec</province><postalCode>H4W 2R2</postalCode><email>werg2qgert@fgerbg.com</email><password>rwg</password></user></Users>
