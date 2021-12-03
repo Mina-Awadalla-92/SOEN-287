@@ -1,5 +1,4 @@
 <?php
-session_start();
  ob_start();
 $xml = new DOMDocument("1.0","UTF-8");
     class user {
@@ -55,7 +54,7 @@ $xml = new DOMDocument("1.0","UTF-8");
         $count = 0;
         $_SESSION['accExist'] = false;
         $xml -> load("../Database/user.xml");
-        $fname = $xml -> getElementsByTagName('firstname');
+        $fname = $xml -> getElementsByTagName('firstName');
         $lname = $xml -> getElementsByTagName('lastName');
         $emails = $xml -> getElementsByTagName('email');
         for ($i = 0; $i < $emails ->length; $i++) {
@@ -68,8 +67,9 @@ $xml = new DOMDocument("1.0","UTF-8");
                 header("Location: ../index.php");
 
         }
+         $count = $count + 1; 
         }
-        $count = $count + 1;        
+              
 
     }
 ?>
