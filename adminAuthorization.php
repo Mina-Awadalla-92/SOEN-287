@@ -16,8 +16,9 @@
 
 
                 <img src="Munchies.jpg" alt="Logo">
-                <h2>MUNCHIES MARKET</h2>
             </a>
+            <h2>MUNCHIES MARKET</h2>
+
         </div>
     </div>
 
