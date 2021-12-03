@@ -78,8 +78,13 @@ session_start();
         <div>
         <?php 
            
-             
-          echo "<span style=\"color:white\">Hello ".$_SESSION['first']."</span>";
+             if(isset($_SESSION['first'])){
+               echo "<span style=\"color:white\">Hello ".$_SESSION['first']." </span>";
+              echo "<a  style=\"color:white\" href=\"php functions/signOut.php\">Sign Out</a>";
+             }else{
+              echo "<span style=\"color:white\">Hello Guest User</span>";
+             }
+          
       ?> 
           <a class = "navbar-brand" href="Shopping Cart.php">
             <img src="cartfinal-removebg-preview.png" alt="Cart" 

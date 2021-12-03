@@ -112,57 +112,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><img
-                src="user.jpg"
-                style="width: 50px; height: 50px;" /> </td>
-              <td>Alison</td>
-              <td>Floyd</td>
-              <td>alisonfloyd@gmail.com</td>
-              <td>+6137650987</td>
-              <td>24 Harley Street</td>
-              <td>
-                <a href="EditUsers.php" class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a href="deleteUser.php?deleteId=(put id variable here)" class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td><img
-                  src="user.jpg"
-                  style="width: 50px; height: 50px;" /> </td>
-                <td>John</td>
-                <td>Carter</td>
-                <td>johncarter@gmail.com</td>
-                <td>+5149561408</td>
-                <td>545 Charest Street</td>
-                <td>
-                  <a href="EditUsers.php" class="fa fa-edit"></a>
-                </td>
-                <td>
-                  <a href="deleteUser.php?id" class="fa fa-trash"></a>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td><img
-                  src="user.jpg"
-                  style="width: 50px; height: 50px;" /> </td>
-                <td>Bryan</td>
-                <td>Green</td>
-                <td>b.green123@yahoo.com</td>
-                <td>+3059806170</td>
-                <td>2120 Collin Street</td>
-                <td>
-                  <a href="EditUsers.php" class="fa fa-edit"></a>
-                </td>
-                <td>
-                  <a href="deleteUser.php?id" class="fa fa-trash"></a>
-                </td>
-              </tr>
+              <?php
+                include("../../php functions/displayUsers.php");
+              ?>
           </tbody>
         </table>
       </div>

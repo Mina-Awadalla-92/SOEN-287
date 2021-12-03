@@ -1,5 +1,11 @@
 <?php
+session_start();
+ob_start();
 include "connectDB.php";
+if(!$_SESSION['admin']){
+  header("Location: ../../adminAuthorization.php");
+
+}
 ?>
 
 

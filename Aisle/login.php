@@ -124,9 +124,10 @@
            
 
        <?php 
-       if($_SESSION['accExist'] == true){
+         if(isset($_SESSION['accExist']) && $_SESSION['accExist'] == true){
          echo "<h3 style=\"color:#FF2750\">The email you previously tried to sign in with already exists</h3>";
        }
+       
        checkEandP();     
        ?>
 

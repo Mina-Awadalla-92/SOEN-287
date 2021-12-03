@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Users>
 <user>
-    <firstName>admin</firstName>
-    <lastName/>
-    <address/>
-    <city/>
-    <province/>
-    <postalCode/>
+   <firstName>admin</firstName>
+    <lastName>admin</lastName>
+    <address>.</address>
+   <city>.</city>
+    <province>.</province>
+    <postalCode>.</postalCode>
     <email>admin@admin.com</email>
     <password>admin</password>
 </user>

@@ -54,6 +54,7 @@ $xml = new DOMDocument("1.0","UTF-8");
 
 
     function logIn(){
+        header('Location: signOut.php');
         global $xml;
         $count = 0;
         $_SESSION['accExist'] = false;
@@ -64,11 +65,13 @@ $xml = new DOMDocument("1.0","UTF-8");
         for ($i = 0; $i < $emails ->length; $i++) {
             if (strcasecmp($_POST['email'],"admin@admin.com") == 0){
                 header("Location: ../p7-p12/backstore/backstore.php");
+                $_SESSION['admin'] = true;
             }
             if (strcasecmp($_POST['email'],$emails[$i] -> nodeValue) ==0){
                 $_SESSION['first'] = $fname[$count] -> nodeValue;
                 $_SESSION['last'] = $lname[$count] -> nodeValue;
                 header("Location: ../index.php");
+                $_SESSION['admin'] = false;
 
         }
          $count = $count + 1; 

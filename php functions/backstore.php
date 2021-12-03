@@ -13,7 +13,7 @@ function createAccount() {
 
   $nameTag = $xml -> createElement('firstName',  $_POST['firstName']);
   $lNameTag = $xml -> createElement('lastName', $_POST['lastName']);
-  $addresTag = $xml -> createElement('address', $_POST['address']);
+  $addressTag = $xml -> createElement('address', $_POST['address']);
   $cityTag = $xml -> createElement('city', $_POST['city']);
   $provTag = $xml -> createElement('province', $_POST['province']);
   $postalTag = $xml -> createElement('postalCode', $_POST['postalCode']);
@@ -22,10 +22,10 @@ function createAccount() {
 
   $userTag -> appendChild($nameTag);
   $userTag -> appendChild($lNameTag);
-  $userTag -> appendChild($addresTag);
+  $userTag -> appendChild($addressTag);
   $userTag -> appendChild($cityTag);
   $userTag -> appendChild($provTag);
-  $userTag -> appendChild($postalTag);
+  $userTag-> appendChild($postalTag);
   $userTag -> appendChild($emailTag);
   $userTag -> appendChild($passwrodTag);
 
