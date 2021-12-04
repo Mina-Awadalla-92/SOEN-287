@@ -44,17 +44,17 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="Aisle\FruitsAndVegetables.html">Fruits and vegetables</a>
-                            <a class="dropdown-item" href="Aisle\Beverages.html">Beverages</a>
-                            <a class="dropdown-item" href="Aisle\Bakery.html">Bakery</a>
+                            <a class="dropdown-item" href="Aisle\FruitsAndVegetables.php">Fruits and vegetables</a>
+                            <a class="dropdown-item" href="Aisle\Beverages.php">Beverages</a>
+                            <a class="dropdown-item" href="Aisle\Bakery.php">Bakery</a>
                             <a class="dropdown-item" href="Aisle/Frozen.php">Frozen</a>
-                            <a class="dropdown-item" href="Aisle\Butchery.html">Butchery</a>
-                            <a class="dropdown-item" href="Aisle\Seafood.html">Seafood</a>
+                            <a class="dropdown-item" href="Aisle\Butchery.php">Butchery</a>
+                            <a class="dropdown-item" href="Aisle\Seafood.php">Seafood</a>
                             <a class="dropdown-item" href="Aisle/Snacks.php">Snacks</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Aisle\login.html">Login</a>
+                        <a class="nav-link" href="Aisle\login.php ">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="p7-p12/backstore/backStore.php">Back Store Page</a>
