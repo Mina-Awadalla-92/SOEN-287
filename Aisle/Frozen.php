@@ -74,7 +74,7 @@ session_start();
                         <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ProductList.html">Back Store Page</a>
+                        <a class="nav-link" href="../p7-p12/backstore/backStore.php">Back Store Page</a>
 
                     </li>
                 </ul>
