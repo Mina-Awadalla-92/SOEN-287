@@ -18,7 +18,11 @@ if (isset($_POST['submit'])) {
 ?>
 
 
+<?php
+session_start();
+?>
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
