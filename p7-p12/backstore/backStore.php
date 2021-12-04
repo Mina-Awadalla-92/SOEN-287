@@ -93,7 +93,7 @@ if (!$_SESSION['admin']) {
 
         if (isset($_SESSION['first'])) {
           echo "<span style=\"color:white\">Hello " . $_SESSION['first'] . " </span>";
-          echo "<a  style=\"color:white\" href=\"php functions/signOut.php\">Sign Out</a>";
+          echo "<a  style=\"color:white\" href=\"php functions/signOut.php\"> | Sign Out</a>";
         } else {
           echo "<span style=\"color:white\">Hello Guest User</span>";
         }
