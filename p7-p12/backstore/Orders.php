@@ -153,7 +153,7 @@ session_start();
             <tbody>
             <?php
             //load xml file
-            $xml = simplexml_load_file('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml');
+            $xml = simplexml_load_file('../../Database/orderlist.xml');
 
             foreach ($xml->order as $row) {
                 ?>

@@ -20,7 +20,7 @@ if (isset($_POST['add'])) {
     $order->addChild('Quantity', $_POST['Q']);
     $order->addChild('totalprice', $_POST['BL']);
 
-    file_put_contents('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml', $orderlist->asXML());
+    file_put_contents('../../Database/orderlist.xml', $orderlist->asXML());
     $_SESSION['message'] = 'Order added successfully';
     header('location: Orders.php');
 

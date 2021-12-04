@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(isset($_POST['edit'])){
-		$orderlist = simplexml_load_file('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml');
+		$orderlist = simplexml_load_file('../../Database/orderlist.xml');
 		foreach($orderlist->order as $order){
 			if($order->id == $_POST['id'] && $order->customer = $_POST['id']){
 
@@ -17,7 +17,7 @@
 			}
 		}
 
-		file_put_contents('/Users/minaawadalla/Desktop/Concordia/SOEN 287 - Pope Shenouda /Assignment/Team-SOEN 287/SOEN-287/Database/orderlist.xml', $orderlist->asXML());
+		file_put_contents('../../Database/orderlist.xml', $orderlist->asXML());
 		$_SESSION['message'] = 'Product updated successfully';
 		header('location: Orders.php');
 
