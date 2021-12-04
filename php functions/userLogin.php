@@ -66,7 +66,7 @@ function logIn()
     $emails = $xml->getElementsByTagName('email');
     for ($i = 0; $i < $emails->length; $i++) {
         if (strcasecmp($_POST['email'], "admin@admin.com") == 0) {
-            header("Location: php functions/backstore.php");
+            header("Location: p7-p12/backstore/backStore.php");
             $_SESSION['admin'] = true;
         }
         if (strcasecmp($_POST['email'], $emails[$i]->nodeValue) == 0) {
