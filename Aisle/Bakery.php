@@ -164,7 +164,7 @@ session_start();
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
-              <a href="../Aisle\Product Description\sourdough bread.html"><img class="item-pic" src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" class="card-img-top" alt="..."></a>
+              <a href="Product Description/sourdough bread.php"><img class="item-pic" src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/sourdough bread.php" style="color:black">Sourdough Bread</h5></a>
                 <p class="card-text ">1 Loaf of Sourdough Bread<br> <br> <br> <span>$</span><span class="cost">6.96</span><span>/ Loaf of Sourdough Bread</span>
@@ -190,7 +190,7 @@ session_start();
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
-              <a href="../Aisle\Product Description\bagels.html"><img class="item-pic" src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="..."></a>
+              <a href="Product Description/bagels.php"><img class="item-pic" src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/bagels.php" style="color:black">Bagels</h5></a>
                 <p class="card-text ">1 Bagel<br> <br> <br><span>$</span><span class="cost">1.55</span>
@@ -202,7 +202,7 @@ session_start();
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
-              <a href="../Aisle\Product Description\whole wheat bread.html"><img class="item-pic" src="https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" class="card-img-top" alt="..."></a>
+              <a href="Product Description/whole wheat bread.php"><img class="item-pic" src="https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/whole wheat bread.php" style="color:black">Whole Wheat Bread</h5></a>
                 <p class="card-text ">1 Loaf of Whole Wheat Bread<br> <br> <br><span>$</span><span class="cost">3.25</span>
@@ -215,7 +215,7 @@ session_start();
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
-              <a href="../Aisle\Product Description\brioche bread.html"><img class="item-pic" src="https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" class="card-img-top" alt="..."></a>
+              <a href="Product Description/brioche bread.php"><img class="item-pic" src="https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" class="card-img-top" alt="..."></a>
               <div class="card-body" id="bb">
                 <h5 class="card-title"><a href="Product Description/brioche bread.php" style="color:black">Brioche Bread</h5></a>
                 <p class="card-text ">1 Loaf of Brioche Bread<br> <br> <br><span>$</span><span class="cost">3.75</span>
@@ -228,7 +228,7 @@ session_start();
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
-              <a href="../Aisle\Product Description\pita bread.html"><img class="item-pic" src="https://images.unsplash.com/photo-1583057341912-a0df64b8da4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" class="card-img-top" alt="..."></a>
+              <a href="Product Description/pita bread.php"><img class="item-pic" src="https://images.unsplash.com/photo-1583057341912-a0df64b8da4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/pita bread.php" style="color:black">Pita Bread</h5></a>
                 <p class="card-text ">1 Slice of Pita Bread<br> <br> <br><span>$</span><span class="cost">0.89</span>
