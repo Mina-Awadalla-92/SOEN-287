@@ -168,7 +168,7 @@ session_start();
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/sourdough bread.php" style="color:black">Sourdough Bread</h5></a>
                 <p class="card-text ">1 Loaf of Sourdough Bread<br> <br> <br> <span>$</span><span class="cost">6.96</span><span>/ Loaf of Sourdough Bread</span>
-                  <br> <span class="gram">$6.96</span> <span class="unit">Loaf of Sourdough Bread </span>
+                  <br> <span class="gram">$6.96</span>
                 </p>
                 <button class="btn btn-dark">ADD TO CART</button>
               </div>
