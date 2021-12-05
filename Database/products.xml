@@ -35,283 +35,283 @@
 <item>
 <name>Carrots</name>
 <img></img>
-<price>2.36/pack</price>
+<price>$2.36/pack</price>
 </item>
 
 <item>
 <name>Broccoli</name>
 <img></img>
-<price>5.67/pack</price>
+<price>$5.67/pack</price>
 </item>
 
 <item>
 <name>Corn</name>
 <img></img>
-<price>1.22/unit</price>
+<price>$1.22/unit</price>
 </item>
 
 <item>
 <name>Munchies Water</name>
 <img></img>
-<price>2.49/bottle</price>
+<price>$2.49/bottle</price>
 </item>
 
 <item>
 <name>Coca Cola</name>
 <img></img>
-<price>1.69/Bottle</price>
+<price>$1.69/Bottle</price>
 </item>
 
 <item>
 <name>7Up</name>
 <img></img>
-<price>1.59/bottle</price>
+<price>$1.59/bottle</price>
 </item>
 
 <item>
 <name>Monster</name>
 <img></img>
-<price>4.70/bottle</price>
+<price>$4.70/bottle</price>
 </item>
 
 <item>
 <name>Redbull</name>
 <img></img>
-<price>4.70/bottle</price>
+<price>$4.70/bottle</price>
 </item>
 
 <item>
 <name>Fanta</name>
 <img></img>
-<price>1.49/bottle</price>
+<price>$1.49/bottle</price>
 </item>
 
 <item>
 <name>Orange Juice</name>
 <img></img>
-<price>2.89/bottle</price>
+<price>$2.89/bottle</price>
 </item>
 
 <item>
 <name>Canada Dry</name>
 <img></img>
-<price>1.59/bottle</price>
+<price>$1.59/bottle</price>
 </item>
 
 <item>
 <name>Baguettes</name>
 <img></img>
-<price>1.00/baguette</price>
+<price>$1.00/baguette</price>
 </item>
 
 <item>
 <name>Rye Bread</name>
 <img></img>
-<price>4.55/loaf</price>
+<price>$4.55/loaf</price>
 </item>
 
 <item>
 <name>Sourdough Bread</name>
 <img></img>
-<price>6.96/loaf</price>
+<price>$6.96/loaf</price>
 </item>
 
 <item>
 <name>Challah Bread</name>
 <img></img>
-<price>3.50/loaf</price>
+<price>$3.50/loaf</price>
 </item>
 
 <item>
 <name>Bagels</name>
 <img></img>
-<price>1.55/bagels</price>
+<price>$1.55/bagels</price>
 </item>
 
 <item>
 <name>Whole Wheat Bread</name>
 <img></img>
-<price>3.25/loaf</price>
+<price>$3.25/loaf</price>
 </item>
 
 <item>
 <name>Brioche Bread</name>
 <img></img>
-<price>3.75/loaf</price>
+<price>$3.75/loaf</price>
 </item>
 
 <item>
 <name>Pita Bread</name>
 <img></img>
-<price>0.89/Pita</price>
+<price>$0.89/Pita</price>
 </item>
 
 <item>
 <name>Ice Cream</name>
 <img></img>
-<price>8.00/Box</price>
+<price>$8.00/Box</price>
 </item>
 
 <item>
 <name>Pogo</name>
 <img></img>
-<price>8.99/Box</price>
+<price>$8.99/Box</price>
 </item>
 
 <item>
 <name>French Fries</name>
 <img></img>
-<price>13.99/Box</price>
+<price>$13.99/Box</price>
 </item>
 
 <item>
 <name>Eggos</name>
 <img></img>
-<price>7.00/Box</price>
+<price>$7.00/Box</price>
 </item>
 
 <item>
 <name>Popsicles</name>
 <img></img>
-<price>3.99/Box</price>
+<price>$3.99/Box</price>
 </item>
 
 <item>
 <name>Bagged Ice</name>
 <img></img>
-<price>0.99/Bag</price>
+<price>$0.99/Bag</price>
 </item>
 
 <item>
 <name>Pizza</name>
 <img></img>
-<price>11.99/Box</price>
+<price>$11.99/Box</price>
 </item>
 
 <item>
 <name>Chicken Nuggets</name>
 <img></img>
-<price>7.95/Box</price>
+<price>$7.95/Box</price>
 </item>
 
 <item>
 <name>Sirloin Steak</name>
 <img></img>
-<price>8.53/unit</price>
+<price>$8.53/unit</price>
 </item>
 
 <item>
 <name>Chicken Breast</name>
 <img></img>
-<price>3.96/unit</price>
+<price>$3.96/unit</price>
 </item>
 
 <item>
 <name>Pork Chops</name>
 <img></img>
-<price>9.69/pack</price>
+<price>$9.69/pack</price>
 </item>
 
 <item>
 <name>Italian Sausages</name>
 <img></img>
-<price>5.70/pack</price>
+<price>$5.70/pack</price>
 </item>
 
 <item>
 <name>Fresh Crab</name>
 <img></img>
-<price>30.00/lb</price>
+<price>$30.00/lb</price>
 </item>
 
 <item>
 <name>Lobster</name>
 <img></img>
-<price>29.99/lb</price>
+<price>$29.99/lb</price>
 </item>
 
 <item>
 <name>Shrimp</name>
 <img></img>
-<price>25.99/lb</price>
+<price>$25.99/lb</price>
 </item>
 
 <item>
 <name>Oysters</name>
 <img></img>
-<price>45.50/6g</price>
+<price>$45.50/6g</price>
 </item>
 
 <item>
 <name>Wild Salmon</name>
 <img></img>
-<price>12.00/lb</price>
+<price>$12.00/lb</price>
 </item>
 
 <item>
 <name>Tuna Steak</name>
 <img></img>
-<price>30.00/lb</price>
+<price>$30.00/lb</price>
 </item>
 
 <item>
 <name>Calamari</name>
 <img></img>
-<price>52.99/5lb</price>
+<price>$52.99/5lb</price>
 </item>
 
 <item>
 <name>Caviar</name>
 <img></img>
-<price>75.99/jar</price>
+<price>$75.99/jar</price>
 </item>
 
 <item>
 <name>Chips</name>
 <img></img>
-<price>2.99/bag</price>
+<price>$2.99/bag</price>
 </item>
 
 <item>
 <name>Chocolate</name>
 <img></img>
-<price>18.99/box</price>
+<price>$18.99/box</price>
 </item>
 
 <item>
 <name>Candy</name>
 <img></img>
-<price>11.99/bag</price>
+<price>$11.99/bag</price>
 </item>
 
 <item>
 <name>Pretzels</name>
 <img></img>
-<price>3.99/bag</price>
+<price>$3.99/bag</price>
 </item>
 
 <item>
 <name>Rice Cakes</name>
 <img></img>
-<price>4.99/bag</price>
+<price>$4.99/bag</price>
 </item>
 
 <item>
 <name>Brownies</name>
 <img></img>
-<price>9.99/box</price>
+<price>$9.99/box</price>
 </item>
 
 <item>
 <name>Cookies</name>
 <img></img>
-<price>4.99/box</price>
+<price>$4.99/box</price>
 </item>
 
 <item>
 <name>Muffins</name>
 <img></img>
-<price>9.99/box</price>
+<price>$9.99/box</price>
 </item>
 
 

@@ -250,11 +250,14 @@ include("../php functions/cart.php");
         
     </div>
   </div>
-  
+  <?php 
+  echo $_SESSION['email'];
+  ?>
 </body>
 <?php
 if(isset($_GET['productName'])){
   addToCart();
-  $_GET['productName'] = null;
+  
+ 
 }
 ?>

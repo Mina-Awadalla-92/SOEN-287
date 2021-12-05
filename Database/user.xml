@@ -3,18 +3,19 @@
 <user>
    <firstName>Admin</firstName>
     <lastName>admin</lastName>
-    <address></address>
-   <city></city>
-    <province></province>
-    <postalCode></postalCode>
+    <address/>
+   <city/>
+    <province/>
+    <postalCode/>
     <email>admin@admin.com</email>
     <password>admin</password>
     <cart>
         <item>
-        <productName></productName>
-        <img></img>
-        <price></price>
+            <productName/>
+            <price/>
+            <img/>
         </item>
+    
     </cart>
 </user>
 <user>
@@ -27,5 +28,7 @@
 <email>reuven1203@gmail.com</email>
 <password>12345</password>
  
-</user>
+<cart>
+ test
+ <item><productName>Red apples</productName><img/><price/></item><item><productName>Red apples</productName><img/><price/></item><item><productName>Bananas</productName><img/><price/></item><item><productName>Red apples</productName><img/><price/></item></cart></user>
 </Users>
