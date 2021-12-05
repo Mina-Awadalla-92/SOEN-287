@@ -36,5 +36,5 @@
 
 
 <cart>
-<item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Munchies Water</productName><img/><price>$2.49/bottle</price><quantity>1</quantity></item></cart></user>    
 </Users>

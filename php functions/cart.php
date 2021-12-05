@@ -80,7 +80,6 @@ function displayCart()
            $priceTag = $itemTag[$j] -> getElementsByTagName('price')[0]->nodeValue;
             $imgTag = $itemTag[$j] -> getElementsByTagName('img')[0]->nodeValue;
             $quantityTag = $itemTag[$j] -> getElementsByTagName('quantity')[0]->nodeValue;
-            echo $priceTag;
            echo "<td>";
            echo "<img src=\"". $imgTag. "\" alt=\";\"";
             echo "<p>".$productNameTag."</p>";
