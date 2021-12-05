@@ -64,6 +64,9 @@ function logIn()
     $fname = $xml->getElementsByTagName('firstName');
     $lname = $xml->getElementsByTagName('lastName');
     $emails = $xml->getElementsByTagName('email');
+    if(Request.ServerVariables["HTTP_REFERER"].ToLower().IndexOf("https://munchies-market.herokuapp.com/") == -1){
+        // Not from my site
+        Response.Redirect("NotAllowed.aspx");
     for ($i = 0; $i < $emails->length; $i++) {
         if (strcasecmp($_POST['email'], "admin@admin.com") == 0) {
             header("Location: ../p7-p12/backstore/Users.php");
