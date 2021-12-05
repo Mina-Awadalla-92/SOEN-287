@@ -49,7 +49,7 @@ function displayItemPrice() {
   quantityButton = document.getElementsByClassName("shoppinginput");
   
   for(i=0;i<quantityButton.length;i++){
-      quantityButton[i].addEventListener('load',function(event) {
+      quantityButton[i].addEventListener('change',function(event) {
       buttonClicked = event.target
       quantity= buttonClicked.value;
       var price = buttonClicked.parentElement.parentElement.querySelector("h6").textContent;
