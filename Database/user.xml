@@ -35,5 +35,5 @@
 
 
 <cart>
-<item><productName>Rye Bread</productName><img/><price>$4.55/loaf</price><quantity>1</quantity></item><item><productName>Baguettes</productName><img/><price>$1.00/baguette</price><quantity>1</quantity></item><item><productName>Sourdough Bread</productName><img/><price>$6.96/loaf</price><quantity>1</quantity></item><item><productName>Challah Bread</productName><img/><price>$3.50/loaf</price><quantity>1</quantity></item><item><productName>Bagel</productName><img/><price/><quantity>1</quantity></item><item><productName>Whole Wheat Bread</productName><img/><price>$3.25/loaf</price><quantity>1</quantity></item><item><productName>Brioche Bread</productName><img/><price>$3.75/loaf</price><quantity>1</quantity></item><item><productName>Pita Bread</productName><img/><price>$0.89/Pita</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Red apples</productName><img/><price/><quantity>1</quantity></item><item><productName>Bananas</productName><img/><price/><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price/><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item></cart></user>    
 </Users>

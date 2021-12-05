@@ -145,8 +145,9 @@ include("../php functions/cart.php");
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/french baguettes.php" style="color:black">Baguettes</h5></a>
                 <p class="card-text ">1 French Baguette <br> <br> <br><span>$</span><span class="cost">1.00</span>
-                <button class="btn btn-dark" name="productName" value="Baguettes" type="submit">ADD TO CART</button>
+                <span class="unit">/ Baguette</span> <br> <span class="gram">$1.00 / Loaf</span>
                 </p>
+                <button class="btn btn-dark">ADD TO CART</button>
 
               </div>
             </div>
@@ -158,7 +159,7 @@ include("../php functions/cart.php");
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/rye bread.php" style="color:black">Rye Bread</h5></a>
                 <p class="card-text ">1 Loaf of Rye Bread<br> <br> <br><span>$</span><span class="cost">4.55</span>
-                  <span class="unit">/ Loaf of Rye Bread</span> <br> <span class="gram">$4.55 / Loaf</span>
+                  <span class="unit">/ Loaf of Rye Bread</span> <br> <span class="gram">$1.00 / Baguette</span>
                 </p>
                 <button class="btn btn-dark" name="productName" value="Rye Bread" type="submit">ADD TO CART</button>
               </div>
