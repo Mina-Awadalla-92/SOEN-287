@@ -1,5 +1,7 @@
 <?php
 session_start();
+ob_start();
+include("../php functions/cart.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +39,9 @@ session_start();
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="../js/Aisle.js">
 
+  </script>
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <a class="navbar-brand" href="../index.php">
@@ -138,21 +142,26 @@ session_start();
         </ul>
 
       </div>
-
+      
       <div class="main-content col-md-10">
+<form action="FruitsAndVegetables.php" method="get">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
-            <div class="card">
-              <a href="Product Description/apples.php"><img class="item-pic" src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title"><a href="Product Description/apples.php" style="color:black">Red Apples</h5></a>
-                <p class="card-text ">5 Apples (Around 910 grams) <br> <br> <br> approx. <span class="cost">$2.36</span>
-                  / pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+              
+                <div class="card">
+                <a href="Product Description/apples.php"><img class="item-pic" src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a  href="Product Description/apples.php" style="color:black"><span>Red Apples</span> </h5></a>
+                  <p class="card-text ">5 Apples (Around 910 grams) <br> <br> <br> approx. <span class="cost">$2.36</span>
+                    / pack <br> <span class="gram"></span></p>
+                 <button class="btn btn-dark" name="productName" value="Red apples" type="submit">ADD TO CART</button>
+                </div>
+                <?php
+                add();
+                ?>
+              
               </div>
-            </div>
           </div>
-
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
               <a href="Product Description/bananas.php"><img class="item-pic" src="https://images.unsplash.com/photo-1543218024-57a70143c369?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=735&q=80" class="card-img-top" alt="..."></a>
@@ -160,7 +169,7 @@ session_start();
                 <h5 class="card-title"><a href="Product Description/bananas.php" style="color:black">Bananas</h5></a>
                 <p class="card-text ">5 Bananas (approx. 590 g) <br> <br> <br> approx. <span class="cost">$3.57</span>
                   /pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Bananas" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -195,7 +204,7 @@ session_start();
                 <h5 class="card-title"><a href="Product Description/cucumber.php" style="color:black">Cucumber</h5></a>
                 <p class="card-text ">1 Cucumber (approx. 99 g)<br> <br> <br> approx. <span class="cost">$0.98</span>/
                   unit <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                <button class="btn btn-dark" type="submit" name="addToCart">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -237,7 +246,16 @@ session_start();
           </div>
         </div>
       </div>
-
+      </form>
+        
     </div>
   </div>
+  <?php
+  addToCart();
+  ?>
 </body>
+<?php
+if(isset($_GET['productName'])){
+  addToCart();
+}
+?>

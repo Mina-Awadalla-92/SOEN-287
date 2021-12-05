@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<Products>
+
 <item>
-<name>Red Apples</name>
+<name>Red apples</name>
 <img></img>
-<price></price>
+<price>2.36/pack</price>
 </item>
 
-</Products>
