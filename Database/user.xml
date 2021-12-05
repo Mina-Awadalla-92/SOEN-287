@@ -34,6 +34,7 @@
 
 
 
+
 <cart>
-<item><productName>Red apples</productName><img/><price/><quantity>1</quantity></item><item><productName>Bananas</productName><img/><price/><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price/><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Brocolli</productName><img/><price/><quantity>1</quantity></item><item><productName>Brocolli</productName><img/><price/><quantity>1</quantity></item><item><productName>Brocolli</productName><img/><price/><quantity>1</quantity></item><item><productName>Brocolli</productName><img/><price/><quantity>1</quantity></item><item><productName>Brocolli</productName><img/><price>$5.67/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price/><quantity>1</quantity></item></cart></user>    
 </Users>
