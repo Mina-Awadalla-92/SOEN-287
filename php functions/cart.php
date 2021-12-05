@@ -7,7 +7,8 @@ function addToCart()
 {
     $productPage = new DOMDocument("1.0","UTF-8");
     $productPage -> load("../Database/products.xml");
-    $nameTag = $productPage -> getElementsByTagName('name');
+    $rootTag = $productPage -> getElementsByTagName('productList')[0];
+    $nameTag = $rootTag -> getElementsByTagName('name');
 
     $xml = new DOMDocument("1.0","UTF-8");
     $xml -> load("../Database/user.xml");
@@ -17,12 +18,14 @@ function addToCart()
        for($i=0;$i<$nameTag->length;$i++){
            echo $nameTag[$i] -> nodeValue;
         if($_GET['productName'] == $nameTag[$i]->nodeValue){
-           echo "test";
+            
             $img = $productPage -> getElementsByTagName('img')[$i];
             $price = $productPage -> getElementsByTagName('price')[$i];
+           
         }
         for($i=0;$i<$emailTag->length;$i++){
             if($emailTag[$i] == $_SESSION['email']){
+                echo $emailTag[$i]->nodeValue;
                 $userTag = $xml -> getElementsByTagName('user')[$i];
                 $cartTag = $xml-> getElementsByTagName('cart')[$i];
 
