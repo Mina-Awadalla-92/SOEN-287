@@ -2,11 +2,11 @@
 
 <productList>
 
-<item&#38;>
+<item>
 <name>Red apples</name>
 <img>img class="item-pic" src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&#38;ixlib=rb-1.2.1&#38;auto=format&#38;fit=crop&#38;w=1374&#38;q=80" class="card-img-top" alt="..."></img>
 <price>$2.36/pack</price>
-</item&#38;
+</item>
 
 <item>
 <name>Bananas</name>
