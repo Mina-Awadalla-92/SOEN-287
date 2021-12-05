@@ -72,6 +72,7 @@ function logIn()
         if (strcasecmp($_POST['email'], $emails[$i]->nodeValue) == 0) {
             $_SESSION['first'] = $fname[$count]->nodeValue;
             $_SESSION['last'] = $lname[$count]->nodeValue;
+            $_SESSION['email'] = $emails[$count]->nodeValue;
             header("Location: ../index.php");
             $_SESSION['admin'] = false;
         }

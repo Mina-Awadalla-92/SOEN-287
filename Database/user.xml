@@ -3,11 +3,29 @@
 <user>
    <firstName>Admin</firstName>
     <lastName>admin</lastName>
-    <address>.</address>
-   <city>.</city>
-    <province>.</province>
-    <postalCode>.</postalCode>
+    <address></address>
+   <city></city>
+    <province></province>
+    <postalCode></postalCode>
     <email>admin@admin.com</email>
     <password>admin</password>
+    <cart>
+        <item>
+        <productName></productName>
+        <img></img>
+        <price></price>
+        </item>
+    </cart>
 </user>
-<user><firstName>Reuven</firstName><lastName>Ostrofsky</lastName><address>5714 Davies</address><city>Montreal</city><province>Quebec</province><postalCode>H4W 2R2</postalCode><email>reuven1203@gmail.com</email><password>12345</password></user></Users>
+<user>
+<firstName>Reuven</firstName>
+<lastName>Ostrofsky</lastName>
+<address>5714 Davies</address>
+<city>Montreal</city>
+<province>Quebec</province>
+<postalCode>H4W 2R2</postalCode>
+<email>reuven1203@gmail.com</email>
+<password>12345</password>
+ 
+</user>
+</Users>
