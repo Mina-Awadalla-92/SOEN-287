@@ -157,7 +157,7 @@ include("../php functions/cart.php");
                  <button class="btn btn-dark" name="productName" value="Red apples" type="submit">ADD TO CART</button>
                 </div>
                 <?php
-                add();
+                
                 ?>
               
               </div>
@@ -250,12 +250,11 @@ include("../php functions/cart.php");
         
     </div>
   </div>
-  <?php
-  addToCart();
-  ?>
+  
 </body>
 <?php
 if(isset($_GET['productName'])){
   addToCart();
+  $_GET['productName'] = null;
 }
 ?>
