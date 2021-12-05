@@ -180,7 +180,7 @@ include("../php functions/cart.php");
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/kiwis.php" style="color:black">Kiwis</h5></a>
                 <p class="card-text "> 5 Kiwis (approx. 345)<br> <br> <br> approx. <span class="cost">$5.45</span>/pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                <button class="btn btn-dark" name="productName" value="Kiwis" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -192,7 +192,7 @@ include("../php functions/cart.php");
                 <h5 class="card-title"><a href="Product Description/oranges.php" style="color:black">Oranges</h5></a>
                 <p class="card-text ">5 Oranges (approx. 770 g) <br> <br> <br> approx. <span class="cost">$5.70</span>
                   / pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Oranges" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ include("../php functions/cart.php");
                 <h5 class="card-title"><a href="Product Description/cucumber.php" style="color:black">Cucumber</h5></a>
                 <p class="card-text ">1 Cucumber (approx. 99 g)<br> <br> <br> approx. <span class="cost">$0.98</span>/
                   unit <br> <span class="gram"></span></p>
-                <button class="btn btn-dark" type="submit" name="addToCart">ADD TO CART</button>
+                  <button class="btn btn-dark" name="productName" value="Cucumber" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@ include("../php functions/cart.php");
                 <h5 class="card-title"><a href="Product Description/carrots.php" style="color:black">Carrots</h5></a>
                 <p class="card-text ">5 Carrots (approx. 78 g/Carrot)<br> <br> <br> approx. <span class="cost">$3.45</span>/
                   pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Carrots" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@ include("../php functions/cart.php");
                 <h5 class="card-title"><a href="Product Description/brocolli.php" style="color:black">Brocolli</h5></a>
                 <p class="card-text ">Brocolli (approx. 148 g/brocolli)<br> <br> <br> approx. <span class="cost">$5.67</span>/
                   pack <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Brocolli" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -240,24 +240,29 @@ include("../php functions/cart.php");
                 <h5 class="card-title"><a href="Product Description/corn.php" style="color:black">Corn</h5></a>
                 <p class="card-text ">Corn (approx. 129 g/Corn cob)<br> <br> <br> approx. <span class="cost">$1.22</span>/
                   unit <br> <span class="gram"></span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Corn" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       </form>
+      <?php
+
+
+?>
         
     </div>
   </div>
   <?php 
-  echo $_SESSION['email'];
   ?>
 </body>
 <?php
 if(isset($_GET['productName'])){
+  echo "test";
   addToCart();
   
  
 }
+
 ?>

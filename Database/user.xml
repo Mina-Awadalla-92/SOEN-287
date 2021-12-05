@@ -10,6 +10,7 @@
     <email>admin@admin.com</email>
     <password>admin</password>
     <cart>
+    test
         <item>
             <productName/>
             <price/>
@@ -18,6 +19,7 @@
     
     </cart>
 </user>
+
 <user>
 <firstName>Reuven</firstName>
 <lastName>Ostrofsky</lastName>
@@ -27,8 +29,8 @@
 <postalCode>H4W 2R2</postalCode>
 <email>reuven1203@gmail.com</email>
 <password>12345</password>
- 
+
 <cart>
- test
- <item><productName>Red apples</productName><img/><price/></item><item><productName>Red apples</productName><img/><price/></item><item><productName>Bananas</productName><img/><price/></item><item><productName>Red apples</productName><img/><price/></item></cart></user>
+<item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Bananas</productName><img/><price>$3.57/pack</price><quantity>1</quantity></item><item><productName>Kiwis</productName><img/><price>$5.45/pack</price><quantity>1</quantity></item></cart></user>
+    
 </Users>

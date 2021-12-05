@@ -137,6 +137,7 @@ session_start();
       </div>
 
       <div class="main-content col-md-10">
+      <form action="Butchery.php" method="get">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
@@ -145,7 +146,7 @@ session_start();
                 <h5 class="card-title" id="sirloin"><a href="Product Description/sirloin steak.php" style="color:black">Sirloin Steak</h5></a>
                 <p class="card-text ">1 steak (approx. 300 g) <br> <br> <br> approx. <span class="cost">$8.53</span>
                   / unit <br> <span class="gram">$2.84 / 100 G</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Sirloin Steak" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -157,7 +158,7 @@ session_start();
                 <h5 class="card-title" id="chicken"><a href="Product Description/Chicken breast.php" style="color:black">Chicken Breast</h5></a>
                 <p class="card-text ">1 breast (approx. 200 g) <br> <br> <br> approx. <span class="cost">$3.96</span>
                   / unit <br> <span class="gram">$1.98 / 100 G</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Chicken Breast" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -169,7 +170,7 @@ session_start();
                 <h5 class="card-title" id="pork"><a href="Product Description/Pork chops.php" style="color:black">Pork Chops</h5></a>
                 <p class="card-text "> 6 pork chops (approx. 800g)<br> <br> <br> approx. <span class="cost">$9.69</span>/
                   pack <br> <span class="gram">$1.21 / 100 G</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Pork Chop" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -181,7 +182,7 @@ session_start();
                 <h5 class="card-title" id="sausage"><a href="Product Description/Italian sausages.php" style="color:black">Italian Sausages</h5></a>
                 <p class="card-text ">4 sausages (approx. 370 g) <br> <br> <br> approx. <span class="cost">$5.70</span>
                   / pack <br> <span class="gram">$1.54 / 100 G</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Italian Sausages" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -189,7 +190,7 @@ session_start();
 
         </div>
       </div>
-
+      </form>
     </div>
   </div>
 </body>

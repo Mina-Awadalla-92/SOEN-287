@@ -137,6 +137,7 @@ session_start();
       </div>
 
       <div class="main-content col-md-10">
+      <form action="Beverages.php" method="get">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
@@ -145,7 +146,7 @@ session_start();
                 <h5 class="card-title"> <a href="Product Description/water.php" style="color:black">Munchies Water</h5></a>
                 <p class="card-text ">1 Munchies Water (approx. 500mL) <br> <br> <br> approx. <span class="cost">$2.49</span>
                   / Bottle <br> <span class="gram">$2.49 / 500mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Munchies Water" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -157,7 +158,7 @@ session_start();
                 <h5 class="card-title"> <a href="Product Description/coca.php" style="color:black">Coca Cola</h5></a>
                 <p class="card-text ">1 Coca Cola (approx. 330mL) <br> <br> <br> approx. <span class="cost">$1.69</span>
                   / Bottle <br> <span class="gram">$1.69 / 330mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Coca Cola" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -169,7 +170,7 @@ session_start();
                 <h5 class="card-title"> <a href="Product Description/7up.php" style="color:black">7Up</h5></a>
                 <p class="card-text "> 1 7Up (approx. 330mL)<br> <br> <br> approx. <span class="cost">$1.59</span>/
                   Bottle <br> <span class="gram">$1.59 / 330mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="7Up" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -181,7 +182,7 @@ session_start();
                 <h5 class="card-title"> <a href="Product Description/monster.php" style="color:black">Monster</h5></a>
                 <p class="card-text ">1 Monster (approx. 550mL) <br> <br> <br> approx. <span class="cost">$4.70</span>
                   / Bottle <br> <span class="gram">$4.70 / 550mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Monster" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -193,7 +194,7 @@ session_start();
                 <h5 class="card-title"> <a href="Product Description/redbull.php" style="color:black">Red Bull</h5></a>
                 <p class="card-text ">1 Red Bull (approx. 250mL) <br> <br> <br> approx. <span class="cost">$3.69</span>
                   / Bottle <br> <span class="gram">$3.69 / 250mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Red Bull" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -205,7 +206,7 @@ session_start();
                 <h5 class="card-title"><a href="Product Description/fanta.php" style="color:black">Fanta </h5></a>
                 <p class="card-text ">1 Fanta (approx. 330mL) <br> <br> <br> approx. <span class="cost">$1.49</span>
                   / Bottle <br> <span class="gram">$1.49 / 330mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Fanta" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -217,7 +218,7 @@ session_start();
                 <h5 class="card-title"><a href="Product Description/orangejuice.php" style="color:black">Orange Juice</h5></a>
                 <p class="card-text ">1 Orange Juice (approx. 750mL) <br> <br> <br> approx. <span class="cost">$2.89</span>
                   / Bottle <br> <span class="gram">$2.89 / 750mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Orange Juice" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -229,13 +230,13 @@ session_start();
                 <h5 class="card-title"><a href="Product Description/canadadry.php" style="color:black">Canada Dry</h5></a>
                 <p class="card-text ">1 Canada Dry (approx. 330mL) <br> <br> <br> approx. <span class="cost">$1.59</span>
                   / Bottle <br> <span class="gram">$1.59 / 330mL</span></p>
-                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                  <button class="btn btn-dark" name="productName" value="Canada Dry" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      <form>
     </div>
   </div>
 </body>

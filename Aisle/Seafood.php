@@ -135,6 +135,7 @@ session_start();
             </div>
 
             <div class="main-content col-md-10">
+            <form action="Seafood.php" method="get">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
                         <div class="card">
@@ -143,7 +144,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Crab.php" style="color:black">Fresh Crab</h5></a>
                                 <p class="card-text ">1 Fresh Crab (approx. 2lb) <br> <br> <br> approx. <span class="cost">$30.00</span>
                                     / lb <br> <span class="gram">$30.00 / 2lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Fresh Crab" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -155,7 +156,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Lobster.php" style="color:black">Lobster</h5></a>
                                 <p class="card-text ">1 Lobster (approx. 1lb) <br> <br> <br> approx. <span class="cost">$29.99</span>
                                     / lb <br> <span class="gram">$29.99 / 1lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Lobster" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -167,7 +168,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Shrimp.php" style="color:black">Shrimp</h5></a>
                                 <p class="card-text "> 10 Shrimp (approx. 1lb)<br> <br> <br> approx. <span class="cost">$25.99</span>/
                                     lb <br> <span class="gram">$25.99 / 1lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Shrimp" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -179,7 +180,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Oysters.php" style="color:black">Oysters</h5></a>
                                 <p class="card-text ">12 Oysters (approx. 6g) <br> <br> <br> approx. <span class="cost">$45.50</span>
                                     / 6g <br> <span class="gram">$45.50 / 6g</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Oysters" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -191,7 +192,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/WildSalmon.php" style="color:black">Wild Salmon</h5></a>
                                 <p class="card-text ">1 Wild Salmon (approx. 4lb) <br> <br> <br> approx. <span class="cost">$12.00</span>
                                     / lb <br> <span class="gram">$12.00 / lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Wild Salmon" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -203,7 +204,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/TunaSteak.php" style="color:black">Tuna Steak</h5></a>
                                 <p class="card-text ">1 Tuna Steak (approx. 0.8lb) <br> <br> <br> approx. <span class="cost">$30.00</span>
                                     / lb <br> <span class="gram">$24.00 / 0.8lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Tuna Steak" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -215,7 +216,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Calamari.php" style="color:black">Calamari</h5></a>
                                 <p class="card-text ">1 Calamari (approx. 5lb) <br> <br> <br> approx. <span class="cost">$52.99</span>
                                     / 5lb <br> <span class="gram">$10.60 / 5lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Calamari" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -227,12 +228,13 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Caviar.php" style="color:black">Caviar</h5></a>
                                 <p class="card-text ">1 Jar Caviar (approx. 30g) <br> <br> <br> approx. <span class="cost">$75.99</span>
                                     / jar <br> <span class="gram">$75.99 / 30g</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Caviar" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </form>
 
         </div>
     </div>

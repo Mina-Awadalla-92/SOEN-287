@@ -31,7 +31,7 @@ function createAccount() {
 
   $rootTag -> appendChild($userTag);
   $_SESSION['first'] = $_POST['firstName'];
-  $xml->save("../Database/user.xml"); 
+  $xml-> save("Database/user.xml"); 
  }
 }
  

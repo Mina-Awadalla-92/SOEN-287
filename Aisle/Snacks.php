@@ -135,6 +135,7 @@ session_start();
             </div>
 
             <div class="main-content col-md-10">
+            <form action="Snacks.php" method="get">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
                         <div class="card">
@@ -143,7 +144,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Chips.php" style="color:black">Chips</h5></a>
                                 <p class="card-text ">1 Bag of Chips (approx. 250g) <br> <br> <br> approx. <span class="cost">$2.99</span>
                                     / bag <br> <span class="gram">$2.99 / 250g</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Chips" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -155,7 +156,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Chocolate.php" style="color:black">Chocolate</h5></a>
                                 <p class="card-text ">1 Box of Varied Chocolates (approx. 0.5lb) <br> <br> <br> approx. <span class="cost">$18.99</span>
                                     / box <br> <span class="gram">$18.99 / 0.5lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Chocolate" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -167,7 +168,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Candy.php" style="color:black">Candy</h5></a>
                                 <p class="card-text "> 1 bag of varied candies (approx. 1lb)<br> <br> <br> approx. <span class="cost">$11.99</span>/
                                     bag <br> <span class="gram">$11.99/ 1lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Candy" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -179,7 +180,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Pretzels.php" style="color:black">Pretzels</h5></a>
                                 <p class="card-text ">1 Bag of Pretzels (approx. 1lb) <br> <br> <br> approx. <span class="cost">$3.99</span>
                                     / bag <br> <span class="gram">$3.99/ 1lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Pretzel" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -191,7 +192,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/RiceCakes.php" style="color:black">Rice Cakes</h5></a>
                                 <p class="card-text ">1 Bag of Rice Cakes (approx. 300g) <br> <br> <br> approx. <span class="cost">$4.99</span>
                                     / bag <br> <span class="gram">$4.99 / 300g</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Rice Cakes" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -203,7 +204,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Brownies.php" style="color:black">Brownies</h5></a>
                                 <p class="card-text ">1 Box of Brownies (approx. 2lb) <br> <br> <br> approx. <span class="cost">$9.99</span>
                                     / box <br> <span class="gram">$8.99 / 2lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Brownies" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -215,7 +216,7 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Cookies.php" style="color:black">Cookies</h5></a>
                                 <p class="card-text ">1 Box of Cookies (approx. 1.5lb) <br> <br> <br> approx. <span class="cost">$4.99</span>
                                     / box <br> <span class="gram">$4.99 / 1.5lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Cookies" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -227,12 +228,13 @@ session_start();
                                 <h5 class="card-title"><a href="Product Description/Muffins.php" style="color:black">Muffins</h5></a>
                                 <p class="card-text ">1 Box Muffins (approx. 3lb) <br> <br> <br> approx. <span class="cost">$9.99</span>
                                     / box <br> <span class="gram">$9.99 / 3lb</span></p>
-                                <a href="#" class="btn btn-dark">ADD TO CART</a>
+                                    <button class="btn btn-dark" name="productName" value="Muffins" type="submit">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </form>
 
         </div>
     </div>

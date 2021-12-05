@@ -135,6 +135,7 @@ session_start();
       </div>
 
       <div class="main-content col-md-10">
+      <form action="Bakery.php" method="get">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
@@ -142,9 +143,10 @@ session_start();
               <div class="card-body">
                 <h5 class="card-title"><a href="Product Description/french baguettes.php" style="color:black">Baguettes</h5></a>
                 <p class="card-text ">1 French Baguette <br> <br> <br><span>$</span><span class="cost">1.00</span>
-                  <span class="unit">/ Baguette</span> <br> <span class="gram">$1.00 / Baguette</span>
+                <button class="btn btn-dark" name="productName" value="Baguettes" type="submit">ADD TO CART</button>
                 </p>
                 <button class="btn btn-dark">ADD TO CART</button>
+
               </div>
             </div>
           </div>
@@ -157,7 +159,7 @@ session_start();
                 <p class="card-text ">1 Loaf of Rye Bread<br> <br> <br><span>$</span><span class="cost">4.55</span>
                   <span class="unit">/ Loaf of Rye Bread</span> <br> <span class="gram">$4.55 / Loaf</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Rye Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -170,7 +172,7 @@ session_start();
                 <p class="card-text ">1 Loaf of Sourdough Bread<br> <br> <br> <span>$</span><span class="cost">6.96</span><span>/ Loaf of Sourdough Bread</span>
                   <br> <span class="gram">$6.96</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Sourdough Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -183,7 +185,7 @@ session_start();
                 <p class="card-text ">1 Loaf of Challah Bread <br> <br> <br><span>$</span><span class="cost">3.50</span>
                   <span class="unit">/ Loaf of Challah Bread</span> <br> <span class="gram">$3.50 / Loaf</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Challah Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -196,7 +198,7 @@ session_start();
                 <p class="card-text ">1 Bagel<br> <br> <br><span>$</span><span class="cost">1.55</span>
                   <span class="unit">/ Bagel</span> <br> <span class="gram">$1.55 / Bagel</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Bagel" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -208,7 +210,7 @@ session_start();
                 <p class="card-text ">1 Loaf of Whole Wheat Bread<br> <br> <br><span>$</span><span class="cost">3.25</span>
                   <span class="unit">/ Loaf of Whole Wheat Bread</span> <br> <span class="gram">$3.25 / Loaf</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Whole Wheat Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -221,7 +223,7 @@ session_start();
                 <p class="card-text ">1 Loaf of Brioche Bread<br> <br> <br><span>$</span><span class="cost">3.75</span>
                   <span class="unit">/ Loaf of Brioche Bread</span> <br> <span class="gram">$3.75 / Loaf</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Brioche Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
@@ -234,14 +236,14 @@ session_start();
                 <p class="card-text ">1 Slice of Pita Bread<br> <br> <br><span>$</span><span class="cost">0.89</span>
                   <span class="unit">/ Slice of Pita Bread</span> <br> <span class="gram">$0.89 / Unit</span>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
+                <button class="btn btn-dark" name="productName" value="Pita Bread" type="submit">ADD TO CART</button>
               </div>
             </div>
           </div>
 
         </div>
       </div>
-
+      </form>
     </div>
   </div>
 

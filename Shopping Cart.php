@@ -1,5 +1,7 @@
 <?php
 session_start();
+include("php functions/cart.php")
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -111,7 +113,7 @@ session_start();
 
                                         </td>
                                         <td>
-                                            <span>$</span><output class="itemPrice">5.45</output>
+                                            <span>$</span><output class="itemPrice"></output>
                                             <button type="button" class="btn btn-dark btn1 remove"> Remove</button>
                                         </td>
                                     </tr>
@@ -199,6 +201,9 @@ session_start();
                                         </td>
 
                                     </tr>
+                                    <?php
+                                    displayCart();
+                                    ?>
 
 
                                 </tbody>
