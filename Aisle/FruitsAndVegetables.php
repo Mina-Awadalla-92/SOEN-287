@@ -144,7 +144,7 @@ include("../php functions/cart.php");
       </div>
       
       <div class="main-content col-md-10">
-<form action="FruitsAndVegetables.php" method="get">
+      <form action="FruitsAndVegetables.php" method="get">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
               
@@ -246,7 +246,7 @@ include("../php functions/cart.php");
           </div>
         </div>
       </div>
-      </form>
+    </form>
       <?php
 
 
@@ -259,7 +259,6 @@ include("../php functions/cart.php");
 </body>
 <?php
 if(isset($_GET['productName'])){
-  echo "test";
   addToCart();
   
  

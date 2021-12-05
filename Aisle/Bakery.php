@@ -1,5 +1,7 @@
 <?php
 session_start();
+ob_start();
+include("../php functions/cart.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -145,7 +147,6 @@ session_start();
                 <p class="card-text ">1 French Baguette <br> <br> <br><span>$</span><span class="cost">1.00</span>
                 <button class="btn btn-dark" name="productName" value="Baguettes" type="submit">ADD TO CART</button>
                 </p>
-                <button class="btn btn-dark">ADD TO CART</button>
 
               </div>
             </div>
@@ -248,5 +249,12 @@ session_start();
   </div>
 
 </body>
+<?php
+if(isset($_GET['productName'])){
+  addToCart();
+  
+}
+
+?>
 
 </html>

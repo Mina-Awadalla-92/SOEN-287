@@ -81,7 +81,7 @@ function displayCart()
             $imgTag = $itemTag[$j] -> getElementsByTagName('img')[0]->nodeValue;
             $quantityTag = $itemTag[$j] -> getElementsByTagName('quantity')[0]->nodeValue;
            echo "<td>";
-           echo "<img src=". $imgTag. " alt=\";\"";
+           echo "<img src=\"". $imgTag. "\" alt=\";\"";
             echo "<p>".$productNameTag."</p>";
            echo "</td>";
             echo "<td>";
@@ -91,7 +91,7 @@ function displayCart()
             echo "<input type=\"number\" class=\"shoppinginput\"  value=\"".$quantityTag ."\" min=\"0\">";
             echo"</td>";
             echo "<td>";
-            echo "<span>$</span><output class=\"itemPrice\">".substr($priceTag,1,4)."</output>";
+            echo "<span>$</span><output class=\"itemPrice\">".substr($priceTag,1,strpos($priceTag,"/")-1)."</output>";
             echo "<button type=\"button\" class=\"btn btn-dark btn1 remove\"> Remove</button>";
             echo "</td>";
             echo "</tr>";

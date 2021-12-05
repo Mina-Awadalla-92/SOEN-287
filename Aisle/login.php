@@ -146,6 +146,7 @@ include("../php functions/userLogin.php");
 
 </body>
 
+
 <footer>
   <p class="copyRight"> &copy MUNCHIES Team 2021 </p>
 </footer>

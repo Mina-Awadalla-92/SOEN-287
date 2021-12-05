@@ -1,5 +1,7 @@
 <?php
 session_start();
+ob_start();
+include("../php functions/cart.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -238,4 +240,11 @@ session_start();
 
         </div>
     </div>
-</body>
+</body><?php
+if(isset($_GET['productName'])){
+  addToCart();
+  
+ 
+}
+
+?>
