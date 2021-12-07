@@ -261,6 +261,5 @@ include("php functions/cart.php")
     <br><br>
     <script type="text/javascript" src="js/cart.js"> </script>
     <script type="text/javascript">
-        ;
     </script>
 </body>
