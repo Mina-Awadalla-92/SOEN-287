@@ -32,9 +32,9 @@
 <postalCode>H4W 2R2</postalCode>
 <email>reuven1203@gmail.com</email>
 <password>12345</password>
+
 <cart>
-<item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Munchies Water</productName><img/><price>$2.49/bottle</price><quantity>1</quantity></item></cart>
-</user>    
+<item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>3</quantity></item><item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Munchies Water</productName><img/><price>$2.49/bottle</price><quantity>1</quantity></item><item><productName>Bananas</productName><img>https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg?w=1110</img><price>$3.57/pack</price><quantity>2</quantity></item></cart></user>    
 
 
 

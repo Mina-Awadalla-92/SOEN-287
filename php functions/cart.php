@@ -54,6 +54,7 @@ function addToCart()
     
 }
 
+
 function remove(){
     echo "test";
 }
