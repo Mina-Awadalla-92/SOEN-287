@@ -4,7 +4,7 @@
 <product>
 <id>1</id>
 <name>Red apples</name>
-<img>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80</img>
+<img>productImg/applesred.webp</img>
 <available>78</available>
 <price>$2.36/pack</price>
 </product>
@@ -12,7 +12,7 @@
 <product>
 <id>2</id>
 <name>Bananas</name>
-<img>https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg?w=1110</img>
+<img>productImg/banana.webp</img>
 <available>300</available>
 <price>$3.57/pack</price>
 </product>
@@ -20,7 +20,7 @@
 <product>
 <id>3</id>
 <name>Kiwis</name>
-<img>https://cdn.britannica.com/s:1500x700,q:85/45/126445-004-90305E10/Kiwi-fruit.jpg</img>
+<img>productImg/kiwi.webp</img>
 <available>150</available>
 <price>$5.45/pack</price>
 </product>

@@ -1,2 +1,2 @@
-Link: https://munchies-market.herokuapp.com/Home.html
+Link: https://munchies-market.herokuapp.com/index.php
 
