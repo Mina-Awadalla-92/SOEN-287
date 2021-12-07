@@ -110,9 +110,10 @@ function displayCart()
            $productNameTag = $itemTag[$j] -> getElementsByTagName('productName')[0]->nodeValue;
            $priceTag = $itemTag[$j] -> getElementsByTagName('price')[0]->nodeValue;
             $imgTag = $itemTag[$j] -> getElementsByTagName('img')[0]->nodeValue;
+            echo $imgTag;
             $quantityTag = $itemTag[$j] -> getElementsByTagName('quantity')[0]->nodeValue;
            echo "<td>";
-           echo "<img src=\"". $imgTag. "\">";
+           echo "<img src=\"".$imgTag."\">";
             echo "<p>".$productNameTag."</p>";
            echo "</td>";
             echo "<td>";
