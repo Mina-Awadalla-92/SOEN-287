@@ -18,7 +18,7 @@
             <img/>
         </item>
     
-    <item><productName>Pogo</productName><img/><price>$8.99/Box</price><quantity>1</quantity></item></cart></user>
+    <item><productName>Pogo</productName><img/><price>$8.99/Box</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Bananas</productName><img/><price>$3.57/pack</price><quantity>1</quantity></item><item><productName>Kiwis</productName><img/><price>$5.45/pack</price><quantity>1</quantity></item><item><productName>Oranges</productName><img/><price>$5.70/pack</price><quantity>1</quantity></item><item><productName>Cucumber</productName><img/><price>$0.98/unit</price><quantity>1</quantity></item><item><productName>Carrots</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Brocolli</productName><img/><price>$5.67/pack</price><quantity>1</quantity></item><item><productName>Corn</productName><img/><price>$1.22/unit</price><quantity>1</quantity></item></cart></user>
 
 <user>
 <firstName>Reuven</firstName>

@@ -41,7 +41,7 @@ session_start();
     <div class="container-fluid nav">
 
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="../../Home.html">
+            <a class="navbar-brand" href="../../index.php">
                 <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
                 <p class="logo" style="display: inline">
                     <span class="logo-sub">MUNCHIES</span>Market
@@ -53,7 +53,7 @@ session_start();
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Home.html">Home</a>
+                        <a class="nav-link" href="../../index.php">Home</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -86,7 +86,7 @@ session_start();
 
                 if (isset($_SESSION['first'])) {
                     echo "<span style=\"color:white\">Hello " . $_SESSION['first'] . " </span>";
-                    echo "<a  style=\"color:white\" href=\"php functions/signOut.php\">Sign Out</a>";
+                    echo "<a  style=\"color:white\" href=\"../../php functions/signOut.php\">Sign Out</a>";
                 } else {
                     echo "<span style=\"color:white\">Hello Guest User</span>";
                 }
