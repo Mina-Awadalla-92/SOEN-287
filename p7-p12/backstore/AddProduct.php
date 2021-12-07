@@ -1,24 +1,4 @@
 <?php
-include "connectDB.php";
-if (isset($_POST['submit'])) {
-  $image = $_POST['image_path'];
-  $title = $_POST['title'];
-  $description = $_POST['description'];
-  $quantity = $_POST['quantity'];
-  $price = $_POST['price'];
-
-  $sql = "insert into products (image, title, description, quantity, price) values('$image', '$title', '$description', '$quantity', '$price')";
-  $result = mysqli_query($connection, $sql);
-  if ($result) {
-    header('location: backStore.php');
-  } else {
-    die(mysqli_error($connection));
-  }
-}
-?>
-
-
-<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -50,7 +30,7 @@ session_start();
 
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-      <a class="navbar-brand" href="../../index.php">
+      <a class="navbar-brand" href="../../Home.html">
         <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
         <p class="logo" style="display: inline">
           <span class="logo-sub">MUNCHIES</span>Market
@@ -62,7 +42,7 @@ session_start();
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.php">Home</a>
+            <a class="nav-link" href="../../Home.html">Home</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -106,30 +86,41 @@ session_start();
   <br>
 
   <div class="container">
-    <form method="POST">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Upload Image</label>
-        <input type="file" class="form-control" name="image_path">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Product Title</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Title" name="title">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Description</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Description" name="description">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Quantity</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Quantity" name="quantity">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Price Per Unit</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Price" name="price">
-      </div>
+    <div class="container">
 
-      <button type="submit" class="btn btn-primary" name="submit">Save</button>
-    </form>
+      <form method="post" action="addProductXML.php">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Product No</label>
+          <input type="text" class="form-control" name="id" aria-describedby="emailHelp" placeholder="Enter Product No" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Product Name</label>
+          <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter Product Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Image URL</label>
+          <input type="text" class="form-control" name="image" placeholder="Enter Image URL" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Stock:</label>
+          <input type="text" class="form-control" name="stock" aria-describedby="emailHelp" placeholder="Enter Stock Amount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Price</label>
+          <input type="text" class="form-control" name="price" aria-describedby="emailHelp" placeholder="Enter Product Price" required>
+        </div>
+        
+       
+        <button type="submit" name="add" class="btn btn-primary">Save</button>
+      </form>
+
+
+    </div>
 
 
   </div>

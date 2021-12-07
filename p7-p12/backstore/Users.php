@@ -33,7 +33,7 @@ if (!$_SESSION['admin']) {
 
   <div class="container-fluid pb-5">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-      <a class="navbar-brand" href="../../index.php">
+      <a class="navbar-brand" href="../../Home.html">
         <img src="https://cdn.dribbble.com/users/6509578/screenshots/15442655/media/25c9f235821b698efae9b157e88dc827.jpg" height="50" width="80" />
         <p class="logo" style="display: inline">
           <span class="logo-sub">MUNCHIES</span>Market
@@ -99,7 +99,7 @@ if (!$_SESSION['admin']) {
   <div class="container">
     <div class="row">
       <div class="col-2">
-        <a class="btn btn-success" href="EditUsers.php">Add User</a>
+        <a class="btn btn-success" href="addUser.php">Add User</a>
       </div>
     </div>
     <div class="row">
@@ -121,8 +121,31 @@ if (!$_SESSION['admin']) {
             </tr>
           </thead>
           <tbody>
+          <?php
+            //load xml file
+            $xml = simplexml_load_file('../../Database/user.xml');
+
+            foreach ($xml->user as $row) {
+            ?>
+              <tr>
+                <th scope="row"><?php echo $row->id; ?></th>
+                <td><img src="user.jpg" alt="" style="width: 50px; height: 50px;"></td>
+                <td><?php echo $row->firstName; ?></td>
+                <td><?php echo $row->lastName; ?></td>
+                <td><?php echo $row->email; ?></td>
+                <td><?php echo $row->contact; ?></td>
+                <td><?php echo $row->address; ?></td>
+                <td>
+                  <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="fa fa-edit"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+                </td>
+                <td>
+                  <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="fa fa-trash"><span class="glyphicon glyphicon-trash"></span> Delete</a>
+                </td>
+                <?php include('edit_delete_user.php'); ?>
+              </tr>
             <?php
-            include("../../php functions/displayUsers.php");
+            }
+
             ?>
           </tbody>
         </table>

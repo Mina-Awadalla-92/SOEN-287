@@ -11,12 +11,12 @@
             </div>
             <div class="modal-body">
                 <div class="container-fluid">
-                    <form method="POST" action="edit.php">
+                    <form method="POST" action="editUser.php">
 
 
                         <div class="row form-group">
                             <div class="col-sm-2">
-                                <label class="control-label" style="position:relative; top:7px;">Order No::</label>
+                                <label class="control-label" style="position:relative; top:7px;">User Id:</label>
                             </div>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" name="id" value="<?php echo $row->id; ?>" readonly>
@@ -29,7 +29,7 @@
                                 <label class="control-label" style="position:relative; top:7px;">First Name:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="FN" value="<?php echo $row->First_Name; ?>">
+                                <input type="text" class="form-control" name="FN" value="<?php echo $row->firstName; ?>">
                             </div>
                         </div>
 
@@ -38,7 +38,7 @@
                                 <label class="control-label" style="position:relative; top:7px;">Last Name:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="LN" value="<?php echo $row->Last_Name; ?>">
+                                <input type="text" class="form-control" name="LN" value="<?php echo $row->lastName; ?>">
                             </div>
                         </div>
 
@@ -47,7 +47,15 @@
                                 <label class="control-label" style="position:relative; top:7px;">E-mail:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="EM" value="<?php echo $row->Email; ?>">
+                                <input type="text" class="form-control" name="EM" value="<?php echo $row->email; ?>">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-2">
+                                <label class="control-label" style="position:relative; top:7px;">Password:</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="PW" value="<?php echo $row->password; ?>">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -55,7 +63,7 @@
                                 <label class="control-label" style="position:relative; top:7px;">Contact No.:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="PH" value="<?php echo $row->Contact; ?>">
+                                <input type="text" class="form-control" name="CN" value="<?php echo $row->contact; ?>">
                             </div>
                         </div>
                         <div class="row form-group">
@@ -63,42 +71,44 @@
                                 <label class="control-label" style="position:relative; top:7px;">Address:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="AD" value="<?php echo $row->Address; ?>">
+                                <input type="text" class="form-control" name="AD" value="<?php echo $row->address; ?>">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-sm-2">
-                                <label class="control-label" style="position:relative; top:7px;">Item:</label>
+                                <label class="control-label" style="position:relative; top:7px;">City:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="IT" value="<?php echo $row->products; ?>">
+                                <input type="text" class="form-control" name="CT" value="<?php echo $row->city; ?>">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-sm-2">
-                                <label class="control-label" style="position:relative; top:7px;">Quantity:</label>
+                                <label class="control-label" style="position:relative; top:7px;">Province:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="Q" value="<?php echo $row->Quantity; ?>">
+                                <input type="text" class="form-control" name="PR" value="<?php echo $row->province; ?>">
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-sm-2">
-                                <label class="control-label" style="position:relative; top:7px;">Bill:</label>
+                                <label class="control-label" style="position:relative; top:7px;">Postal Code:</label>
                             </div>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="BL" value="<?php echo $row->totalprice; ?>">
+                                <input type="text" class="form-control" name="PC" value="<?php echo $row->postalCode; ?>">
                             </div>
                         </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            <button type="submit" name="edit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
+
+                        </div>
+                    </form>
 
 
 
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                <button type="submit" name="edit" class="btn btn-success"><span class="glyphicon glyphicon-check"></span> Update</button>
-                </form>
             </div>
 
         </div>
@@ -117,11 +127,11 @@
             </div>
             <div class="modal-body">
                 <p class="text-center">Are you sure you want to Delete</p>
-                <h2 class="text-center"><?php echo $row->productName; ?></h2>
+                <h2 class="text-center"><?php echo $row->name; ?></h2>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                <a href="delete.php?id=<?php echo $row->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Yes</a>
+                <a href="deleteUser.php?id=<?php echo $row->id; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Yes</a>
             </div>
 
         </div>

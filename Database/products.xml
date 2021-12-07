@@ -1,319 +1,326 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-
 <productList>
 
-<item>
+<product>
+<id>1</id>
 <name>Red apples</name>
-<img>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&#38;ixlib=rb-1.2.1&#38;auto=format&#38;fit=crop&#38;w=1374&#38;q=80"</img>
+<img>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80"</img>
+<available>500</available>
 <price>$2.36/pack</price>
-</item>
+</product>
 
-<item>
+<product>
+<id>2</id>
 <name>Bananas</name>
-<img></img>
+<img>https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg?w=1110</img>
+<available>300</available>
 <price>$3.57/pack</price>
-</item>
+</product>
 
-<item>
+<product>
+<id>3</id>
 <name>Kiwis</name>
-<img></img>
+<img>https://cdn.britannica.com/s:1500x700,q:85/45/126445-004-90305E10/Kiwi-fruit.jpg</img>
+<available>150</available>
 <price>$5.45/pack</price>
-</item>
+</product>
 
-<item>
+<!-- <product id="4" >
 <name>Oranges</name>
 <img></img>
 <price>$5.70/pack</price>
-</item>
+</product>
 
-<item>
+<product id="5" >
 <name>Cucumber</name>
 <img></img>
 <price>$0.98/unit</price>
-</item>
+</product>
 
-<item>
+<product id="6" >
 <name>Carrots</name>
 <img></img>
 <price>$2.36/pack</price>
-</item>
+</product>
 
-<item>
+<product id="7" >
 <name>Brocolli</name>
 <img></img>
 <price>$5.67/pack</price>
-</item>
+</product>
 
-<item>
+<product id="8" >
 <name>Corn</name>
 <img></img>
 <price>$1.22/unit</price>
-</item>
+</product>
 
-<item>
+<product id="9" >
 <name>Munchies Water</name>
 <img></img>
 <price>$2.49/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="10" >
 <name>Coca Cola</name>
 <img></img>
 <price>$1.69/Bottle</price>
-</item>
+</product>
 
-<item>
+<product id="11" >
 <name>7Up</name>
 <img></img>
 <price>$1.59/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="12" >
 <name>Monster</name>
 <img></img>
 <price>$4.70/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="13" >
 <name>Redbull</name>
 <img></img>
 <price>$3.69/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="14" >
 <name>Fanta</name>
 <img></img>
 <price>$1.49/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="15" >
 <name>Orange Juice</name>
 <img></img>
 <price>$2.89/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="16" >
 <name>Canada Dry</name>
 <img></img>
 <price>$1.59/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="17" >
 <name>Baguettes</name>
 <img></img>
 <price>$1.00/baguette</price>
-</item>
+</product>
 
-<item>
+<product id="18" >
 <name>Rye Bread</name>
 <img></img>
 <price>$4.55/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="19" >
 <name>Sourdough Bread</name>
 <img></img>
 <price>$6.96/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="20" >
 <name>Challah Bread</name>
 <img></img>
 <price>$3.50/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="21" >
 <name>Bagels</name>
 <img></img>
 <price>$1.55/bagels</price>
-</item>
+</product>
 
-<item>
+<product id="22" >
 <name>Whole Wheat Bread</name>
 <img></img>
 <price>$3.25/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="23" >
 <name>Brioche Bread</name>
 <img></img>
 <price>$3.75/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="24" >
 <name>Pita Bread</name>
 <img></img>
 <price>$0.89/Pita</price>
-</item>
+</product>
 
-<item>
+<product id="25" >
 <name>Ice Cream</name>
 <img></img>
 <price>$8.00/Box</price>
-</item>
+</product>
 
-<item>
+<product id="26" >
 <name>Pogo</name>
 <img></img>
 <price>$8.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="27" >
 <name>French Fries</name>
 <img></img>
 <price>$13.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="28" >
 <name>Eggos</name>
 <img></img>
 <price>$7.00/Box</price>
-</item>
+</product>
 
-<item>
+<product id="29" >
 <name>Popsicles</name>
 <img></img>
 <price>$3.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="30" >
 <name>Bagged Ice</name>
 <img></img>
 <price>$0.99/Bag</price>
-</item>
+</product>
 
-<item>
+<product id="31" >
 <name>Pizza</name>
 <img></img>
 <price>$11.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="31" >
 <name>Chicken Nuggets</name>
 <img></img>
 <price>$7.95/Box</price>
-</item>
+</product>
 
-<item>
+<product id="32" >
 <name>Sirloin Steak</name>
 <img></img>
 <price>$8.53/unit</price>
-</item>
+</product>
 
-<item>
+<product id="33" >
 <name>Chicken Breast</name>
 <img></img>
 <price>$3.96/unit</price>
-</item>
+</product>
 
-<item>
+<product id="34" >
 <name>Pork Chops</name>
 <img></img>
 <price>$9.69/pack</price>
-</item>
+</product>
 
-<item>
+<product id="35" >
 <name>Italian Sausages</name>
 <img></img>
 <price>$5.70/pack</price>
-</item>
+</product>
 
-<item>
+<product id="36" >
 <name>Fresh Crab</name>
 <img></img>
 <price>$30.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="37" >
 <name>Lobster</name>
 <img></img>
 <price>$29.99/lb</price>
-</item>
+</product>
 
-<item>
+<product id="38" >
 <name>Shrimp</name>
 <img></img>
 <price>$25.99/lb</price>
-</item>
+</product>
 
-<item>
+<product id="39" >
 <name>Oysters</name>
 <img></img>
 <price>$45.50/6g</price>
-</item>
+</product>
 
-<item>
+<product id="40" >
 <name>Wild Salmon</name>
 <img></img>
 <price>$12.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="41" >
 <name>Tuna Steak</name>
 <img></img>
 <price>$30.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="42" >
 <name>Calamari</name>
 <img></img>
 <price>$52.99/5lb</price>
-</item>
+</product>
 
-<item>
+<product id="43" >
 <name>Caviar</name>
 <img></img>
 <price>75.99/jar</price>
-</item>
+</product>
 
-<item>
+<product id="44" >
 <name>Chips</name>
 <img></img>
 <price>2.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="45" >
 <name>Chocolate</name>
 <img></img>
 <price>18.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="46" >
 <name>Candy</name>
 <img></img>
 <price>$11.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="47" >
 <name>Pretzels</name>
 <img></img>
 <price>$3.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="48" >
 <name>Rice Cakes</name>
 <img></img>
 <price>$4.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="49" >
 <name>Brownies</name>
 <img></img>
 <price>$9.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="50" >
 <name>Cookies</name>
 <img></img>
 <price>$4.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="51" >
 <name>Muffins</name>
 <img></img>
 <price>$9.99/box</price>
-</item>
+</product>
+ -->
 
 
 
-</productList>
+
+<product><id>4</id><name>Mangoes</name><img>https://i.guim.co.uk/img/media/292c3089e3d84938710d70dfb37fec346be442b9/0_374_5616_3370/master/5616.jpg?width=620&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=20a8921c58c7fb9c8a2ff361a90b1fb5</img><available>500</available><price>10$/pack</price></product><product><id>5</id><name>Sidhri Mangoes</name><img>https://i.imgur.com/6ERv8te.png</img><available>250</available><price>100$/pack</price></product></productList>
