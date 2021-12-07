@@ -19,7 +19,7 @@
      echo "<td>".$email."</td>";
      echo "<td>".$address."</td>";
      echo "<td> <a href=\"EditUsers.php\" class=\"fa fa-edit\"></a></td>";
-     echo "<td> <a href=\"deleteUser.php?deleteId=(put id variable here)\" class=\"fa fa-trash\"></a> </td>";
+     echo "<td> <a href='deleteUser.php?id=<?php echo $row->id; ?>' class=\"fa fa-trash\"></a> </td>";
      echo " </tr>";
    
  }

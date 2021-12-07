@@ -128,33 +128,28 @@ if (!$_SESSION['admin']) {
           </thead>
           <tbody>
             <?php
-            $sql = "Select * from products";
-            $result = mysqli_query($connection, $sql);
-            if ($result) {
-              while ($row = mysqli_fetch_assoc($result)) {
-                $id = $row['id'];
-                $image = $row['image'];
-                $title = $row['title'];
-                $description = $row['description'];
-                $quantity = $row['quantity'];
-                $price = $row['price'];
-                echo ' 
-                <tr>
-                <th scope="row">' . $id . '</th>
-                <td><img src="https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" style="width: 50px; height: 50px;" /> </td>
-                <td>' . $title . '</td>
-                <td>' . $quantity . '</td>
-                <td>' . $price . '$ / ' . $title . '</td>
+            //load xml file
+            $xml = simplexml_load_file('../../Database/products.xml');
+
+            foreach ($xml->product as $row) {
+            ?>
+              <tr>
+                <th scope="row"><?php echo $row->id; ?></th>
+                <td><?php echo $row->name; ?></td>
+                <td><img src=<?php echo $row->img; ?> alt="" style="width: 50px; height: 50px;"></td>
+                <td><?php echo $row->available; ?></td>
+                <td><?php echo $row->price; ?></td>
                 <td>
-                  <a href="updateProduct.php?updateId=' . $id . '" class="fa fa-edit "></a>
+                  <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a>
                 </td>
                 <td>
-                  <a href="deleteProduct.php?deleteId=' . $id . '" class="fa fa-trash"></a>
+                  <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> Delete</a>
                 </td>
+                <?php include('edit_delete_product.php'); ?>
               </tr>
-                ';
-              }
+            <?php
             }
+
             ?>
             <!-- <tr>
               <th scope="row">1</th>
@@ -167,71 +162,6 @@ if (!$_SESSION['admin']) {
               </td>
               <td>
                 <a href="AddProduct.php" class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80.jpg" style="width: 50px; height: 50px;" /> </td>
-              <td>Rye Bread</td>
-              <td>10</td>
-              <td>$4.55 / Loaf</td>
-              <td>
-                <a class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><img src="https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" style="width: 50px; height: 50px;" /> </td>
-              <td>Sourdough Bread</td>
-              <td>100</td>
-              <td>$6.96 / Loaf</td>
-              <td>
-                <a class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><img src="https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" style="width: 50px; height: 50px;" /> </td>
-              <td>Challah Bread</td>
-              <td>50</td>
-              <td>$3.50 / Loaf</td>
-              <td>
-                <a class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td><img src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" style="width: 50px; height: 50px;" /> </td>
-              <td>Bagels</td>
-              <td>0</td>
-              <td>$1.55 / Bagel</td>
-              <td>
-                <a class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td><img src="https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" style="width: 50px; height: 50px;" /> </td>
-              <td>Whole Wheat Bread</td>
-              <td>567</td>
-              <td>$3.25 / Loaf</td>
-              <td>
-                <a class="fa fa-edit"></a>
-              </td>
-              <td>
-                <a class="fa fa-trash"></a>
               </td>
             </tr> -->
           </tbody>

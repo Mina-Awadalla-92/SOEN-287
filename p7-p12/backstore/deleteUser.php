@@ -1,13 +1,25 @@
 <?php
-include "connectDB.php";
+	session_start();
+	$id = $_GET['id'];
 
-if (isset($_GET['deleteId'])) {
-    $id = $_GET['deleteId'];
-    $sql = "delete from users where id=$id";
-    $result = mysqli_query($connection, $sql);
-    if ($result) {
-        header('location: Users.php');
-    } else {
-        die(mysqli_error($connection));
-    }
-}
+	$users = simplexml_load_file('../../Database/user.xml');
+
+	//we're are going to create iterator to assign to each product
+	$index = 0;
+	$i = 0;
+
+	foreach($users->user as $user){
+		if($user->id == $id){
+			$index = $i;
+			break;
+		}
+		$i++;
+	}
+
+	unset($users->user[$index]);
+	file_put_contents('../../Database/user.xml', $users->asXML());
+
+	$_SESSION['message'] = 'Product deleted successfully';
+	header('location: Users.php');
+
+?>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,33 +93,49 @@
   <br>
 
   <div class="container">
-          <form>
+          <form method="POST" action="addUserXML.php" >
             <div class="form-group">
-                <label for="exampleInputEmail1">Upload Image</label>
-                <input type="file" class="form-control">
+                <label for="exampleInputEmail1">Id</label>
+                <input type="text" name="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Image URL">
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">First Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
+              <input type="text" name="FN" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter First Name">
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Last Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
+                <input type="text" name="LN" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Name">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                <input type="email" name="EM" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" name="PW" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Password">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Contact No.</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                <input type="text" name="CN"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact">
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+                <input type="text" name="AD" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">City</label>
+                <input type="text" name="CT" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter City">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Province</label>
+                <input type="text" name="PR" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Province">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Postal Code</label>
+                <input type="text" name="PC" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Postal Code">
               </div>
             
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" name="add" class="btn btn-primary">Save</button>
           </form>
   
           <br>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Users>
 <user>
+<id>1</id>
    <firstName>Admin</firstName>
     <lastName>admin</lastName>
     <address/>
@@ -9,15 +10,22 @@
     <postalCode/>
     <email>admin@admin.com</email>
     <password>admin</password>
+    <cart>
+    test
+        <item>
+            <productName/>
+            <price/>
+            <img/>
+        </item>
     
-
-<cart>
-        
-<item><productName>Red apples</productName><img>productImg/applesred.webp</img><price>$2.36/pack</price><quantity>5</quantity></item><item><productName>Cucumber</productName><img>productImg/cucumber.webp</img><price>$0.98/unit</price><quantity>1</quantity></item><item><productName>Bananas</productName><img>productImg/banana.webp</img><price>$3.57/pack</price><quantity>1</quantity></item><item><productName>Kiwis</productName><img>productImg/kiwi.webp</img><price>$5.45/pack</price><quantity>1</quantity></item></cart></user>
+    </cart>
+</user>
 
 <user>
+<id>2</id>
 <firstName>Reuven</firstName>
 <lastName>Ostrofsky</lastName>
+<contact>12345667</contact>
 <address>5714 Davies</address>
 <city>Montreal</city>
 <province>Quebec</province>
@@ -25,5 +33,25 @@
 <email>reuven1203@gmail.com</email>
 <password>12345</password>
 <cart>
-<item><productName>Red apples</productName><img>productImg/applesred.webp</img><price>$2.36/pack</price><quantity>3</quantity></item><item><productName>Bananas</productName><img>productImg/banana.webp</img><price>$3.57/pack</price><quantity>3</quantity></item><item><productName>Kiwis</productName><img>productImg/kiwi.webp</img><price>$5.45/pack</price><quantity>1</quantity></item><item><productName>Oranges</productName><img>productImg/oranges.webp</img><price>$5.70/pack</price><quantity>1</quantity></item><item><productName>Carrots</productName><img>productImg/carrots.webp</img><price>$2.36/pack</price><quantity>2</quantity></item><item><productName>7Up</productName><img/><price>$1.59/bottle</price><quantity>3</quantity></item><item><productName>Munchies Water</productName><img/><price>$2.49/bottle</price><quantity>3</quantity></item><item><productName>Cucumber</productName><img>productImg/cucumber.webp</img><price>$0.98/unit</price><quantity>3</quantity></item></cart></user>    
+<item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img>Munchies.jpg</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Red apples</productName><img/><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Munchies Water</productName><img/><price>$2.49/bottle</price><quantity>1</quantity></item></cart>
+</user>    
+
+
+
+
+<user>
+<id>5</id>
+<firstName>test</firstName>
+<lastName>user</lastName>
+<contact>92 334 334 334</contact>
+<address>Address</address>
+<city>city</city>
+<province>province</province>
+<postalCode>postal code</postalCode>
+<email>test@gmail.cm</email>
+<password>password</password>
+<cart/>
+
+</user>
+
 </Users>
