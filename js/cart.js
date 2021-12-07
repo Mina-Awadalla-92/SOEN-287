@@ -7,6 +7,28 @@ var totalItems;
 var quantityButton;
 var quantity;
 var buttonClicked;
+
+function calcOnLoad(){
+  var quantity =  document.getElementsByClassName("shoppinginput");
+  var length = quantity.length;
+  var price;
+  var tPrice;
+  for(var i = 0; i < length; i++){
+    console.log(i);
+    quantity = document.getElementsByClassName("shoppinginput")[i];
+    price = quantity.parentElement.parentElement.querySelector("h6").textContent;
+    price = price.substring(1,price.indexOf("/"));
+    tPrice = quantity.parentElement.parentElement.querySelector(".itemPrice");
+    tPrice.innerHTML = (price * quantity.value).toFixed(2);
+    displaySubtotal();
+    displayTotalItems();
+  }
+  
+  
+    
+}
+
+
 function removeButtonEvent() {
    var remove = document.getElementsByClassName('remove');
 for(i=0;i<remove.length;i++){
@@ -22,6 +44,7 @@ for(i=0;i<remove.length;i++){
   
 }
  function onLoad() {
+  calcOnLoad()
   removeButtonEvent();
   calcTotalPrice();
   displayTotalItems();

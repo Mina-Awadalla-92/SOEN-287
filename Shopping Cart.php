@@ -18,7 +18,6 @@ include("php functions/cart.php")
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script type="text/javascript" src="../SOEN-287/js/cart.js"> </script>
 
 </head>
 
@@ -109,11 +108,11 @@ include("php functions/cart.php")
                                             <h6>$5.45/pack</h6>
                                         </td>
                                         <td>
-                                            <input type="number" class="shoppinginput" value="1" min="0">
+                                            <input type="number" class="shoppinginput" value="10" min="0">
 
                                         </td>
                                         <td>
-                                            <span>$</span><output class="itemPrice"></output>
+                                            <span>$</span><output class="itemPrice">5.45</output>
                                             <button type="button" class="btn btn-dark btn1 remove"> Remove</button>
                                         </td>
                                     </tr>
@@ -253,7 +252,5 @@ include("php functions/cart.php")
     </div>
     <br><br>
     <script type="text/javascript" src="js/cart.js"> </script>
-    <script type="text/javascript">
-        ;
-    </script>
+
 </body>
