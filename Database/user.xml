@@ -9,7 +9,8 @@
     <postalCode/>
     <email>admin@admin.com</email>
     <password>admin</password>
-    <cart>
+    
+<cart>
     test
         <item>
             <productName/>
@@ -17,8 +18,7 @@
             <img/>
         </item>
     
-    </cart>
-</user>
+    <item><productName>Pogo</productName><img/><price>$8.99/Box</price><quantity>1</quantity></item></cart></user>
 
 <user>
 <firstName>Reuven</firstName>

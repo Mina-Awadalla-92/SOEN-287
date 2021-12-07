@@ -5,4 +5,4 @@
   
 
 
-<order><id>32</id><First_Name>Paul</First_Name><Last_Name>Marc</Last_Name><Email>p_m@hotmail.com</Email><Contact>514-444-6532</Contact><Address>MTL</Address><products>Banana</products><Quantity>10</Quantity><totalprice>20</totalprice><customer>32</customer></order><order><id>1212</id><First_Name>Jennifer</First_Name><Last_Name>Anderson</Last_Name><Email>jj@yahoo.com</Email><Contact>514-324-7549</Contact><Address>MTL</Address><products>Tomato</products><Quantity>5</Quantity><totalprice>10</totalprice><customer>1212</customer></order></orderlist>
+<order><id>32</id><First_Name>Paul</First_Name><Last_Name>Marc</Last_Name><Email>p_m@hotmail.com</Email><Contact>514-444-6532</Contact><Address>MTL</Address><products>fff</products><Quantity>10</Quantity><totalprice>20</totalprice><customer>32</customer></order><order><id>1212</id><First_Name>Jennifer</First_Name><Last_Name>Anderson</Last_Name><Email>jj@yahoo.com</Email><Contact>514-324-7549</Contact><Address>MTL</Address><products>Tomato</products><Quantity>5</Quantity><totalprice>10</totalprice><customer>1212</customer></order></orderlist>
