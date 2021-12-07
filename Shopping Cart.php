@@ -99,89 +99,7 @@ include("php functions/cart.php")
                             </thead>
                             <div class="product-display-div">
                                 <tbody class="addedProducts">
-                                    <tr>
-                                        <td>
-                                            <img src="https://images.unsplash.com/photo-1616684000067-36952fde56ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80" alt=" ;">
-                                            <p>Kiwis</p>
-                                        </td>
-                                        <td>
-                                            <h6>$5.45/pack</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="shoppinginput" value="10" min="0">
-
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">5.45</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://cdn.pixabay.com/photo/2018/04/08/14/46/red-bull-3301415_1280.jpg" alt=" ;">
-                                            <p>Red Bull</p>
-                                        </td>
-                                        <td>
-                                            <h6>$3.69/Bottle</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="shoppinginput" value="1" min="0">
-
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">3.69</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" alt=" ;">
-                                            <p>Brioche Bread</p>
-                                        </td>
-                                        <td>
-                                            <h6>$3.75/unit</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="shoppinginput" value="1" min="0">
-
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">3.75</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://assets.bonappetit.com/photos/57ad3d4c53e63daf11a4dd38/16:9/w_1280,c_limit/spicy-italian-sausage.jpg" alt=" ;">
-                                            <p>Italian Sausages</p>
-                                        </td>
-                                        <td>
-                                            <h6>$1.54/100 G</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" class="shoppinginput" value="1" min="0">
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">1.54</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="https://www.washingtonpost.com/rf/image_982w/2010-2019/WashingtonPost/2020/08/13/Food/Images/v-howto-lobster_029.JPG" alt=" ;">
-                                            <p>Lobster</p>
-                                        </td>
-                                        <td>
-                                            <h6>$29.99/lb</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" id="Lobster" class="shoppinginput" value="1" min="0">
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">29.99</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
-                                        </td>
-                                    </tr>
+                                <form method="get" , action ="index.php">
                                     <tr>
                                         <td>
                                             <img src="https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT" alt=" ;">
@@ -195,15 +113,22 @@ include("php functions/cart.php")
                                             <input type="number" class="shoppinginput" value="1" min="0">
                                         </td>
                                         <td>
+    
                                             <span>$</span><output class="itemPrice" id="Chocolate_total">18.99</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
+                                            <button type="submit"  class="btn btn-dark btn1 remove" name="remove" value="Chocolate" > Remove</button> &nbsp
                                         </td>
 
                                     </tr>
+                                </form>
                                     <?php
                                     displayCart();
+                                    if(isset($_GET['remove'])){
+                                        echo"hjyuy";
+                                    }
+                                    
+                                   
                                     ?>
-
+                                
 
                                 </tbody>
                             </div>

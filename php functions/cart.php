@@ -4,7 +4,6 @@
 
 function addToCart()
 {
-    if(isset($_GET['productName'])){
     $productPage = new DOMDocument("1.0","UTF-8");
     $productPage -> load("../Database/products.xml");
     $nameTag = $productPage -> getElementsByTagName('name');
@@ -13,7 +12,9 @@ function addToCart()
     $xml -> load("../Database/user.xml");
     $emailTag = $xml -> getElementsByTagName('email');
     if(isset($_GET['productName'])){
-        
+        if(contains($_GET['productName'])){
+            return false;
+        }
       for($i=0;$i<$nameTag->length;$i++){
           
        if($_GET['productName'] == $nameTag[$i]->nodeValue){
@@ -29,10 +30,8 @@ function addToCart()
                 
                 
                $userTag = $xml -> getElementsByTagName('user')->item($j);
-               echo $userTag->nodeValue;
                $cartTag = $xml-> getElementsByTagName('cart')[$j];
                 $itemTag = $xml -> createElement('item');
-
 
              $productNameTag = $xml -> createElement('productName',  $_GET['productName']);
             $priceTag = $xml -> createElement('price',$price);
@@ -55,6 +54,37 @@ function addToCart()
     
 }
 
+function remove(){
+    echo "test";
+}
+
+
+
+function contains($product) {
+    $xml = new DOMDocument("1.0","UTF-8");
+    $xml -> load("../Database/user.xml");
+    $userTag = $xml -> getElementsByTagName("user");
+    for($i=0;$i<$userTag->length;$i++){
+        $emailTag = $userTag[$i] -> getElementsByTagName("email")[0]->nodeValue;
+        if(strcasecmp($emailTag,$_SESSION['email'])==0){
+            $cartTag = $userTag[$i] -> getElementsByTagName('cart')[0];
+            $itemTag = $cartTag->getElementsByTagName('item');
+            for($j=0;$j<$itemTag->length;$j++){
+                $productNameTag = $itemTag[$j] -> getElementsByTagName('productName')[0];
+                $quantityTag = $itemTag[$j]->getElementsByTagName('quantity')[0];
+                $productN = $productNameTag -> nodeValue;
+                $quantity = $quantityTag -> nodeValue;
+                if($productN == $product){
+                    $q = ((int) $quantity +1);
+                    $quantityTag -> nodeValue = $q;
+                    $xml->save("../Database/user.xml"); 
+                    return true;
+                }
+            }
+            return false;
+
+}
+}
 }
 
 function displayCart()
@@ -63,7 +93,7 @@ function displayCart()
     $xml -> load("Database/user.xml");
     $rootTag = $xml -> getElementsByTagName("Users")->item(0);
     $userTag = $xml -> getElementsByTagName("user");
-       
+    
     
     
     for($i=0;$i<$userTag->length;$i++){
@@ -81,7 +111,7 @@ function displayCart()
             $imgTag = $itemTag[$j] -> getElementsByTagName('img')[0]->nodeValue;
             $quantityTag = $itemTag[$j] -> getElementsByTagName('quantity')[0]->nodeValue;
            echo "<td>";
-           echo "<img src=\"". $imgTag. "\" alt=\";\"";
+           echo "<img src=\"". $imgTag. "\">";
             echo "<p>".$productNameTag."</p>";
            echo "</td>";
             echo "<td>";
@@ -101,22 +131,6 @@ function displayCart()
             
     }
 }
-/*<tr>
-                                        <td>
-                                            <img src="https://www.washingtonpost.com/rf/image_982w/2010-2019/WashingtonPost/2020/08/13/Food/Images/v-howto-lobster_029.JPG" alt=" ;">
-                                            <p>Lobster</p>
-                                        </td>
-                                        <td>
-                                            <h6>$29.99/lb</h6>
-                                        </td>
-                                        <td>
-                                            <input type="number" id="Lobster" class="shoppinginput" value="1" min="0">
-                                        </td>
-                                        <td>
-                                            <span>$</span><output class="itemPrice">29.99</output>
-                                            <button type="button" class="btn btn-dark btn1 remove"> Remove</button> &nbsp
-                                        </td>
-                                    </tr>*/
 
 
 
