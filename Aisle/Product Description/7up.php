@@ -1,6 +1,11 @@
 <?php
 session_start();
+
+include 'cart.php'
+
+
 ?>
+
 
 <!DOCTYPE html>
 
@@ -118,11 +123,22 @@ session_start();
         <div class="row">
             <div class="container" style="margin-top:30px">
                 <div class="row">
+
+                    <form action="addToCart()" method="get">
+
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                         <img src="https://images.unsplash.com/photo-1622766815178-641bef2b4630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1519&q=80" alt="" class="img1" style="width: 100%;">
                     </div>
+
+
+
+
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <h4 class="product-name">7Up</h4>
+
+                        <h4 class="product-name">
+                            <input type="label" name="productName" value="7Up"/>
+                        </h4>
+
                         <br>
 
                         <div class="panel-heading">
@@ -141,22 +157,30 @@ session_start();
 
 
                         <p class="under-product-name"></p>
+
                         <br>
+
                         <h5><span class="third">$1.59/Bottle </span>
                             <br><span class="fourth">1 bottle (approx. 330mL)</span>
                         </h5>
+
                         <br>
                         <br>
+
                         Quantity:
+
                         <div class="box">
-                            <input type="number" id="box" value="1" min="1">
+                            <input type="number" id="box" value="1" min="1" name='productQuantity'>
                         </div>
+
                         <br>
+
                         <button type="button" class="btn btn-dark btn1">
                             <i class="fas fa-shopping-cart fas"></i> Add to Shopping Cart
                         </button>
 
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

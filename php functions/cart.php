@@ -101,6 +101,7 @@ function displayCart()
             
     }
 }
+
 /*<tr>
                                         <td>
                                             <img src="https://www.washingtonpost.com/rf/image_982w/2010-2019/WashingtonPost/2020/08/13/Food/Images/v-howto-lobster_029.JPG" alt=" ;">

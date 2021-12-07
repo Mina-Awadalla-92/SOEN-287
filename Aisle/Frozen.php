@@ -2,6 +2,8 @@
 session_start();
 ob_start();
 include("../php functions/cart.php");
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,7 +139,7 @@ include("../php functions/cart.php");
             </div>
 
             <div class="main-content col-md-10">
-            <form action="Frozen.php" method="get">
+
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
                         <div class="card">
