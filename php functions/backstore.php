@@ -10,7 +10,7 @@ function createAccount() {
 
   $rootTag = $xml -> getElementsByTagName("Users")->item(0);
   $userTag = $xml -> createElement('user');
-
+  
   $nameTag = $xml -> createElement('firstName',  $_POST['firstName']);
   $lNameTag = $xml -> createElement('lastName', $_POST['lastName']);
   $addressTag = $xml -> createElement('address', $_POST['address']);
@@ -19,6 +19,7 @@ function createAccount() {
   $postalTag = $xml -> createElement('postalCode', $_POST['postalCode']);
   $emailTag = $xml -> createElement('email', $_POST['email']);
   $passwrodTag = $xml -> createElement('password', $_POST['password']);
+  $cartTag = $xml -> createElement('cart',"");
 
   $userTag -> appendChild($nameTag);
   $userTag -> appendChild($lNameTag);
@@ -28,10 +29,11 @@ function createAccount() {
   $userTag-> appendChild($postalTag);
   $userTag -> appendChild($emailTag);
   $userTag -> appendChild($passwrodTag);
+  $userTag -> appendChild($cartTag);
 
   $rootTag -> appendChild($userTag);
   $_SESSION['first'] = $_POST['firstName'];
-  $xml-> save("Database/user.xml"); 
+  $xml-> save("../Database/user.xml"); 
  }
 }
  
