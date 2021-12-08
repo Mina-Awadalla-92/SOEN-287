@@ -100,7 +100,7 @@ include("php functions/cart.php")
                             </thead>
                             <div class="product-display-div">
                                 <tbody class="addedProducts">
-                                    <tr>
+                                    <!-- <tr>
                                         <td>
                                             <img src="https://images.unsplash.com/photo-1616684000067-36952fde56ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80" alt=" ;">
                                             <p>Kiwis</p>
@@ -201,7 +201,7 @@ include("php functions/cart.php")
                                             <button type="submit"  class="btn btn-dark btn1 remove" name="remove" value="Chocolate" > Remove</button> &nbsp
                                         </td>
 
-                                    </tr>
+                                    </tr> -->
                                 </form>
                                     <?php
                                     displayCart();
@@ -225,7 +225,7 @@ include("php functions/cart.php")
                     <ul>
                         <li># OF ITEMS
                             <span>
-                                <output id="numOfItems">7</output>
+                                <output id="numOfItems"></output>
                             </span>
                         </li>
                         <li>subtotal
