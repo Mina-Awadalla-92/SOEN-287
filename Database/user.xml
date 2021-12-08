@@ -28,7 +28,7 @@
 <password>3456</password>
 
 <cart>
-<item><productName>Red apples</productName><img>productImg/applesred.webp</img><price>$2.36/pack</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Red apples</productName><img>productImg/applesred.webp</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Chicken Breast</productName><img/><price/><quantity>1</quantity></item><item><productName>Rye Bread</productName><img/><price>$4.55/loaf</price><quantity>1</quantity></item></cart></user>    
 
 
 
