@@ -92,9 +92,6 @@ include("../php functions/backstore.php");
   <div class="login">
     <div class="login-text">Sign Up</div>
     <br><br><br>
-    <div>
-      <h1><a href="../Database/user.xml">xmlfileusers</a></h1>
-    </div>
 
 
     <div class="textboxSignup">
