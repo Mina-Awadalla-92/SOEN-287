@@ -120,13 +120,13 @@
 <img>https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1471-q=80</img>
 <price>$6.96/loaf</price>
 </product>
-<!--
+
 <product id="20" >
 <name>Challah Bread</name>
-<img><https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1470-q=80/img>
+<img>https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1470-q=80</img>
 <price>$3.50/loaf</price>
 </product>
--->
+
 <product id="21" >
 <name>Bagels</name>
 <img></img>
