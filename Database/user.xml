@@ -25,10 +25,10 @@
 <province>Quebec</province>
 <postalCode>H4W 2R2</postalCode>
 <email>reuven1203@gmail.com</email>
-<password>3456</password>
+<password>12345</password>
 
 <cart>
-<item><productName>Red apples</productName><img>productImg/applesred.webp</img><price>$2.36/pack</price><quantity>1</quantity></item><item><productName>Chicken Breast</productName><img/><price/><quantity>1</quantity></item><item><productName>Rye Bread</productName><img/><price>$4.55/loaf</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Rye Bread</productName><img>https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1472-q=80.jpg</img><price>$4.55/loaf</price><quantity>1</quantity></item><item><productName>Sourdough Bread</productName><img>https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1471-q=80</img><price>$6.96/loaf</price><quantity>1</quantity></item></cart></user>    
 
 
 
