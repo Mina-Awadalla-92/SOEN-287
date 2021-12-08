@@ -1,319 +1,326 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-
 <productList>
 
-<item>
+<product>
+<id>1</id>
 <name>Red apples</name>
-<img>https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&#38;ixlib=rb-1.2.1&#38;auto=format&#38;fit=crop&#38;w=1374&#38;q=80"</img>
+<img>https://media.self.com/photos/5b6b0b0cbb7f036f7f5cbcfa/4:3/w_2560%2Cc_limit/apples.jpg</img>
+<available>78</available>
 <price>$2.36/pack</price>
-</item>
+</product>
 
-<item>
+<product>
+<id>2</id>
 <name>Bananas</name>
-<img></img>
+<img>https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg?w=1110</img>
+<available>300</available>
 <price>$3.57/pack</price>
-</item>
+</product>
 
-<item>
+<product>
+<id>3</id>
 <name>Kiwis</name>
-<img></img>
+<img>https://cdn.britannica.com/s:1500x700,q:85/45/126445-004-90305E10/Kiwi-fruit.jpg</img>
+<available>150</available>
 <price>$5.45/pack</price>
-</item>
+</product>
 
-<item>
+ <product id="4" >
 <name>Oranges</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=735-q=80</img>
 <price>$5.70/pack</price>
-</item>
+</product>
 
-<item>
+<product id="5" >
 <name>Cucumber</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1580294672675-91afc00ee7b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1470-q=80</img>
 <price>$0.98/unit</price>
-</item>
+</product>
 
-<item>
+<product id="6" >
 <name>Carrots</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1447175008436-054170c2e979?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1599-q=80</img>
 <price>$2.36/pack</price>
-</item>
+</product>
 
-<item>
+<product id="7" >
 <name>Brocolli</name>
-<img></img>
+<img>https://post.healthline.com/wp-content/uploads/2020/09/benefits-of-broccoli-1200x628-facebook-1200x628.jpg</img>
 <price>$5.67/pack</price>
-</item>
+</product>
 
-<item>
+<product id="8" >
 <name>Corn</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1551754655-cd27e38d2076?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=2070-q=80</img>
 <price>$1.22/unit</price>
-</item>
+</product>
 
-<item>
+<product id="9" >
 <name>Munchies Water</name>
-<img></img>
+<img>https://www.factsaboutbpa.org/wp-content/uploads/2017/09/waterbottles.png</img>
 <price>$2.49/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="10" >
 <name>Coca Cola</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1624797375978-8c2f746bdd3a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbGF8ZW58MHx8MHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=800-q=60</img>
 <price>$1.69/Bottle</price>
-</item>
-
-<item>
+</product>
+ 
+<product id="11" >
 <name>7Up</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1622766815178-641bef2b4630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1519-q=80</img>
 <price>$1.59/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="12" >
 <name>Monster</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1551870573-6f5e93e660fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1470-q=80</img>
 <price>$4.70/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="13" >
 <name>Redbull</name>
-<img></img>
+<img>https://cdn.pixabay.com/photo/2018/04/08/14/46/red-bull-3301415_1280.jpg</img>
 <price>$3.69/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="14" >
 <name>Fanta</name>
-<img></img>
+<img>https://st.depositphotos.com/2121815/4264/i/600/depositphotos_42646321-stock-photo-can-of-fanta-drink-on.jpg</img>
 <price>$1.49/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="15" >
 <name>Orange Juice</name>
-<img></img>
+<img>https://www.packagingstrategies.com/ext/resources/Issues/June/July2012/Laura_uploads/Tropicana540.jpg?1559144132</img>
 <price>$2.89/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="16" >
 <name>Canada Dry</name>
-<img></img>
+<img>https://preview.free3d.com/img/2020/01/2279683203843229623/civw902w-900.jpg</img>
 <price>$1.59/bottle</price>
-</item>
+</product>
 
-<item>
+<product id="17" >
 <name>Baguettes</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1597079910443-60c43fc4f729?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1632-q=80</img>
 <price>$1.00/baguette</price>
-</item>
+</product>
 
-<item>
+<product id="18" >
 <name>Rye Bread</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1472-q=80.jpg</img>
 <price>$4.55/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="19" >
 <name>Sourdough Bread</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1471-q=80</img>
 <price>$6.96/loaf</price>
-</item>
-
-<item>
+</product>
+<!--
+<product id="20" >
 <name>Challah Bread</name>
-<img></img>
+<img><https://images.unsplash.com/photo-1609970957077-6baa39b4a749?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1470-q=80/img>
 <price>$3.50/loaf</price>
-</item>
-
-<item>
+</product>
+-->
+<product id="21" >
 <name>Bagels</name>
 <img></img>
 <price>$1.55/bagels</price>
-</item>
+</product>
 
-<item>
+<product id="22" >
 <name>Whole Wheat Bread</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1565181917578-a87c12e04ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1536-q=80</img>
 <price>$3.25/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="23" >
 <name>Brioche Bread</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1620921568790-c1cf8984624c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1074-q=80</img>
 <price>$3.75/loaf</price>
-</item>
+</product>
 
-<item>
+<product id="24" >
 <name>Pita Bread</name>
-<img></img>
+<img>https://images.unsplash.com/photo-1583057341912-a0df64b8da4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1074-q=80</img>
 <price>$0.89/Pita</price>
-</item>
+</product>
 
-<item>
+<product id="25" >
 <name>Ice Cream</name>
-<img></img>
+<img>https://static-assets.boxed.com/1527886610321.jpg</img>
 <price>$8.00/Box</price>
-</item>
+</product>
 
-<item>
+<product id="26" >
 <name>Pogo</name>
-<img></img>
+<img>https://images.chickadvisor.com/item/40271/375/i/pogos.jpg?ic=1</img>
 <price>$8.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="27" >
 <name>French Fries</name>
-<img></img>
+<img>https://www.emenacpackaging.com/wp-content/uploads/2019/04/4-168.jpg</img>
 <price>$13.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="28" >
 <name>Eggos</name>
-<img></img>
+<img>https://target.scene7.com/is/image/Target/GUEST_3fcb9390-f290-4059-bbb5-36f9cfad7026?wid=488-hei=488-fmt=pjpeg</img>
 <price>$7.00/Box</price>
-</item>
+</product>
 
-<item>
+<product id="29" >
 <name>Popsicles</name>
-<img></img>
+<img>https://images.squarespace-cdn.com/content/5175ca67e4b06533f73d4a14/1368218112096-NS7EA3TL0ES5GRKH8G18/popsicle+box.jpg?format=1000w-content-type=image%2Fjpeg</img>
 <price>$3.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="30" >
 <name>Bagged Ice</name>
-<img></img>
+<img>https://cdnimg.webstaurantstore.com/images/products/extra_large/202123/1114724.jpg</img>
 <price>$0.99/Bag</price>
-</item>
+</product>
 
-<item>
+<product id="31" >
 <name>Pizza</name>
-<img></img>
+<img>https://i5.walmartimages.com/asr/7563f7de-725d-41a3-b610-c439082efd2f_1.d8c62c0b49810e07c1994458d7a6eaaf.jpeg</img>
 <price>$11.99/Box</price>
-</item>
+</product>
 
-<item>
+<product id="31" >
 <name>Chicken Nuggets</name>
-<img></img>
+<img>https://i5.walmartimages.com/asr/c99dd5fe-34ba-4a25-b6e2-8f4f42df996b_3.98384eae2bacba1ca2d052153be52d27.png</img>
 <price>$7.95/Box</price>
-</item>
+</product>
 
-<item>
+<product id="32" >
 <name>Sirloin Steak</name>
-<img></img>
+<img>https://thumbs.dreamstime.com/b/raw-meat-beef-steak-green-rustic-table-raw-meat-beef-steak-green-rustic-table-background-164197668.jpg</img>
 <price>$8.53/unit</price>
-</item>
+</product>
 
-<item>
+<product id="33" >
 <name>Chicken Breast</name>
-<img></img>
+<img>https://post.healthline.com/wp-content/uploads/2020/09/2375-Raw_Chicken-1296x728-header-1200x628.jpg</img>
 <price>$3.96/unit</price>
-</item>
+</product>
 
-<item>
+<product id="34" >
 <name>Pork Chops</name>
-<img></img>
+<img>https://www.bowrivermeatmarket.ca/wp-content/uploads/2019/06/porkchops.jpg</img>
 <price>$9.69/pack</price>
-</item>
+</product>
 
-<item>
+<product id="35" >
 <name>Italian Sausages</name>
-<img></img>
+<img>https://assets.bonappetit.com/photos/57ad3d4c53e63daf11a4dd38/16:9/w_1280,c_limit/spicy-italian-sausage.jpg</img>
 <price>$5.70/pack</price>
-</item>
+</product>
 
-<item>
+<product id="36" >
 <name>Fresh Crab</name>
-<img></img>
+<img>https://www.marchespublics-mtl.com/wp-content/uploads/MPM_Poissons_Crabe.jpg</img>
 <price>$30.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="37" >
 <name>Lobster</name>
-<img></img>
+<img>https://www.washingtonpost.com/rf/image_982w/2010-2019/WashingtonPost/2020/08/13/Food/Images/v-howto-lobster_029.JPG</img>
 <price>$29.99/lb</price>
-</item>
+</product>
 
-<item>
+<product id="38" >
 <name>Shrimp</name>
-<img></img>
+<img>https://www.sweetandsavorybyshinee.com/wp-content/uploads/2021/05/Shrimp-2-1.jpg</img>
 <price>$25.99/lb</price>
-</item>
+</product>
 
-<item>
+<product id="39" >
 <name>Oysters</name>
-<img></img>
+<img>https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fcourtneyschiessl%2Ffiles%2F2018%2F05%2FOysters_int.jpg</img>
 <price>$45.50/6g</price>
-</item>
+</product>
 
-<item>
+<product id="40" >
 <name>Wild Salmon</name>
-<img></img>
+<img>https://www.skinnytaste.com/wp-content/uploads/2018/12/Baked-Salmon-1.jpg</img>
 <price>$12.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="41" >
 <name>Tuna Steak</name>
-<img></img>
+<img>https://theheritagecook.com/wp-content/uploads/2012/01/Raw-Ahi-Tuna-Steaks2-iStock.jpg</img>
 <price>$30.00/lb</price>
-</item>
+</product>
 
-<item>
+<product id="42" >
 <name>Calamari</name>
-<img></img>
+<img>https://www.thespruceeats.com/thmb/3IAKAM_nPxKNRJfrdNsVdktNeH4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/calamari_1806999-2-e8a531d5915e49719d5b049fd6fa00a1.jpg</img>
 <price>$52.99/5lb</price>
-</item>
+</product>
 
-<item>
+<product id="43" >
 <name>Caviar</name>
-<img></img>
+<img>https://upload.wikimedia.org/wikipedia/commons/f/ff/Caviar_spoons.jpg</img>
 <price>75.99/jar</price>
-</item>
+</product>
 
-<item>
+<product id="44" >
 <name>Chips</name>
-<img></img>
+<img>https://s-i.huffpost.com/gen/1401075/images/o-POTATO-CHIPS-facebook.jpg</img>
 <price>2.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="45" >
 <name>Chocolate</name>
-<img></img>
+<img>https://uknow.uky.edu/sites/default/files/styles/facebook/public/chocolate%20cadies%20assortment%20(1280x853).jpg?itok=H6LqJmiT</img>
 <price>18.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="46" >
 <name>Candy</name>
-<img></img>
+<img>https://assets.bonappetit.com/photos/5a833c4b668fb87d44d15fc3/16:9/w_1280,c_limit/museum-of-candy-opening-in-nyc.jpg</img>
 <price>$11.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="47" >
 <name>Pretzels</name>
-<img></img>
+<img>https://2.bp.blogspot.com/-83qPJ9IX-r0/UBhLAXS5XoI/AAAAAAAAAd8/3hFeyaPk-uw/s1600/100_9879.jpg</img>
 <price>$3.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="48" >
 <name>Rice Cakes</name>
-<img></img>
+<img>https://post.healthline.com/wp-content/uploads/2020/08/are-rice-cakes-healthy-1200x628-facebook-1200x628.jpg</img>
 <price>$4.99/bag</price>
-</item>
+</product>
 
-<item>
+<product id="49" >
 <name>Brownies</name>
-<img></img>
+<img>https://kirbiecravings.com/wp-content/uploads/2019/05/keto-avocado-brownies-13.jpg</img>
 <price>$9.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="50" >
 <name>Cookies</name>
-<img></img>
+<img>https://www.tasteofhome.com/wp-content/uploads/2017/11/shutterstock_389576623-1.jpg</img>
 <price>$4.99/box</price>
-</item>
+</product>
 
-<item>
+<product id="51" >
 <name>Muffins</name>
-<img></img>
+<img>https://sparkpeo.hs.llnwd.net/e2/guid/Banana-Chocolate-Chip-Muffins/651c890a-7eb6-4092-a1ae-6b841101b6d9.jpg</img>
 <price>$9.99/box</price>
-</item>
+</product> -->
+ 
 
 
 
-</productList>
+
+<product><id>4</id><name>Mangoes</name><img>https://i.guim.co.uk/img/media/292c3089e3d84938710d70dfb37fec346be442b9/0_374_5616_3370/master/5616.jpg?width=620-amp;quality=85-amp;auto=format-amp;fit=max-amp;s=20a8921c58c7fb9c8a2ff361a90b1fb5</img><available>500</available><price>10$/pack</price></product><product><id>5</id><name>Sidhri Mangoes</name><img>https://i.imgur.com/6ERv8te.png</img><available>250</available><price>100$/pack</price></product></productList>

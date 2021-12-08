@@ -28,12 +28,14 @@ include("../php functions/userLogin.php");
       .alert {
         margin: auto;
         margin-bottom: 5px;
+        margin-left: 1px;
         font-size: 25px;
         text-align: center;
         color: red;
         border: 3px solid red;
-        width: 400px;
+        width: 100%;
         background-color: pink;
+        position: relative;
       }
     </style>
 
@@ -120,7 +122,7 @@ include("../php functions/userLogin.php");
 
       <?php
       if (isset($_SESSION['accExist']) && $_SESSION['accExist'] == true) {
-        echo "<h3 style=\"color:#FF2750\">The email you previously tried to sign in with already exists</h3>";
+        echo "<h3 style=\"color:#FF2750\">The email you previously tried to sign up with already exists</h3>";
       }
 
       checkEandP();
