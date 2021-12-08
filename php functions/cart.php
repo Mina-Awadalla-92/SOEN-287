@@ -11,6 +11,7 @@ function addToCart()
     
     $xml = new DOMDocument("1.0","UTF-8");
     $xml -> load("../Database/user.xml");
+
     $emailTag = $xml -> getElementsByTagName('email');
     if(isset($_GET['productName'])){
         

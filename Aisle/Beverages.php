@@ -165,17 +165,35 @@ include("../php functions/cart.php");
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
-            <div class="card">
-              <a href="Product Description/7up.php"><img class="item-pic" src="https://images.unsplash.com/photo-1622766815178-641bef2b4630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1519&q=80" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title"> <a href="Product Description/7up.php" style="color:black">7Up</h5></a>
-                <p class="card-text "> 1 7Up (approx. 330mL)<br> <br> <br> approx. <span class="cost">$1.59</span>/
-                  Bottle <br> <span class="gram">$1.59 / 330mL</span></p>
-                  <button class="btn btn-dark" name="productName" value="7Up" type="submit">ADD TO CART</button>
-              </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
+                <div class="card">
+                    <a href="Product Description/7up.php">
+                        <img class="item-pic"
+                             src="https://images.unsplash.com/photo-1622766815178-641bef2b4630?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1519&q=80"
+                             class="card-img-top" alt="..."/>
+                    </a>
+
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="Product Description/7up.php" style="color:black">7Up</a>
+                        </h5>
+
+                        <p class="card-text ">
+                            1 7Up (approx. 330mL)
+                            <br><br><br>
+                            approx.
+                            <span class="cost">$1.59</span> / Bottle
+                            <br>
+                            <span class="gram">$1.59 / 330mL</span>
+                        </p>
+
+                        <button class="btn btn-dark" name="productName" value="7Up" type="submit">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
 
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-2">
             <div class="card">
