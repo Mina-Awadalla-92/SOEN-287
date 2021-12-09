@@ -28,7 +28,7 @@
 <password>12345</password>
 
 <cart>
-<item><productName>Rye Bread</productName><img>https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1472-q=80.jpg</img><price>$4.55/loaf</price><quantity>1</quantity></item><item><productName>Sourdough Bread</productName><img>https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1471-q=80</img><price>$6.96/loaf</price><quantity>1</quantity></item></cart></user>    
+<item><productName>Rye Bread</productName><img>https://images.unsplash.com/photo-1509440159596-0249088772ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-ixlib=rb-1.2.1-auto=format-fit=crop-w=1472-q=80.jpg</img><price>$4.55/loaf</price><quantity>1</quantity></item><item><productName>Sourdough Bread</productName><img>https://images.unsplash.com/photo-1585478259715-876a6a81fc08?ixlib=rb-1.2.1-ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8-auto=format-fit=crop-w=1471-q=80</img><price>$6.96/loaf</price><quantity>1</quantity></item><item><productName>Bagel</productName><img/><price/><quantity>1</quantity></item><item><productName>Tuna Steak</productName><img>https://theheritagecook.com/wp-content/uploads/2012/01/Raw-Ahi-Tuna-Steaks2-iStock.jpg</img><price>$30.00/lb</price><quantity>1</quantity></item></cart></user>    
 
 
 
